@@ -76,6 +76,7 @@ export default function Layout({
     };
     switch (headerStyle) {
       case 1:
+      case 3:
         return <Header1 {...headerProps} />
       default:
         return null;

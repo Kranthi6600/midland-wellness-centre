@@ -6,12 +6,18 @@ export default function Departments_Details() {
 
     return (
         <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Details">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Blog">
                 <section className="sidebar-page-container pt_120 pb_120">
                     <div className="auto-container">
                         <div className="row clearfix">
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="blog-details-content">
+                                    <div className="back-to-blog mb_30">
+                                        <Link href="/blog" className="theme-btn btn-one" style={{ width: '200px', padding: '12px 30px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                            <i className="icon-21"></i>
+                                            Back to Blog
+                                        </Link>
+                                    </div>
                                     <div className="news-block-one">
                                         <div className="inner-box">
                                             <figure className="image-box"><Image src="/assets/images/news/news-7.jpg" alt="Image" width={856} height={425} priority /></figure>

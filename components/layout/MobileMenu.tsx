@@ -74,6 +74,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
               {/* Contact */}
               <li><Link href="/contact">Contact Us</Link></li>
 
+              {/* Blog */}
+              <li><Link href="/blog">Blog</Link></li>
+
             </ul>
           </div>
 

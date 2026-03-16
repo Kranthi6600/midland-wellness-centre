@@ -72,7 +72,8 @@ export default function Footer1() {
                                     <div className="widget-content">
                                         <ul className="info-list clearfix">
                                             <li><Image src="/assets/images/icons/icon-5.svg" alt="Icon" width={20} height={15} priority />Email: <Link href="mailto:info@midlandwellness.ca">info@midlandwellness.ca</Link></li>
-                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+1 416-261-7246">+1 416-261-7246</Link></li>
+                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+41 416-261-7246">+41 416-261-7246</Link></li>
+                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+41 416-261-9813">+41 416-261-9813</Link></li>
                                             <li><Image src="/assets/images/icons/icon-7.svg" alt="Icon" width={20} height={20} priority />2555 Eglinton Ave. E,
                                                 Scarborough, Ontario
                                                 Canada, M1K 5J1 </li>
@@ -81,14 +82,8 @@ export default function Footer1() {
                                 </div>
                             </div>
                         </div>
-                        <div className="footer-menu mt_60">
+                        <div className="footer-logo mt_60">
                             <figure className="logo-box"><Link href="/"><Image src="/assets/images/header_logo.png" alt="Footer Logo" width={203} height={40} priority /></Link></figure>
-                            <ul className="menu-list clearfix">
-                                <li><Link href="/">Home</Link></li>
-                                <li><Link href="/about">About Us</Link></li>
-                                <li><Link href="/departments">Departments</Link></li>
-                                <li><Link href="/contact">Contact Us</Link></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

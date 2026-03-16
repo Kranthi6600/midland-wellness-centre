@@ -241,16 +241,18 @@ export default function Appointments_Page() {
                             {/* Info Column */}
                             <div className="col-lg-4 col-md-12 col-sm-12 info-column">
                                 <div className="appointment-info">
-                                    <div className="info-box">
+                                    <div className="info-box" style={{ marginBottom: '30px' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                                             <Image src="/assets/images/icons/icon-6.svg" alt="Emergency" width={20} height={20} priority />
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Emergency Contact</h4>
                                         </div>
                                         <p>For urgent medical needs</p>
                                         <a href="tel:+41 416-261-7246" className="phone">+41 416-261-7246</a>
+                                        <br />
+                                        <a href="tel:+41 416-261-9813" className="phone">+41 416-261-9813</a>
                                     </div>
 
-                                    <div className="info-box">
+                                    <div className="info-box" style={{ marginBottom: '30px' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="12" cy="12" r="10" stroke="#FFD700" strokeWidth="2" fill="none"/>
@@ -264,7 +266,7 @@ export default function Appointments_Page() {
                                         <p>Sunday: Closed</p>
                                     </div>
 
-                                    <div className="info-box">
+                                    <div className="info-box" style={{ marginBottom: '30px' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                                             <Image src="/assets/images/icons/icon-7.svg" alt="Location" width={20} height={20} priority />
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Location</h4>
@@ -278,7 +280,6 @@ export default function Appointments_Page() {
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Email Us</h4>
                                         </div>
                                         <p><a href="mailto:info@midlandwellnesscentre.com">info@midlandwellnesscentre.com</a></p>
-                                        <p>appointments@midlandwellnesscentre.com</p>
                                     </div>
                                 </div>
                             </div>

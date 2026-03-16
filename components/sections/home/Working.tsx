@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Working() {
   return (
         <section className="working-section sec-pad centred">
@@ -12,109 +13,115 @@ export default function Working() {
                     <div className="arrow-shape" style={{ backgroundImage: "url(assets/images/shape/shape-18.png)" }}></div>
                     <div className="row clearfix">
                         <div className="col-lg-4 col-md-6 col-sm-12 working-block">
-                            <div className="working-block-one">
-                                <div className="inner-box">
-                                    <div className="image-box">
-                                        <figure className="image" style={{
-                                            borderRadius: '50%',
-                                            overflow: 'hidden',
-                                            display: 'block',
-                                            width: '100%',
-                                            height: '100%'
-                                        }}>
-                                            <Image 
-                                                src="/assets/images/resource/appointment.webp" 
-                                                alt="Image" 
-                                                width={250} 
-                                                height={250} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '50%',
-                                                    objectFit: 'cover',
-                                                    width: '100%',
-                                                    height: '100%',
-                                                    display: 'block'
-                                                }}
-                                            />
-                                        </figure>
-                                        <span className="count-text">01</span>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3>Get Appointment</h3>
-                                        <p>On the other hand, we denounce with righteous indignation.</p>
+                            <Link href="/appointments" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <div className="working-block-one">
+                                    <div className="inner-box">
+                                        <div className="image-box">
+                                            <figure className="image" style={{
+                                                borderRadius: '50%',
+                                                overflow: 'hidden',
+                                                display: 'block',
+                                                width: '100%',
+                                                height: '100%'
+                                            }}>
+                                                <Image 
+                                                    src="/assets/images/resource/appointment2.jpg" 
+                                                    alt="Image" 
+                                                    width={250} 
+                                                    height={250} 
+                                                    priority 
+                                                    style={{
+                                                        borderRadius: '50%',
+                                                        objectFit: 'cover',
+                                                        width: '100%',
+                                                        height: '100%',
+                                                        display: 'block'
+                                                    }}
+                                                />
+                                            </figure>
+                                            <span className="count-text">01</span>
+                                        </div>
+                                        <div className="lower-content">
+                                            <h3>Get Appointment</h3>
+                                            <p>On the other hand, we denounce with righteous indignation.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 working-block">
-                            <div className="working-block-one">
-                                <div className="inner-box">
-                                    <div className="image-box">
-                                        <figure className="image" style={{
-                                            borderRadius: '50%',
-                                            overflow: 'hidden',
-                                            display: 'block',
-                                            width: '100%',
-                                            height: '100%'
-                                        }}>
-                                            <Image 
-                                                src="/assets/images/resource/checkup.webp" 
-                                                alt="Image" 
-                                                width={250} 
-                                                height={250} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '50%',
-                                                    objectFit: 'cover',
-                                                    width: '100%',
-                                                    height: '100%',
-                                                    display: 'block'
-                                                }}
-                                            />
-                                        </figure>
-                                        <span className="count-text">02</span>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3>Start Check-Up</h3>
-                                        <p>On the other hand, we denounce with righteous indignation.</p>
+                            <Link href="/appointments" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <div className="working-block-one">
+                                    <div className="inner-box">
+                                        <div className="image-box">
+                                            <figure className="image" style={{
+                                                borderRadius: '50%',
+                                                overflow: 'hidden',
+                                                display: 'block',
+                                                width: '100%',
+                                                height: '100%'
+                                            }}>
+                                                <Image 
+                                                    src="/assets/images/resource/checkup2.png" 
+                                                    alt="Image" 
+                                                    width={250} 
+                                                    height={250} 
+                                                    priority 
+                                                    style={{
+                                                        borderRadius: '50%',
+                                                        objectFit: 'cover',
+                                                        width: '100%',
+                                                        height: '100%',
+                                                        display: 'block'
+                                                    }}
+                                                />
+                                            </figure>
+                                            <span className="count-text">02</span>
+                                        </div>
+                                        <div className="lower-content">
+                                            <h3>Start Check-Up</h3>
+                                            <p>On the other hand, we denounce with righteous indignation.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 working-block">
-                            <div className="working-block-one">
-                                <div className="inner-box">
-                                    <div className="image-box">
-                                        <figure className="image" style={{
-                                            borderRadius: '50%',
-                                            overflow: 'hidden',
-                                            display: 'block',
-                                            width: '100%',
-                                            height: '100%'
-                                        }}>
-                                            <Image 
-                                                src="/assets/images/resource/healthylife.webp" 
-                                                alt="Image" 
-                                                width={250} 
-                                                height={250} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '50%',
-                                                    objectFit: 'cover',
-                                                    width: '100%',
-                                                    height: '100%',
-                                                    display: 'block'
-                                                }}
-                                            />
-                                        </figure>
-                                        <span className="count-text">03</span>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3>Enjoy Healthy Life</h3>
-                                        <p>On the other hand, we denounce with righteous indignation.</p>
+                            <Link href="/appointments" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <div className="working-block-one">
+                                    <div className="inner-box">
+                                        <div className="image-box">
+                                            <figure className="image" style={{
+                                                borderRadius: '50%',
+                                                overflow: 'hidden',
+                                                display: 'block',
+                                                width: '100%',
+                                                height: '100%'
+                                            }}>
+                                                <Image 
+                                                    src="/assets/images/resource/healthylife2.jpg" 
+                                                    alt="Image" 
+                                                    width={250} 
+                                                    height={250} 
+                                                    priority 
+                                                    style={{
+                                                        borderRadius: '50%',
+                                                        objectFit: 'cover',
+                                                        width: '100%',
+                                                        height: '100%',
+                                                        display: 'block'
+                                                    }}
+                                                />
+                                            </figure>
+                                            <span className="count-text">03</span>
+                                        </div>
+                                        <div className="lower-content">
+                                            <h3>Enjoy Healthy Life</h3>
+                                            <p>On the other hand, we denounce with righteous indignation.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

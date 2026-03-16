@@ -67,7 +67,7 @@ export default function Header1({
             <div className="outer-box">
               <div className="logo-box">
                 <figure className="logo">
-                  <Link href="/index-2">
+                  <Link href="/">
                     <Image src="/assets/images/header_logo.png" alt="Logo Image" width={203} height={40} priority />
                   </Link>
                 </figure>
@@ -92,7 +92,7 @@ export default function Header1({
                         <Link href="/about">About Us</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href="/departments">Departments</Link>
+                        <Link href="/departments">Our Services</Link>
                         <ul>
                           <li>
                             <Link href="/department-details">Physiotherapy
@@ -119,11 +119,9 @@ export default function Header1({
                         </ul>
                       </li>
                       <li>
-                        <Link href="/appointments">Appointments</Link>
-                      </li>
-                      <li>
                         <Link href="/contact">Contact Us</Link>
                       </li>
+                      <li><Link href="/blog">Blog</Link></li>
                     </ul>
                   </div>
                 </nav>
@@ -136,7 +134,7 @@ export default function Header1({
                   </div>
                   <span>Emergency Call</span>
                   <h6>
-                    <a href="tel:+1 416-261-7246">+1 416-261-7246</a>
+                    <a href="tel:+41 416-261-7246">+41 416-261-7246</a>
                   </h6>
                 </div>
                 <div className="btn-box">
@@ -180,34 +178,32 @@ export default function Header1({
                         <Link href="/about">About Us</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href="/departments">Departments</Link>
+                        <Link href="/departments">Our Services</Link>
                         <ul>
                           <li>
-                            <Link href="/department-details">Cardiology</Link>
+                            <Link href="/department-details">Physiotherapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-2">Dental</Link>
+                            <Link href="/department-details-2">Chiropractic Adjustments</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-3">Gastroenterology</Link>
+                            <Link href="/department-details-3">Massage Therapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-4">Neurology</Link>
+                            <Link href="/department-details-4">Electrotherapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-5">Orthopaedics</Link>
+                            <Link href="/department-details-5">Kinesio Taping</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-6">Modern Laboratory</Link>
+                            <Link href="/department-details-6">Orthotics</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <Link href="/appointments">Appointments</Link>
-                      </li>
-                      <li>
                         <Link href="/contact">Contact</Link>
                       </li>
+                      <li><Link href="/blog">Blog</Link></li>
                     </ul>
                   </div>
                 </nav>
@@ -220,7 +216,7 @@ export default function Header1({
                   </div>
                   <span>Emergency Call</span>
                   <h6>
-                    <a href="tel:+1 416-261-7246">+1 416-261-7246</a>
+                    <a href="tel:+41 416-261-7246">+41 416-261-7246</a>
                   </h6>
                 </div>
                 <div className="btn-box">

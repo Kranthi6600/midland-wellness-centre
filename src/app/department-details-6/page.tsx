@@ -82,6 +82,19 @@ export default function Departments_Details_Six() {
                                             </ul>
                                         </div>
                                     </div>
+                                    <div className="sidebar-widget appointment-widget mb_10" style={{ marginTop: '60px' }}>
+                                        <div className="widget-title">
+                                            <h2>Book Appointment</h2>
+                                        </div>
+                                        <div className="widget-content">
+                                            <p style={{ color: '#ffffffd9' }}>Ready to schedule your appointment? Click below to book your visit with our specialists.</p>
+                                            <div className="btn-box mt_20">
+                                                <Link href="/appointments" className="theme-btn btn-one" style={{ width: '100%', justifyContent: 'center', border: '2px solid #ffffff' }}>
+                                                    Book Appointment Now
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
@@ -93,9 +106,8 @@ export default function Departments_Details_Six() {
                                         }} /></figure>
                                         <div className="text-box">
                                             <h2>Orthotics</h2>
-                                            <p>Orthotics is a specialized healthcare field focused on designing, fabricating, and fitting custom orthotic devices to support, align, prevent, or correct musculoskeletal deformities and improve function. These medical devices range from custom shoe inserts and braces to more complex orthoses that support various body parts and enhance mobility while reducing pain.<br />At Midland Wellness Centre, our orthotics services provide comprehensive assessment and custom-fabrication solutions for patients of all ages. Our experienced orthotics specialists conduct thorough evaluations including gait analysis, postural assessment, and biomechanical measurements to determine the most effective orthotic interventions for each individual&apos;s needs.<br />Orthotics effectively treats numerous conditions including flat feet, plantar fasciitis, ankle instability, knee pain, back pain, sports injuries, arthritis, and neurological conditions affecting mobility. We also provide orthotic solutions for workplace injury prevention and athletic performance enhancement.<br />Custom orthotics are particularly beneficial because they're specifically designed to address each patient&apos;s unique foot structure, gait pattern, and lifestyle requirements, ensuring optimal comfort and therapeutic effectiveness.</p>
-                                            <p>Orthotic devices work by redistributing pressure, improving alignment, supporting weak structures, and enhancing proprioception. This not only reduces pain but also prevents further injury and improves overall function and quality of life.</p>
-                                            <p>In summary, orthotics at Midland Wellness Centre offers personalized, evidence-based solutions for musculoskeletal support and correction. Our comprehensive approach combines advanced assessment techniques with custom fabrication to provide orthotic devices that improve function, reduce pain, and enhance mobility for our patients.</p>
+                                            <p>Orthotics is a specialized healthcare field focused on designing, fabricating, and fitting custom orthotic devices to correct biomechanical issues and improve patient mobility. At Midland Wellness Centre, our orthotics specialists provide comprehensive solutions for foot, ankle, and lower limb problems through personalized assessment and custom device creation.<br />Orthotic devices are medical appliances designed to support, align, or correct musculoskeletal abnormalities. These can include shoe inserts, braces, splints, and other custom-fabricated devices that help patients walk, stand, and move more comfortably and efficiently.<br />Our orthotics specialists conduct thorough gait analysis, pressure mapping, and biomechanical assessments to determine the most effective orthotic solutions for each patient&apos;s specific needs and lifestyle requirements.</p>
+                                            <p>Custom orthotics effectively treat numerous conditions including flat feet, high arches, plantar fasciitis, bunions, heel pain, ankle instability, and alignment issues affecting walking and standing. They&apos;re particularly beneficial for athletes, individuals with chronic foot pain, diabetes patients requiring special footwear accommodations, and those recovering from lower limb injuries or surgeries.<br />The orthotic devices we provide are made from high-quality materials and can be designed for various activities including sports, work, and daily wear, ensuring optimal comfort and therapeutic benefit.</p>
                                         </div>
                                     </div>
                                     <div className="content-two">
@@ -103,13 +115,13 @@ export default function Departments_Details_Six() {
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
-                                        <p>Our orthotics specialists are healthcare professionals with advanced training in biomechanics, gait analysis, and orthotic device design. They conduct comprehensive assessments to identify musculoskeletal imbalances and functional limitations, then develop customized orthotic solutions that address each patient&apos;s specific needs and goals. Common applications include custom foot orthotics, ankle braces, knee orthoses, and spinal supports.</p>
+                                        <p>Our orthotics practitioners are certified healthcare professionals with extensive training in biomechanics, gait analysis, and orthotic device fabrication. They conduct comprehensive assessments including pressure mapping, range of motion testing, and functional movement analysis to create precise, effective orthotic solutions. Common services include custom shoe inserts, ankle braces, foot orthoses, and specialized devices for specific medical conditions.</p>
                                         <ul className="list-style-one clearfix">
-                                            <li>Comprehensive biomechanical and gait analysis</li>
+                                            <li>Certified orthotics specialists with advanced biomechanical training</li>
+                                            <li>Comprehensive gait analysis and pressure mapping</li>
                                             <li>Custom-fabricated orthotic devices for precise fit</li>
-                                            <li>Integration with rehabilitation and exercise programs</li>
-                                            <li>Solutions for sports, workplace, and daily activities</li>
-                                            <li>Evidence-based approaches to musculoskeletal support</li>
+                                            <li>Integration with physiotherapy and rehabilitation programs</li>
+                                            <li>Specialized solutions for sports, work, and daily activities</li>
                                         </ul>
                                     </div>
                                 </div>

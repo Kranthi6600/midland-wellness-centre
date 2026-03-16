@@ -82,6 +82,19 @@ export default function Departments_Details_Two() {
                                             </ul>
                                         </div>
                                     </div>
+                                    <div className="sidebar-widget appointment-widget mb_10" style={{ marginTop: '60px' }}>
+                                        <div className="widget-title">
+                                            <h2>Book Appointment</h2>
+                                        </div>
+                                        <div className="widget-content">
+                                            <p style={{ color: '#ffffffd9' }}>Ready to schedule your appointment? Click below to book your visit with our specialists.</p>
+                                            <div className="btn-box mt_20">
+                                                <Link href="/appointments" className="theme-btn btn-one" style={{ width: '100%', justifyContent: 'center', border: '2px solid #ffffff' }}>
+                                                    Book Appointment Now
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">

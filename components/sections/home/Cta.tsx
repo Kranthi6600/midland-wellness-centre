@@ -21,7 +21,10 @@ export default function Cta() {
                                     }}
                                 />
                             </div>
-                            <span>Call: <Link href="tel:112345615523">+1 (123)-456-155-23</Link></span>
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px', fontWeight: '600', color: '#ffffff' }}>Call: <Link href="tel:+41 416-261-7246" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-7246</Link>
+                            <br />
+                            Call: <Link href="tel:+41 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-9813</Link>
+                            </span>
                         </div>
                     </div>
                     <figure className="image-layer">
