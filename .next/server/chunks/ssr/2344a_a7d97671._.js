@@ -1679,7 +1679,7 @@ var MiddlewareSpan = /*#__PURE__*/ function(MiddlewareSpan) {
     MiddlewareSpan["execute"] = "Middleware.execute";
     return MiddlewareSpan;
 }(MiddlewareSpan || {});
-const NextVanillaSpanAllowlist = [
+const NextVanillaSpanAllowlist = new Set([
     "Middleware.execute",
     "BaseServer.handleRequest",
     "Render.getServerSideProps",
@@ -1696,12 +1696,12 @@ const NextVanillaSpanAllowlist = [
     "NextNodeServer.getLayoutOrPageModule",
     "NextNodeServer.startResponse",
     "NextNodeServer.clientComponentLoading"
-];
-const LogSpanAllowList = [
+]);
+const LogSpanAllowList = new Set([
     "NextNodeServer.findPageComponents",
     "NextNodeServer.createComponentTree",
     "NextNodeServer.clientComponentLoading"
-]; //# sourceMappingURL=constants.js.map
+]); //# sourceMappingURL=constants.js.map
 }),
 "[project]/Medicinsk/node_modules/next/dist/shared/lib/is-thenable.js [ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
@@ -3247,6 +3247,7 @@ _export(exports, {
 });
 const _constants = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/server/lib/trace/constants.js [ssr] (ecmascript)");
 const _isthenable = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/shared/lib/is-thenable.js [ssr] (ecmascript)");
+const NEXT_OTEL_PERFORMANCE_PREFIX = process.env.NEXT_OTEL_PERFORMANCE_PREFIX;
 let api;
 // we want to allow users to use their own version of @opentelemetry/api if they
 // want to, so we try to require it first, and if it fails we fall back to the
@@ -3344,7 +3345,7 @@ class NextTracerImpl {
             }
         };
         const spanName = options.spanName ?? type;
-        if (!_constants.NextVanillaSpanAllowlist.includes(type) && process.env.NEXT_OTEL_VERBOSE !== '1' || options.hideSpan) {
+        if (!_constants.NextVanillaSpanAllowlist.has(type) && process.env.NEXT_OTEL_VERBOSE !== '1' || options.hideSpan) {
             return fn();
         }
         // Trying to get active scoped span to assign parent. If option specifies parent span manually, will try to use it.
@@ -3363,11 +3364,17 @@ class NextTracerImpl {
             ...options.attributes
         };
         return context.with(spanContext.setValue(rootSpanIdKey, spanId), ()=>this.getTracerInstance().startActiveSpan(spanName, options, (span)=>{
-                const startTime = 'performance' in globalThis && 'measure' in performance ? globalThis.performance.now() : undefined;
+                let startTime;
+                if (NEXT_OTEL_PERFORMANCE_PREFIX && type && _constants.LogSpanAllowList.has(type)) {
+                    startTime = 'performance' in globalThis && 'measure' in performance ? globalThis.performance.now() : undefined;
+                }
+                let cleanedUp = false;
                 const onCleanup = ()=>{
+                    if (cleanedUp) return;
+                    cleanedUp = true;
                     rootSpanAttributesStore.delete(spanId);
-                    if (startTime && process.env.NEXT_OTEL_PERFORMANCE_PREFIX && _constants.LogSpanAllowList.includes(type || '')) {
-                        performance.measure(`${process.env.NEXT_OTEL_PERFORMANCE_PREFIX}:next-${(type.split('.').pop() || '').replace(/[A-Z]/g, (match)=>'-' + match.toLowerCase())}`, {
+                    if (startTime) {
+                        performance.measure(`${NEXT_OTEL_PERFORMANCE_PREFIX}:next-${(type.split('.').pop() || '').replace(/[A-Z]/g, (match)=>'-' + match.toLowerCase())}`, {
                             start: startTime,
                             end: performance.now()
                         });
@@ -3376,10 +3383,17 @@ class NextTracerImpl {
                 if (isRootSpan) {
                     rootSpanAttributesStore.set(spanId, new Map(Object.entries(options.attributes ?? {})));
                 }
-                try {
-                    if (fn.length > 1) {
+                if (fn.length > 1) {
+                    try {
                         return fn(span, (err)=>closeSpanWithError(span, err));
+                    } catch (err) {
+                        closeSpanWithError(span, err);
+                        throw err;
+                    } finally{
+                        onCleanup();
                     }
+                }
+                try {
                     const result = fn(span);
                     if ((0, _isthenable.isThenable)(result)) {
                         // If there's error make sure it throws
@@ -3411,7 +3425,7 @@ class NextTracerImpl {
             {},
             args[1]
         ];
-        if (!_constants.NextVanillaSpanAllowlist.includes(name) && process.env.NEXT_OTEL_VERBOSE !== '1') {
+        if (!_constants.NextVanillaSpanAllowlist.has(name) && process.env.NEXT_OTEL_VERBOSE !== '1') {
             return fn;
         }
         return function() {
@@ -3929,7 +3943,7 @@ function getHeadHTMLProps(props) {
 function getAmpPath(ampPath, asPath) {
     return ampPath || `${asPath}${asPath.includes('?') ? '&' : '?'}amp=1`;
 }
-function getNextFontLinkTags(nextFontManifest, dangerousAsPath, assetPrefix = '', assetQueryString = '') {
+function getNextFontLinkTags(nextFontManifest, dangerousAsPath, assetPrefix = '') {
     if (!nextFontManifest) {
         return {
             preconnect: null,
@@ -3955,7 +3969,7 @@ function getNextFontLinkTags(nextFontManifest, dangerousAsPath, assetPrefix = ''
             const ext = /\.(woff|woff2|eot|ttf|otf)$/.exec(fontFile)[1];
             return /*#__PURE__*/ (0, _jsxruntime.jsx)("link", {
                 rel: "preload",
-                href: `${assetPrefix}/_next/${(0, _encodeuripath.encodeURIPath)(fontFile)}${assetQueryString}`,
+                href: `${assetPrefix}/_next/${(0, _encodeuripath.encodeURIPath)(fontFile)}`,
                 as: "font",
                 type: `font/${ext}`,
                 crossOrigin: "anonymous",
@@ -4158,7 +4172,7 @@ class Head extends _react.default.Component {
         // @types/react bug. Returned value from .map will not be `null` if you pass in `[null]`
         });
         const files = getDocumentFiles(this.context.buildManifest, this.context.__NEXT_DATA__.page, ("TURBOPACK compile-time value", "nodejs") !== 'edge' && inAmpMode);
-        const nextFontLinkTags = getNextFontLinkTags(nextFontManifest, dangerousAsPath, assetPrefix, this.context.assetQueryString);
+        const nextFontLinkTags = getNextFontLinkTags(nextFontManifest, dangerousAsPath, assetPrefix);
         const tracingMetadata = (0, _utils.getTracedMetadata)((0, _tracer.getTracer)().getTracePropagationData(), this.context.experimentalClientTraceMetadata);
         const traceMetaTags = (tracingMetadata || []).map(({ key, value }, index)=>/*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
                 name: key,

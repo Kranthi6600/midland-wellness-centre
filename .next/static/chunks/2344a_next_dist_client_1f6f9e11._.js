@@ -3056,7 +3056,7 @@ const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/Medi
 const _onrecoverableerror = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/react-client-callbacks/on-recoverable-error.js [client] (ecmascript)");
 const _tracer = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/tracing/tracer.js [client] (ecmascript)"));
 const _isnextroutererror = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/components/is-next-router-error.js [client] (ecmascript)");
-const version = "15.5.0";
+const version = "15.5.12";
 let router;
 const emitter = (0, _mitt.default)();
 const looseToArray = (input)=>[].slice.call(input);

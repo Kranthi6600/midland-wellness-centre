@@ -7235,11 +7235,13 @@ const _createhreffromurl = __turbopack_context__.r("[project]/Medicinsk/node_mod
 const _createroutercachekey = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/components/router-reducer/create-router-cache-key.js [app-ssr] (ecmascript)");
 const _fillcachewithnewsubtreedata = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/components/router-reducer/fill-cache-with-new-subtree-data.js [app-ssr] (ecmascript)");
 const _handlemutable = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/components/router-reducer/handle-mutable.js [app-ssr] (ecmascript)");
+const _navigatereducer = __turbopack_context__.r("[project]/Medicinsk/node_modules/next/dist/client/components/router-reducer/reducers/navigate-reducer.js [app-ssr] (ecmascript)");
 function handleAliasedPrefetchEntry(navigatedAt, state, flightData, url, mutable) {
     let currentTree = state.tree;
     let currentCache = state.cache;
     const href = (0, _createhreffromurl.createHrefFromUrl)(url);
     let applied;
+    let scrollableSegments = [];
     if (typeof flightData === 'string') {
         return false;
     }
@@ -7291,6 +7293,16 @@ function handleAliasedPrefetchEntry(navigatedAt, state, flightData, url, mutable
             currentCache = newCache;
             applied = true;
         }
+        for (const subSegment of (0, _navigatereducer.generateSegmentsFromPatch)(treePatch)){
+            const scrollableSegmentPath = [
+                ...normalizedFlightData.pathToSegment,
+                ...subSegment
+            ];
+            // Filter out the __DEFAULT__ paths as they shouldn't be scrolled to in this case.
+            if (scrollableSegmentPath[scrollableSegmentPath.length - 1] !== _segment.DEFAULT_SEGMENT_KEY) {
+                scrollableSegments.push(scrollableSegmentPath);
+            }
+        }
     }
     if (!applied) {
         return false;
@@ -7299,6 +7311,7 @@ function handleAliasedPrefetchEntry(navigatedAt, state, flightData, url, mutable
     mutable.cache = currentCache;
     mutable.canonicalUrl = href;
     mutable.hashFragment = url.hash;
+    mutable.scrollableSegments = scrollableSegments;
     return (0, _handlemutable.handleMutable)(state, mutable);
 }
 function hasLoadingComponentInSeedData(seedData) {
@@ -7544,6 +7557,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 0 && (module.exports = {
+    generateSegmentsFromPatch: null,
     handleExternalUrl: null,
     navigateReducer: null
 });
@@ -7554,6 +7568,9 @@ function _export(target, all) {
     });
 }
 _export(exports, {
+    generateSegmentsFromPatch: function() {
+        return generateSegmentsFromPatch;
+    },
     handleExternalUrl: function() {
         return handleExternalUrl;
     },

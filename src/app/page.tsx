@@ -6,7 +6,6 @@ import AboutTwo from "../../components/sections/home2/About_Two";
 import Banner from "../../components/sections/home2/Banner";
 import Chooseus from "../../components/sections/home2/Chooseus";
 import Service from "../../components/sections/home2/Service";
-import News from "../../components/sections/home3/News";
 import Cta from "../../components/sections/home2/Cta";
 export default function Home() {
 

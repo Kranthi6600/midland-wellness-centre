@@ -2436,6 +2436,7 @@ const imageConfigDefault = {
     formats: [
         'image/webp'
     ],
+    maximumResponseBody: 50000000,
     dangerouslyAllowSVG: false,
     contentSecurityPolicy: "script-src 'none'; frame-src 'none'; sandbox;",
     contentDispositionType: 'attachment',
