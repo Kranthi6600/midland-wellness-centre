@@ -4,8 +4,8 @@ import { useState } from "react";
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Cta from "../../../components/sections/home2/Cta";
-import Appointment from "../../../components/sections/home2/Appointment";
+import Cta from "../../../components/sections/home/Cta";
+import Appointment from "../../../components/sections/home/Appointment";
 
 export default function Portfolio_Page() {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);

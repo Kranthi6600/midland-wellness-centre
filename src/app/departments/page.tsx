@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../../components/layout/Layout";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 export default function Departments_Page() {
 
     const [activeTab, setActiveTab] = useState(2); // Default to first available tab (id: 2)

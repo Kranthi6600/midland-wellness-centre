@@ -1,12 +1,13 @@
 
 import Layout from "../../components/layout/Layout";
-import Working from "../../components/sections/home2/Working";
-import About from "../../components/sections/home2/About";
-import AboutTwo from "../../components/sections/home2/About_Two";
-import Banner from "../../components/sections/home2/Banner";
-import Chooseus from "../../components/sections/home2/Chooseus";
-import Service from "../../components/sections/home2/Service";
-import Cta from "../../components/sections/home2/Cta";
+import Working from "../../components/sections/home/Working";
+import About from "../../components/sections/home/About";
+import AboutTwo from "../../components/sections/home/About_Two";
+import Banner from "../../components/sections/home/Banner";
+import Chooseus from "../../components/sections/home/Chooseus";
+import Service from "../../components/sections/home/Service";
+import Cta from "../../components/sections/home/Cta";
+
 export default function Home() {
 
     return (

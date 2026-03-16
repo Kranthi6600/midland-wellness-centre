@@ -1,12 +1,12 @@
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 export default function Departments_Details_Four() {
 
     return (
         <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Neurology">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Electrotherapy">
                 <section className="service-details pt_120 pb_110">
                     <div className="auto-container">
                         <div className="row clearfix">
@@ -19,12 +19,12 @@ export default function Departments_Details_Four() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/department-details">Cardiology</Link></li>
-                                                <li><Link href="/department-details-2">Dental</Link></li>
-                                                <li><Link href="/department-details-3">Gastroenterology</Link></li>
-                                                <li><Link href="/department-details-4" className="current">Neurology</Link></li>
-                                                <li><Link href="/department-details-5">Orthopaedics</Link></li>
-                                                <li><Link href="/department-details-6">Dental Caring</Link></li>
+                                                <li><Link href="/department-details">Physiotherapy</Link></li>
+                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                                                <li><Link href="/department-details-4" className="current">Electrotherapy</Link></li>
+                                                <li><Link href="/department-details-5">Kinesio Taping</Link></li>
+                                                <li><Link href="/department-details-6">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -47,10 +47,12 @@ export default function Departments_Details_Four() {
                                                     <div className="select-box">
                                                         <select className="selectmenu">
                                                             <option>I&apos;m interested in *</option>
-                                                            <option>Heart Health</option>
-                                                            <option>Cardiology</option>
-                                                            <option>Dental</option>
-                                                            <option>Gastroenterology</option>
+                                                            <option>Physiotherapy</option>
+                                                            <option>Chiropractic Adjustments</option>
+                                                            <option>Massage Therapy</option>
+                                                            <option>Electrotherapy</option>
+                                                            <option>Kinesio Taping</option>
+                                                            <option>Orthotics</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -70,13 +72,13 @@ export default function Departments_Details_Four() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="schedule-list clearfix">
-                                                <li>Sunday<span>02 pm to 06 pm</span></li>
-                                                <li>Monday<span>03 pm to 07 pm</span></li>
-                                                <li>Tuesday<span>02 pm to 06 pm</span></li>
-                                                <li>Wednesday<span>02 pm to 06 pm</span></li>
-                                                <li>Thursday<span>04 pm to 06 pm</span></li>
-                                                <li>Friday<span>03 pm to 08 pm</span></li>
-                                                <li>Saturday<span>Closed</span></li>
+                                                <li>Sunday<span>Closed</span></li>
+                                                <li>Monday<span>10 AM – 6 PM</span></li>
+                                                <li>Tuesday<span>10 AM – 6 PM</span></li>
+                                                <li>Wednesday<span>10 AM – 7 PM</span></li>
+                                                <li>Thursday<span>10 AM – 6 PM</span></li>
+                                                <li>Friday<span>10 AM – 6 PM</span></li>
+                                                <li>Saturday<span>12 PM – 3 PM</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -85,23 +87,29 @@ export default function Departments_Details_Four() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/service/service-8.jpg" alt="Image" width={856} height={525} priority /></figure>
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/electrotherapy1.png" alt="Image" width={856} height={525} priority style={{
+                                            borderRadius: '15px',
+                                            objectFit: 'cover'
+                                        }} /></figure>
                                         <div className="text-box">
-                                            <h2>Neurology</h2>
-                                            <p>Cardiology is the study of the heart and its functions, as well as the diagnosis and treatment of heart diseases and conditions. It encompasses a wide range of disciplines, including cardiovascular physiology, electrophysiology, and interventional Neurology.<br />Cardiologists are medical professionals who specialize in the diagnosis and treatment of heart-related conditions. They may use a variety of tests and procedures to evaluate the heart&apos;s function, including electrocardiograms ECGs, echocardiograms, stress tests, and cardiac catheterization.<br />Common heart conditions treated by cardiologists include coronary artery disease, heart failure, arrhythmias, and congenital heart defects. Treatment options may include medication, lifestyle changes, surgery, or other procedures such as angioplasty or cardiac ablation.</p>
-                                            <p>Preventative Neurology is an important aspect of the field, as it focuses on reducing the risk of heart disease through lifestyle changes such as exercise, healthy diet, and smoking cessation.</p>
-                                            <p>In summary, cardiology is a branch of medicine focused on the heart and its function, and includes the diagnosis and treatment of a variety of heart-related conditions. Cardiologists may use a variety of tests and procedures to evaluate the heart, and treatment options may include medication, lifestyle changes, surgery, or other procedures. Preventative cardiology is also an important aspect of the field, aimed at reducing the risk of heart disease.</p>
-                                            <h3>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h3>
+                                            <h2>Electrotherapy</h2>
+                                            <p>Electrotherapy is a therapeutic modality that uses electrical energy to treat various medical conditions and promote healing. Through controlled electrical stimulation, electrotherapy can reduce pain, improve muscle function, enhance circulation, and accelerate tissue repair. This non-invasive treatment modality is widely used in physiotherapy and rehabilitation settings to complement manual therapies and exercise programs.<br />At Midland Wellness Centre, we utilize advanced electrotherapy equipment including TENS (Transcutaneous Electrical Nerve Stimulation), electrical muscle stimulation, ultrasound therapy, and laser therapy. These modalities are applied by trained therapists who customize treatment parameters based on each patient's specific condition and response to therapy.<br />Electrotherapy effectively treats numerous conditions including acute and chronic pain, muscle weakness, inflammation, edema, nerve injuries, and post-surgical rehabilitation. It's particularly beneficial for sports injuries, arthritis, back pain, and neurological conditions affecting muscle function.<br />The electrical currents used in therapy are carefully controlled and adjusted to ensure patient comfort while maximizing therapeutic benefits. Treatment sessions are typically painless and can be combined with other therapeutic approaches for enhanced outcomes.</p>
+                                            <p>Electrotherapy also plays a crucial role in pain management by blocking pain signals and promoting the release of endorphins, the body's natural pain-relieving chemicals. This makes it an effective alternative or complement to pain medications.</p>
+                                            <p>In summary, electrotherapy at Midland Wellness Centre offers safe, effective, and evidence-based electrical stimulation treatments to support healing, reduce pain, and improve function. Our advanced equipment and skilled therapists ensure optimal therapeutic outcomes through personalized treatment protocols.</p>
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/service/service-5.jpg" alt="Image" width={856} height={525} priority /></figure>
-                                        <p>Cardiologists are medical professionals who specialize in the diagnosis and treatment of heart-related conditions. They may use a variety of tests and procedures to evaluate the heart&apos;s function, including electrocardiograms ECGs, echocardiograms, stress tests, and cardiac catheterization. Common heart conditions treated by cardiologists include coronary artery disease, heart failure, arrhythmias, and congenital heart defects. Treatment options may include medication, lifestyle changes, surgery, or other procedures such as angioplasty or cardiac ablation.</p>
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/electrotherapy2.png" alt="Image" width={856} height={525} priority style={{
+                                            borderRadius: '15px',
+                                            objectFit: 'cover'
+                                        }} /></figure>
+                                        <p>Our electrotherapy treatments are administered by trained healthcare professionals who understand the principles of electrical stimulation and tissue response. They conduct thorough assessments to determine the most appropriate electrotherapy modalities and parameters for each patient's condition. Common applications include pain management, muscle re-education, wound healing, and inflammation reduction.</p>
                                         <ul className="list-style-one clearfix">
-                                            <li>25-30% estimated savings in implementation when using Mobile Health Clinics</li>
-                                            <li>Activate Mobile Health Clinics in just weeks</li>
-                                            <li>Flexible, on-demand access to care services</li>
-                                            <li>Supports referrals to provider networks and care management programs</li>
+                                            <li>Multiple electrotherapy modalities including TENS and ultrasound</li>
+                                            <li>Pain-free and non-invasive treatment sessions</li>
+                                            <li>Customized treatment parameters for individual needs</li>
+                                            <li>Integration with manual therapy and exercise programs</li>
+                                            <li>Evidence-based applications for various conditions</li>
                                         </ul>
                                     </div>
                                 </div>

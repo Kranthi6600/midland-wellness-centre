@@ -1,12 +1,12 @@
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 export default function Departments_Details_Six() {
 
     return (
         <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Modern Laboratory">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Orthotics">
                 <section className="service-details pt_120 pb_110">
                     <div className="auto-container">
                         <div className="row clearfix">
@@ -19,12 +19,12 @@ export default function Departments_Details_Six() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/department-details">Cardiology</Link></li>
-                                                <li><Link href="/department-details-2">Dental</Link></li>
-                                                <li><Link href="/department-details-3">Gastroenterology</Link></li>
-                                                <li><Link href="/department-details-4">Neurology</Link></li>
-                                                <li><Link href="/department-details-5">Orthopaedics</Link></li>
-                                                <li><Link href="/department-details-6" className="current">Modern Laboratory</Link></li>
+                                                <li><Link href="/department-details">Physiotherapy</Link></li>
+                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
+                                                <li><Link href="/department-details-5">Kinesio Taping</Link></li>
+                                                <li><Link href="/department-details-6" className="current">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -47,10 +47,12 @@ export default function Departments_Details_Six() {
                                                     <div className="select-box">
                                                         <select className="selectmenu">
                                                             <option>I&apos;m interested in *</option>
-                                                            <option>Heart Health</option>
-                                                            <option>Cardiology</option>
-                                                            <option>Dental</option>
-                                                            <option>Gastroenterology</option>
+                                                            <option>Physiotherapy</option>
+                                                            <option>Chiropractic Adjustments</option>
+                                                            <option>Massage Therapy</option>
+                                                            <option>Electrotherapy</option>
+                                                            <option>Kinesio Taping</option>
+                                                            <option>Orthotics</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -70,13 +72,13 @@ export default function Departments_Details_Six() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="schedule-list clearfix">
-                                                <li>Sunday<span>02 pm to 06 pm</span></li>
-                                                <li>Monday<span>03 pm to 07 pm</span></li>
-                                                <li>Tuesday<span>02 pm to 06 pm</span></li>
-                                                <li>Wednesday<span>02 pm to 06 pm</span></li>
-                                                <li>Thursday<span>04 pm to 06 pm</span></li>
-                                                <li>Friday<span>03 pm to 08 pm</span></li>
-                                                <li>Saturday<span>Closed</span></li>
+                                                <li>Sunday<span>Closed</span></li>
+                                                <li>Monday<span>10 AM – 6 PM</span></li>
+                                                <li>Tuesday<span>10 AM – 6 PM</span></li>
+                                                <li>Wednesday<span>10 AM – 7 PM</span></li>
+                                                <li>Thursday<span>10 AM – 6 PM</span></li>
+                                                <li>Friday<span>10 AM – 6 PM</span></li>
+                                                <li>Saturday<span>12 PM – 3 PM</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -85,23 +87,29 @@ export default function Departments_Details_Six() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/service/service-10.jpg" alt="Image" width={856} height={525} priority /></figure>
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/orthotics1.jpg" alt="Image" width={856} height={525} priority style={{
+                                            borderRadius: '15px',
+                                            objectFit: 'cover'
+                                        }} /></figure>
                                         <div className="text-box">
-                                            <h2>Modern Laboratory</h2>
-                                            <p>Cardiology is the study of the heart and its functions, as well as the diagnosis and treatment of heart diseases and conditions. It encompasses a wide range of disciplines, including cardiovascular physiology, electrophysiology, and interventional Orthopaedics.<br />Cardiologists are medical professionals who specialize in the diagnosis and treatment of heart-related conditions. They may use a variety of tests and procedures to evaluate the heart&apos;s function, including electrocardiograms ECGs, echocardiograms, stress tests, and cardiac catheterization.<br />Common heart conditions treated by cardiologists include coronary artery disease, heart failure, arrhythmias, and congenital heart defects. Treatment options may include medication, lifestyle changes, surgery, or other procedures such as angioplasty or cardiac ablation.</p>
-                                            <p>Preventative Orthopaedics is an important aspect of the field, as it focuses on reducing the risk of heart disease through lifestyle changes such as exercise, healthy diet, and smoking cessation.</p>
-                                            <p>In summary, cardiology is a branch of medicine focused on the heart and its function, and includes the diagnosis and treatment of a variety of heart-related conditions. Cardiologists may use a variety of tests and procedures to evaluate the heart, and treatment options may include medication, lifestyle changes, surgery, or other procedures. Preventative cardiology is also an important aspect of the field, aimed at reducing the risk of heart disease.</p>
-                                            <h3>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h3>
+                                            <h2>Orthotics</h2>
+                                            <p>Orthotics is a specialized healthcare field focused on designing, fabricating, and fitting custom orthotic devices to support, align, prevent, or correct musculoskeletal deformities and improve function. These medical devices range from custom shoe inserts and braces to more complex orthoses that support various body parts and enhance mobility while reducing pain.<br />At Midland Wellness Centre, our orthotics services provide comprehensive assessment and custom-fabrication solutions for patients of all ages. Our experienced orthotics specialists conduct thorough evaluations including gait analysis, postural assessment, and biomechanical measurements to determine the most effective orthotic interventions for each individual's needs.<br />Orthotics effectively treats numerous conditions including flat feet, plantar fasciitis, ankle instability, knee pain, back pain, sports injuries, arthritis, and neurological conditions affecting mobility. We also provide orthotic solutions for workplace injury prevention and athletic performance enhancement.<br />Custom orthotics are particularly beneficial because they're specifically designed to address each patient's unique foot structure, gait pattern, and lifestyle requirements, ensuring optimal comfort and therapeutic effectiveness.</p>
+                                            <p>Orthotic devices work by redistributing pressure, improving alignment, supporting weak structures, and enhancing proprioception. This not only reduces pain but also prevents further injury and improves overall function and quality of life.</p>
+                                            <p>In summary, orthotics at Midland Wellness Centre offers personalized, evidence-based solutions for musculoskeletal support and correction. Our comprehensive approach combines advanced assessment techniques with custom fabrication to provide orthotic devices that improve function, reduce pain, and enhance mobility for our patients.</p>
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/service/service-5.jpg" alt="Image" width={856} height={525} priority /></figure>
-                                        <p>Cardiologists are medical professionals who specialize in the diagnosis and treatment of heart-related conditions. They may use a variety of tests and procedures to evaluate the heart&apos;s function, including electrocardiograms ECGs, echocardiograms, stress tests, and cardiac catheterization. Common heart conditions treated by cardiologists include coronary artery disease, heart failure, arrhythmias, and congenital heart defects. Treatment options may include medication, lifestyle changes, surgery, or other procedures such as angioplasty or cardiac ablation.</p>
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/orthotics2.jpg" alt="Image" width={856} height={525} priority style={{
+                                            borderRadius: '15px',
+                                            objectFit: 'cover'
+                                        }} /></figure>
+                                        <p>Our orthotics specialists are healthcare professionals with advanced training in biomechanics, gait analysis, and orthotic device design. They conduct comprehensive assessments to identify musculoskeletal imbalances and functional limitations, then develop customized orthotic solutions that address each patient's specific needs and goals. Common applications include custom foot orthotics, ankle braces, knee orthoses, and spinal supports.</p>
                                         <ul className="list-style-one clearfix">
-                                            <li>25-30% estimated savings in implementation when using Mobile Health Clinics</li>
-                                            <li>Activate Mobile Health Clinics in just weeks</li>
-                                            <li>Flexible, on-demand access to care services</li>
-                                            <li>Supports referrals to provider networks and care management programs</li>
+                                            <li>Comprehensive biomechanical and gait analysis</li>
+                                            <li>Custom-fabricated orthotic devices for precise fit</li>
+                                            <li>Integration with rehabilitation and exercise programs</li>
+                                            <li>Solutions for sports, workplace, and daily activities</li>
+                                            <li>Evidence-based approaches to musculoskeletal support</li>
                                         </ul>
                                     </div>
                                 </div>

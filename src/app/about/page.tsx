@@ -3,9 +3,8 @@ import CountUp from "react-countup";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../../components/layout/Layout";
-import Working from "../../../components/sections/home2/Working";
-import Clients from "../../../components/sections/home3/Clients";
-import Cta from "../../../components/sections/home2/Cta";
+import Working from "../../../components/sections/home/Working";
+import Cta from "../../../components/sections/home/Cta";
 export default function About_Page() {
 
     return (
@@ -58,7 +57,19 @@ export default function About_Page() {
                                             <div className="shape">
                                                 <div className="shape-2" style={{ backgroundImage: "url(assets/images/shape/shape-10.png)" }}></div>
                                             </div>
-                                            <figure className="image"><Image src="/assets/images/resource/img2.webp" alt="Image" width={523} height={399} priority /></figure>
+                                            <figure className="image">
+                                            <Image 
+                                                src="/assets/images/resource/img2.webp" 
+                                                alt="Image" 
+                                                width={523} 
+                                                height={399} 
+                                                priority 
+                                                style={{
+                                                    borderRadius: '15px',
+                                                    objectFit: 'cover'
+                                                }}
+                                            />
+                                        </figure>
                                             <div className="text-box">
                                                 <div className="image-shape" style={{ backgroundImage: "url(assets/images/shape/shape-7.png)" }}></div>
                                                 <h2>30</h2>
@@ -84,7 +95,19 @@ export default function About_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/physiotherapy2.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box">
+                                            <Image 
+                                                src="/assets/images/service/physiotherapy2.webp" 
+                                                alt="Image" 
+                                                width={416} 
+                                                height={358} 
+                                                priority 
+                                                style={{
+                                                    borderRadius: '15px',
+                                                    objectFit: 'cover'
+                                                }}
+                                            />
+                                        </figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-18"></i></div>
@@ -98,7 +121,19 @@ export default function About_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/massage1.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box">
+                                            <Image 
+                                                src="/assets/images/service/massage1.webp" 
+                                                alt="Image" 
+                                                width={416} 
+                                                height={358} 
+                                                priority 
+                                                style={{
+                                                    borderRadius: '15px',
+                                                    objectFit: 'cover'
+                                                }}
+                                            />
+                                        </figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-19"></i></div>
@@ -112,7 +147,19 @@ export default function About_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/Orthotics1.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box">
+                                            <Image 
+                                                src="/assets/images/service/Orthotics1.webp" 
+                                                alt="Image" 
+                                                width={416} 
+                                                height={358} 
+                                                priority 
+                                                style={{
+                                                    borderRadius: '15px',
+                                                    objectFit: 'cover'
+                                                }}
+                                            />
+                                        </figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-20"></i></div>
@@ -227,7 +274,6 @@ export default function About_Page() {
                     </div>
                 </section>
                 <Working />
-                <Clients />
                 <Cta />
             </Layout>
         </div>

@@ -39,10 +39,10 @@ export default function Footer1() {
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
                                             <li><Link href="/about">About</Link></li>
-                                            <li><Link href="/">Surgery</Link></li>
-                                            <li><Link href="/">Medications</Link></li>
-                                            <li><Link href="/">Chemotherapy</Link></li>
-                                            <li><Link href="/">Physical therapy</Link></li>
+                                            <li><Link href="/departments">Departments</Link></li>
+                                            <li><Link href="/appointments">Appointments</Link></li>
+                                            <li><Link href="/doctors">Our Team</Link></li>
+                                            <li><Link href="/contact">Contact</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -54,11 +54,12 @@ export default function Footer1() {
                                     </div>
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
-                                            <li><Link href="/">Primary care</Link></li>
-                                            <li><Link href="/">Specialty care</Link></li>
-                                            <li><Link href="/">Emergency care</Link></li>
-                                            <li><Link href="/">Diagnostic services</Link></li>
-                                            <li><Link href="/">Rehabilitation services</Link></li>
+                                            <li><Link href="/department-details">Physiotherapy</Link></li>
+                                            <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                            <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                                            <li><Link href="/department-details-4">Electrotherapy</Link></li>
+                                            <li><Link href="/department-details-5">Kinesio Taping</Link></li>
+                                            <li><Link href="/department-details-6">Orthotics</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -70,9 +71,9 @@ export default function Footer1() {
                                     </div>
                                     <div className="widget-content">
                                         <ul className="info-list clearfix">
-                                            <li><Image src="/assets/images/icons/icon-5.svg" alt="Icon" width={20} height={15} priority />Email: <Link href="mailto:info@midlandwellnesscentre.com">info@midlandwellnesscentre.com</Link></li>
-                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+41 416-261-7246">+41 416-261-7246</Link></li>
-                                            <li><Image src="/assets/images/icons/icon-7.svg" alt="Icon" width={20} height={20} priority />1- 2555 Eglinton Ave. E,
+                                            <li><Image src="/assets/images/icons/icon-5.svg" alt="Icon" width={20} height={15} priority />Email: <Link href="mailto:info@midlandwellness.ca">info@midlandwellness.ca</Link></li>
+                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+1 416-261-7246">+1 416-261-7246</Link></li>
+                                            <li><Image src="/assets/images/icons/icon-7.svg" alt="Icon" width={20} height={20} priority />2555 Eglinton Ave. E,
                                                 Scarborough, Ontario
                                                 Canada, M1K 5J1 </li>
                                         </ul>
@@ -85,8 +86,8 @@ export default function Footer1() {
                             <ul className="menu-list clearfix">
                                 <li><Link href="/">Home</Link></li>
                                 <li><Link href="/about">About Us</Link></li>
-                                <li><Link href="/service">Departments</Link></li>
-                                <li><Link href="/contact">Contact</Link></li>
+                                <li><Link href="/departments">Departments</Link></li>
+                                <li><Link href="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 import ProgressBar from "../../../components/elements/ProgressBar";
 
 export default function Doctors_Details() {
@@ -113,25 +113,25 @@ export default function Doctors_Details() {
                     <h3>Working Hours</h3>
                     <ul className="schedule-list clearfix">
                       <li>
-                        Sunday <span>02 pm to 06 pm</span>
+                        Sunday <span>Closed</span>
                       </li>
                       <li>
-                        Monday <span>03 pm to 07 pm</span>
+                        Monday <span>10 AM – 6 PM</span>
                       </li>
                       <li>
-                        Tuesday <span>02 pm to 06 pm</span>
+                        Tuesday <span>10 AM – 6 PM</span>
                       </li>
                       <li>
-                        Wednesday <span>02 pm to 06 pm</span>
+                        Wednesday <span>10 AM – 7 PM</span>
                       </li>
                       <li>
-                        Thursday <span>04 pm to 06 pm</span>
+                        Thursday <span>10 AM – 6 PM</span>
                       </li>
                       <li>
-                        Friday <span>03 pm to 08 pm</span>
+                        Friday <span>10 AM – 6 PM</span>
                       </li>
                       <li>
-                        Saturday <span>Closed</span>
+                        Saturday <span>12 PM – 3 PM</span>
                       </li>
                     </ul>
                   </div>

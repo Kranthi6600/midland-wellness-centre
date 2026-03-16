@@ -10,11 +10,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle }) => {
   return (
 
     <section className="page-title p_relative centred">
-            <div className="bg-layer" style={{ backgroundImage: "url(/assets/images/background/about5.jpg)" }}
+            <div className="bg-layer" style={{ backgroundImage: "url(/assets/images/resource/staff1.png)" }}
       ></div>
-            <figure className="image-layer"><Image src="/assets/images/resource/img1.webp" alt="Image" width={510} height={502} priority /></figure>
             <div className="auto-container">
-                <div className="content-box">
+                <div className="content-box" style={{padding: '20px', borderRadius: '10px', maxWidth: '600px', margin: '0 auto', position: 'absolute', top: '20px', left: '50%', transform: 'translateX(-50%)' }}>
                     <h1>{breadcrumbTitle}</h1>
                     <ul className="bread-crumb clearfix">
                         <li><Link href="/">Home</Link></li>

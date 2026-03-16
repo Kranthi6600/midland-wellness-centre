@@ -1,12 +1,12 @@
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 export default function Departments_Details_Five() {
 
     return (
         <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Orthopaedics">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Kinesio Taping">
                 <section className="service-details pt_120 pb_110">
                     <div className="auto-container">
                         <div className="row clearfix">
@@ -19,12 +19,12 @@ export default function Departments_Details_Five() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/department-details">Cardiology</Link></li>
-                                                <li><Link href="/department-details-2">Dental</Link></li>
-                                                <li><Link href="/department-details-3">Gastroenterology</Link></li>
-                                                <li><Link href="/department-details-4">Neurology</Link></li>
-                                                <li><Link href="/department-details-5" className="current">Orthopaedics</Link></li>
-                                                <li><Link href="/department-details-6">Dental Caring</Link></li>
+                                                <li><Link href="/department-details">Physiotherapy</Link></li>
+                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
+                                                <li><Link href="/department-details-5" className="current">Kinesio Taping</Link></li>
+                                                <li><Link href="/department-details-6">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -47,10 +47,12 @@ export default function Departments_Details_Five() {
                                                     <div className="select-box">
                                                         <select className="selectmenu">
                                                             <option>I&apos;m interested in *</option>
-                                                            <option>Heart Health</option>
-                                                            <option>Cardiology</option>
-                                                            <option>Dental</option>
-                                                            <option>Gastroenterology</option>
+                                                            <option>Physiotherapy</option>
+                                                            <option>Chiropractic Adjustments</option>
+                                                            <option>Massage Therapy</option>
+                                                            <option>Electrotherapy</option>
+                                                            <option>Kinesio Taping</option>
+                                                            <option>Orthotics</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -70,13 +72,13 @@ export default function Departments_Details_Five() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="schedule-list clearfix">
-                                                <li>Sunday<span>02 pm to 06 pm</span></li>
-                                                <li>Monday<span>03 pm to 07 pm</span></li>
-                                                <li>Tuesday<span>02 pm to 06 pm</span></li>
-                                                <li>Wednesday<span>02 pm to 06 pm</span></li>
-                                                <li>Thursday<span>04 pm to 06 pm</span></li>
-                                                <li>Friday<span>03 pm to 08 pm</span></li>
-                                                <li>Saturday<span>Closed</span></li>
+                                                <li>Sunday<span>Closed</span></li>
+                                                <li>Monday<span>10 AM – 6 PM</span></li>
+                                                <li>Tuesday<span>10 AM – 6 PM</span></li>
+                                                <li>Wednesday<span>10 AM – 7 PM</span></li>
+                                                <li>Thursday<span>10 AM – 6 PM</span></li>
+                                                <li>Friday<span>10 AM – 6 PM</span></li>
+                                                <li>Saturday<span>12 PM – 3 PM</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -85,23 +87,29 @@ export default function Departments_Details_Five() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/service/service-9.jpg" alt="Image" width={856} height={525} priority /></figure>
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/kinesiotaping1.jpg" alt="Image" width={856} height={525} priority style={{
+                                            borderRadius: '15px',
+                                            objectFit: 'cover'
+                                        }} /></figure>
                                         <div className="text-box">
-                                            <h2>Orthopaedics</h2>
-                                            <p>Cardiology is the study of the heart and its functions, as well as the diagnosis and treatment of heart diseases and conditions. It encompasses a wide range of disciplines, including cardiovascular physiology, electrophysiology, and interventional Orthopaedics.<br />Cardiologists are medical professionals who specialize in the diagnosis and treatment of heart-related conditions. They may use a variety of tests and procedures to evaluate the heart&apos;s function, including electrocardiograms ECGs, echocardiograms, stress tests, and cardiac catheterization.<br />Common heart conditions treated by cardiologists include coronary artery disease, heart failure, arrhythmias, and congenital heart defects. Treatment options may include medication, lifestyle changes, surgery, or other procedures such as angioplasty or cardiac ablation.</p>
-                                            <p>Preventative Orthopaedics is an important aspect of the field, as it focuses on reducing the risk of heart disease through lifestyle changes such as exercise, healthy diet, and smoking cessation.</p>
-                                            <p>In summary, cardiology is a branch of medicine focused on the heart and its function, and includes the diagnosis and treatment of a variety of heart-related conditions. Cardiologists may use a variety of tests and procedures to evaluate the heart, and treatment options may include medication, lifestyle changes, surgery, or other procedures. Preventative cardiology is also an important aspect of the field, aimed at reducing the risk of heart disease.</p>
-                                            <h3>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h3>
+                                            <h2>Kinesio Taping</h2>
+                                            <p>Kinesio Taping is a therapeutic taping technique that uses specialized elastic tape to support muscles and joints without restricting movement. Developed by Dr. Kenzo Kase in the 1970s, this innovative approach differs from traditional athletic taping by allowing full range of motion while providing therapeutic benefits through the tape's unique elastic properties and application techniques.<br />At Midland Wellness Centre, our certified Kinesio Taping practitioners use this technique to enhance healing, reduce pain, improve circulation, and support muscle function. The tape is applied in specific patterns and tensions depending on the treatment goals, whether it's to support weak muscles, facilitate muscle contraction, or reduce inflammation and swelling.<br />Kinesio Taping effectively treats numerous conditions including sports injuries, muscle strains, joint instability, postural imbalances, lymphatic drainage issues, and neurological conditions affecting muscle function. It's particularly beneficial for athletes, individuals with repetitive strain injuries, and patients recovering from surgery or injury.<br />The tape can be worn for several days and is water-resistant, allowing patients to continue their daily activities and even shower while receiving continuous therapeutic benefits.</p>
+                                            <p>Kinesio Taping works by lifting the skin slightly to create space between the muscle and dermis, which improves circulation and lymphatic drainage while reducing pressure on pain receptors. This creates a neurosensory effect that helps retrain movement patterns and improve proprioception.</p>
+                                            <p>In summary, Kinesio Taping at Midland Wellness Centre offers a non-invasive, drug-free approach to pain management and functional improvement. Our skilled practitioners combine precise application techniques with comprehensive assessment to provide personalized taping solutions that support healing and enhance performance.</p>
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/service/service-5.jpg" alt="Image" width={856} height={525} priority /></figure>
-                                        <p>Cardiologists are medical professionals who specialize in the diagnosis and treatment of heart-related conditions. They may use a variety of tests and procedures to evaluate the heart&apos;s function, including electrocardiograms ECGs, echocardiograms, stress tests, and cardiac catheterization. Common heart conditions treated by cardiologists include coronary artery disease, heart failure, arrhythmias, and congenital heart defects. Treatment options may include medication, lifestyle changes, surgery, or other procedures such as angioplasty or cardiac ablation.</p>
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/kinesiotaping2.jpg" alt="Image" width={856} height={525} priority style={{
+                                            borderRadius: '15px',
+                                            objectFit: 'cover'
+                                        }} /></figure>
+                                        <p>Our Kinesio Taping practitioners are certified healthcare professionals with specialized training in taping techniques and human anatomy. They conduct comprehensive assessments to identify the most effective taping applications for each patient's condition and goals. Common applications include muscle support, joint stabilization, pain reduction, and lymphatic drainage facilitation.</p>
                                         <ul className="list-style-one clearfix">
-                                            <li>25-30% estimated savings in implementation when using Mobile Health Clinics</li>
-                                            <li>Activate Mobile Health Clinics in just weeks</li>
-                                            <li>Flexible, on-demand access to care services</li>
-                                            <li>Supports referrals to provider networks and care management programs</li>
+                                            <li>Certified Kinesio Taping practitioners with advanced training</li>
+                                            <li>Customized taping applications for specific conditions</li>
+                                            <li>Integration with exercise and manual therapy programs</li>
+                                            <li>Water-resistant tape for extended wear time</li>
+                                            <li>Evidence-based applications for sports and rehabilitation</li>
                                         </ul>
                                     </div>
                                 </div>

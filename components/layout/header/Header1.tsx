@@ -15,13 +15,13 @@ type Header1Props = {
   handleSidebar?: () => void;
 };
 
-export default function Header1({ 
-  scroll, 
-  handleMobileMenu, 
-  isMobileMenu, 
-  handlePopup, 
-  isSidebar, 
-  handleSidebar 
+export default function Header1({
+  scroll,
+  handleMobileMenu,
+  isMobileMenu,
+  handlePopup,
+  isSidebar,
+  handleSidebar
 }: Header1Props) {
   return (
     <>
@@ -33,7 +33,7 @@ export default function Header1({
               <ul className="info-list clearfix">
                 <li>
                   <i className="icon-46"></i>
-                  <a href="mailto:example@info.com">example@info.com</a>
+                  <a href="mailto:info@midlandwellness.ca">info@midlandwellness.ca</a>
                 </li>
                 <li>
                   <i className="icon-2"></i>
@@ -41,7 +41,7 @@ export default function Header1({
                 </li>
                 <li>
                   <i className="icon-3"></i>
-                  Open Hours: <span>Mon - Fri: 8:00am to 5:00pm</span>
+                  Open Hours: <span>Mon-Tue-Thu-Fri: 10 AM - 6 PM | Wed: 10 AM - 7 PM | Sat: 12 PM - 3 PM | Sun: Closed</span>
                 </li>
               </ul>
               <ul className="social-links clearfix">
@@ -86,7 +86,7 @@ export default function Header1({
                   >
                     <ul className="navigation clearfix">
                       <li className="current">
-                        <Link href="/index-2">Home</Link>
+                        <Link href="/">Home</Link>
                       </li>
                       <li>
                         <Link href="/about">About Us</Link>
@@ -95,22 +95,26 @@ export default function Header1({
                         <Link href="/departments">Departments</Link>
                         <ul>
                           <li>
-                            <Link href="/department-details">Cardiology</Link>
+                            <Link href="/department-details">Physiotherapy
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/department-details-2">Dental</Link>
+                            <Link href="/department-details-2">Chiropractic Adjustments</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-3">Gastroenterology</Link>
+                            <Link href="/department-details-3">Massage Therapy
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/department-details-4">Neurology</Link>
+                            <Link href="/department-details-4">Electrotherapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-5">Orthopaedics</Link>
+                            <Link href="/department-details-5">Kinesio Taping
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/department-details-6">Modern Laboratory</Link>
+                            <Link href="/department-details-6">Orthotics
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -118,7 +122,7 @@ export default function Header1({
                         <Link href="/appointments">Appointments</Link>
                       </li>
                       <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">Contact Us</Link>
                       </li>
                     </ul>
                   </div>
@@ -132,11 +136,11 @@ export default function Header1({
                   </div>
                   <span>Emergency Call</span>
                   <h6>
-                    <a href="tel:+41 416-261-7246">+41 416-261-7246</a>
+                    <a href="tel:+1 416-261-7246">+1 416-261-7246</a>
                   </h6>
                 </div>
                 <div className="btn-box">
-                  <Link href="/index-2" className="theme-btn btn-one">
+                  <Link href="/appointments" className="theme-btn btn-one">
                     <span>Appointment</span>
                   </Link>
                 </div>
@@ -170,7 +174,7 @@ export default function Header1({
                   >
                     <ul className="navigation clearfix">
                       <li className="current">
-                        <Link href="/index-2">Home</Link>
+                        <Link href="/">Home</Link>
                       </li>
                       <li>
                         <Link href="/about">About Us</Link>
@@ -216,11 +220,11 @@ export default function Header1({
                   </div>
                   <span>Emergency Call</span>
                   <h6>
-                    <a href="tel:+41 416-261-7246">+41 416-261-7246</a>
+                    <a href="tel:+1 416-261-7246">+1 416-261-7246</a>
                   </h6>
                 </div>
                 <div className="btn-box">
-                  <Link href="/index-2" className="theme-btn btn-one">
+                  <Link href="/appointments" className="theme-btn btn-one">
                     <span>Appointment</span>
                   </Link>
                 </div>
@@ -233,7 +237,7 @@ export default function Header1({
         <MobileMenu
           isSidebar={isSidebar || false}
           handleMobileMenu={handleMobileMenu}
-          handleSidebar={handleSidebar || (() => {})}
+          handleSidebar={handleSidebar || (() => { })}
         />
       </header>
     </>

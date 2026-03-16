@@ -1,7 +1,7 @@
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 export default function Departments_Details() {
 
     return (

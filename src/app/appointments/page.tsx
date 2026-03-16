@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Layout from "../../../components/layout/Layout";
-import Cta from "../../../components/sections/home2/Cta";
+import Cta from "../../../components/sections/home/Cta";
 
 export default function Appointments_Page() {
     const [formData, setFormData] = useState({
@@ -258,8 +258,9 @@ export default function Appointments_Page() {
                                             </svg>
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Working Hours</h4>
                                         </div>
-                                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                                        <p>Monday - Tuesday - Thursday - Friday: 10 AM – 6 PM</p>
+                                        <p>Wednesday: 10 AM – 7 PM</p>
+                                        <p>Saturday: 12 PM – 3 PM</p>
                                         <p>Sunday: Closed</p>
                                     </div>
 
