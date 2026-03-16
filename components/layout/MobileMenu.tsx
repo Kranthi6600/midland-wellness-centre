@@ -31,7 +31,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
         </div>
         <nav className="menu-box">
           <div className="nav-logo">
-            <Link href="/"><Image src="/assets/images/logo-2.png" alt="Logo Image" width={203} height={40} priority /></Link>
+            <Link href="/"><Image src="/assets/images/header_logo.png" alt="Logo Image" width={203} height={40} priority /></Link>
           </div>
           <div className="menu-outer">
             <ul className="navigation clearfix">
@@ -54,52 +54,25 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
 
               {/* Services */}
               <li className={`dropdown ${activeDropdown === 2 ? "current" : ""}`}>
-                <Link href="/#">Departments</Link>
+                <Link href="/departments">Departments</Link>
                 <ul style={{ display: activeDropdown === 2 ? "block" : "none" }}>
-                  <li><Link href="/departments">Our Departments</Link></li>
-                  <li><Link href="/department-details">Cardiology</Link></li>
-                  <li><Link href="/department-details-2">Dental</Link></li>
-                  <li><Link href="/department-details-3">Gastroenterology</Link></li>
-                  <li><Link href="/department-details-4">Neurology</Link></li>
-                  <li><Link href="/department-details-5">Orthopaedics</Link></li>
-                  <li><Link href="/department-details-6">Modern Laboratory</Link></li>
+                  <li><Link href="/department-details">Physiotherapy</Link></li>
+                  <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                  <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                  <li><Link href="/department-details-4">Electrotherapy</Link></li>
+                  <li><Link href="/department-details-5">Kinesio Taping</Link></li>
+                  <li><Link href="/department-details-6">Orthotics</Link></li>
                 </ul>
                 <div className={`dropdown-btn ${activeDropdown === 2 ? "open" : ""}`} onClick={() => toggleDropdown(2)}>
                   <span className="fa fa-angle-right" />
                 </div>
               </li>
 
-              {/* Pages */}
-              <li className={`dropdown ${activeDropdown === 3 ? "current" : ""}`}>
-                <Link href="/#">Pages</Link>
-                <ul style={{ display: activeDropdown === 3 ? "block" : "none" }}>
-                  <li><Link href="/doctors">Our Doctors</Link></li>
-                  <li><Link href="/doctor-details">Doctor Details</Link></li>
-                  <li><Link href="/portfolio">Portfolio One</Link></li>
-                  <li><Link href="/portfolio-2">Portfolio Two</Link></li>
-                  <li><Link href="/pricing">Pricing</Link></li>
-                  <li><Link href="/error">Page Not Found</Link></li>
-                </ul>
-                <div className={`dropdown-btn ${activeDropdown === 3 ? "open" : ""}`} onClick={() => toggleDropdown(3)}>
-                  <span className="fa fa-angle-right" />
-                </div>
-              </li>
-
-              {/* Shop */}
-              <li className={`dropdown ${activeDropdown === 4 ? "current" : ""}`}>
-                <Link href="/#">Blog</Link>
-                <ul style={{ display: activeDropdown === 4 ? "block" : "none" }}>
-                  <li><Link href="/blog">Blog Grid</Link></li>
-                  <li><Link href="/blog-2">Blog Standard</Link></li>
-                  <li><Link href="/blog-details">Blog Details</Link></li>
-                </ul>
-                <div className={`dropdown-btn ${activeDropdown === 4 ? "open" : ""}`} onClick={() => toggleDropdown(4)}>
-                  <span className="fa fa-angle-right" />
-                </div>
-              </li>
+              {/* Appointments */}
+              <li><Link href="/appointments">Appointments</Link></li>
 
               {/* Contact */}
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/contact">Contact Us</Link></li>
 
             </ul>
           </div>
@@ -107,9 +80,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
           <div className="contact-info">
               <h4>Contact Info</h4>
               <ul>
-                  <li>Chicago 12, Melborne City, USA</li>
-                  <li><Link href="tel:+8801682648101">+88 01682648101</Link></li>
-                  <li><Link href="mailto:info@example.com">info@example.com</Link></li>
+                  <li><i className="icon-17"></i> +41 416-261-7246</li>
+                  <li><i className="icon-46"></i> info@midlandwellness.ca</li>
+                  <li><i className="icon-18"></i> Midland Wellness Centre, Ontario, Canada</li>
               </ul>
           </div>
 
