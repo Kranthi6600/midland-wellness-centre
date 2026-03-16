@@ -28,15 +28,17 @@ export default function PortfolioFilter1({}: PortfolioFilterProps) {
   // Apply filter
   useEffect(() => {
     if (isotope.current) {
-      filterKey === "*"
-        ? isotope.current.arrange({ filter: "*" })
-        : isotope.current.arrange({ filter: `.${filterKey}` });
+      if (filterKey === "*") {
+        isotope.current.arrange({ filter: "*" });
+      } else {
+        isotope.current.arrange({ filter: `.${filterKey}` });
+      }
     }
   }, [filterKey]);
 
   const handleFilterKeyChange = useCallback(
     (key: string) => () => setFilterKey(key),
-    [filterKey] // Added filterKey to the dependency array
+    []
   );
 
   const activeBtn = (value: string) => (value === filterKey ? "filter active" : "filter");
