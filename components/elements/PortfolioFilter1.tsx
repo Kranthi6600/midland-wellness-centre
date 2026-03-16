@@ -36,7 +36,7 @@ export default function PortfolioFilter1({}: PortfolioFilterProps) {
 
   const handleFilterKeyChange = useCallback(
     (key: string) => () => setFilterKey(key),
-    []
+    [filterKey] // Added filterKey to the dependency array
   );
 
   const activeBtn = (value: string) => (value === filterKey ? "filter active" : "filter");

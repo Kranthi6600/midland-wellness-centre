@@ -30,9 +30,11 @@ export default function Layout({
   const handleMobileMenu = () => {
     setMobileMenu((prev) => {
       const newState = !prev;
-      newState
-        ? document.body.classList.add("mobile-menu-visible")
-        : document.body.classList.remove("mobile-menu-visible");
+      if (newState) {
+        document.body.classList.add("mobile-menu-visible");
+      } else {
+        document.body.classList.remove("mobile-menu-visible");
+      }
       return newState;
     });
   };
