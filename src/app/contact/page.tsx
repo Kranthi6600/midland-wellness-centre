@@ -2,7 +2,6 @@ import Layout from "../../../components/layout/Layout";
 import ContactForm from "../../../components/elements/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
-import GoogleMapSection from "../../../components/sections/home1/GoogleMap";
 export default function ContactPage() {
 
     return (
@@ -15,27 +14,27 @@ export default function ContactPage() {
                             <div className="col-lg-4 col-md-6 col-sm-12 info-block">
                                 <div className="info-block-two wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
-                                        <div className="icon-box"><Image src="/assets/images/icons/icon-23.svg" alt="Icon" width={50} height={50} priority /></div>
+                                        <div className="icon-box"><Image src="/assets/images/icons/icon-7.svg" alt="Icon" width={50} height={50} priority /></div>
                                         <h3>Office Location</h3>
-                                        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                                        <p>2555 Eglinton Ave. E<br />Scarborough, Ontario<br />Canada, M1K 5J1</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-12 info-block">
                                 <div className="info-block-two wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
-                                        <div className="icon-box"><Image src="/assets/images/icons/icon-24.svg" alt="Icon" width={50} height={50} priority /></div>
+                                        <div className="icon-box"><Image src="/assets/images/icons/icon-5.svg" alt="Icon" width={50} height={50} priority /></div>
                                         <h3>Company Email</h3>
-                                        <p><Link href="mailto:info@example.com">info@example.com</Link><br /><Link href="mailto:contact@example.com">contact@example.com</Link></p>
+                                        <p><Link href="mailto:info@midlandwellnesscentre.com">info@midlandwellnesscentre.com</Link></p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-12 info-block">
                                 <div className="info-block-two wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                                     <div className="inner-box">
-                                        <div className="icon-box"><Image src="/assets/images/icons/icon-25.svg" alt="Icon" width={50} height={50} priority /></div>
+                                        <div className="icon-box"><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={50} height={50} priority /></div>
                                         <h3>Contact Us</h3>
-                                        <p><Link href="tel:000111555999">+000 111555999</Link><br /><Link href="tel:000111555888">+000 111555888</Link></p>
+                                        <p><Link href="tel:+41 416-261-7246">+41 416-261-7246</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +51,6 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <GoogleMapSection />
             </Layout>
         </div>
     )
