@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Roboto, Caveat } from "next/font/google";
-import SwitcherMenu from "../../components/elements/ColorStyle";
 
 import "../../public/assets/css/bootstrap.css";
 import "../../public/assets/css/style.css";

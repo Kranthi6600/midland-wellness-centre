@@ -27,7 +27,7 @@ export default function Header1({
     <>
       {/* main header */}
       <header className={`main-header ${scroll ? "fixed-header" : ""}`}>
-        <div className="header-top">
+        <div className="header-top d-none d-md-block">
           <div className="outer-container">
             <div className="top-inner">
               <ul className="info-list clearfix">
