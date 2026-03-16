@@ -9,9 +9,20 @@ import MobileMenu from "../MobileMenu";
 type Header1Props = {
   scroll: boolean;
   handleMobileMenu: () => void;
+  isMobileMenu?: boolean;
+  handlePopup?: () => void;
+  isSidebar?: boolean;
+  handleSidebar?: () => void;
 };
 
-export default function Header1({ scroll, handleMobileMenu }: Header1Props) {
+export default function Header1({ 
+  scroll, 
+  handleMobileMenu, 
+  isMobileMenu, 
+  handlePopup, 
+  isSidebar, 
+  handleSidebar 
+}: Header1Props) {
   return (
     <>
       {/* main header */}
@@ -220,9 +231,9 @@ export default function Header1({ scroll, handleMobileMenu }: Header1Props) {
 
         {/* ✅ Fixed MobileMenu props */}
         <MobileMenu
-          isSidebar={false}
+          isSidebar={isSidebar || false}
           handleMobileMenu={handleMobileMenu}
-          handleSidebar={() => { }}
+          handleSidebar={handleSidebar || (() => {})}
         />
       </header>
     </>
