@@ -103,7 +103,7 @@ export default function Departments_Details_Five() {
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
-                                        <p>Our Kinesio Taping practitioners are certified healthcare professionals with specialized training in taping techniques and human anatomy. They conduct comprehensive assessments to identify the most effective taping applications for each patient's condition and goals. Common applications include muscle support, joint stabilization, pain reduction, and lymphatic drainage facilitation.</p>
+                                        <p>Our Kinesio Taping practitioners are certified healthcare professionals with specialized training in taping techniques and human anatomy. They conduct comprehensive assessments to identify the most effective taping applications for each patient&apos;s condition and goals. Common applications include muscle support, joint stabilization, pain reduction, and lymphatic drainage facilitation.</p>
                                         <ul className="list-style-one clearfix">
                                             <li>Certified Kinesio Taping practitioners with advanced training</li>
                                             <li>Customized taping applications for specific conditions</li>
