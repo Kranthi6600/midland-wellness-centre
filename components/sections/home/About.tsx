@@ -83,7 +83,7 @@ export default function About() {
                                             border: '1px solid rgba(189, 189, 189, 0.6)',
                                             borderRadius: '5px',
                                             fontSize: '14px',
-                                            color: '#BDBDBD',
+                                            color: 'black',
                                             background: '#fff',
                                             padding: '8px 20px 8px 46px',
                                             transition: 'all 500ms ease',
@@ -122,15 +122,17 @@ export default function About() {
                                             position: 'relative',
                                             display: 'block',
                                             width: '100%',
+                                            maxWidth: '300px',
                                             height: '45px',
                                             border: '1px solid rgba(189, 189, 189, 0.6)',
                                             borderRadius: '5px',
                                             fontSize: '14px',
-                                            color: date ? '#333' : '#BDBDBD',
+                                            color: date ? 'black' : '#BDBDBD',
                                             background: '#fff',
                                             padding: '8px 20px 8px 46px',
                                             transition: 'all 500ms ease',
                                             cursor: 'pointer',
+                                            boxSizing: 'border-box',
                                             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23BDBDBD' d='M6 8L0 0h12z'/%3E%3C/svg%3E")`,
                                             backgroundRepeat: 'no-repeat',
                                             backgroundPosition: 'right 20px center',
@@ -251,11 +253,12 @@ export default function About() {
                                 <input 
                                     type="text" 
                                     name="phone" 
-                                    placeholder="+ 1 (XXX) XXX XXX"
+                                    placeholder="+ XX (XXX) XXX XXX"
                                     style={{
                                         position: 'relative',
                                         display: 'block',
                                         width: '100%',
+                                        maxWidth: '300px',
                                         height: '45px',
                                         border: '1px solid rgba(189, 189, 189, 0.6)',
                                         borderRadius: '5px',
@@ -263,7 +266,8 @@ export default function About() {
                                         color: '#BDBDBD',
                                         background: '#fff',
                                         padding: '8px 20px 8px 46px',
-                                        transition: 'all 500ms ease'
+                                        transition: 'all 500ms ease',
+                                        boxSizing: 'border-box'
                                     }}
                                 />
                             </div>
