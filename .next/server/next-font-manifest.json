@@ -1,0 +1,35 @@
+{
+  "app": {
+    "[project]/Medicinsk/src/app/_not-found/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ],
+    "[project]/Medicinsk/src/app/about/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ],
+    "[project]/Medicinsk/src/app/appointments/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ],
+    "[project]/Medicinsk/src/app/contact/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ],
+    "[project]/Medicinsk/src/app/departments/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ],
+    "[project]/Medicinsk/src/app/index-2/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ],
+    "[project]/Medicinsk/src/app/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2",
+      "static/media/a85fe84266768609-s.p.e658778d.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
