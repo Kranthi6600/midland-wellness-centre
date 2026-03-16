@@ -7,6 +7,7 @@ import SearchPopup from "./SearchPopup";
 import SidebarPopup from "./SidebarPopup";
 import Header1 from "./header/Header1";
 import Footer1 from "./footer/Footer1";
+import { Analytics } from "@vercel/analytics/next";
 
 type LayoutProps = {
   headerStyle?: 1 | 2 | 3;
@@ -95,7 +96,10 @@ export default function Layout({
       <DataBg />
       <div className={`page-wrapper ${wrapperCls || ""}`} id="top">
         {renderHeader()}
-
+        
+        {/* Vercel Analytics */}
+        <Analytics />
+        
         {/* Popups */}
         <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
         <SidebarPopup isOpen={isSidebar} onClose={handleSidebar} />

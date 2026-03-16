@@ -3119,9 +3119,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$l
 var __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$SidebarPopup$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Medicinsk/components/layout/SidebarPopup.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$header$2f$Header1$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Medicinsk/components/layout/header/Header1.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$footer$2f$Footer1$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Medicinsk/components/layout/footer/Footer1.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Medicinsk/node_modules/@vercel/analytics/dist/next/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -3192,7 +3194,7 @@ function Layout(param) {
                     ...headerProps
                 }, void 0, false, {
                     fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                    lineNumber: 78,
+                    lineNumber: 79,
                     columnNumber: 16
                 }, this);
             default:
@@ -3204,7 +3206,7 @@ function Layout(param) {
             case 1:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$footer$2f$Footer1$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                    lineNumber: 87,
+                    lineNumber: 88,
                     columnNumber: 16
                 }, this);
             default:
@@ -3215,7 +3217,7 @@ function Layout(param) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$elements$2f$DataBg$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                lineNumber: 95,
+                lineNumber: 96,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3223,12 +3225,17 @@ function Layout(param) {
                 id: "top",
                 children: [
                     renderHeader(),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
+                        fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
+                        lineNumber: 101,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$SearchPopup$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         isPopup: isPopup,
                         handlePopup: handlePopup
                     }, void 0, false, {
                         fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                        lineNumber: 100,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$SidebarPopup$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3236,14 +3243,14 @@ function Layout(param) {
                         onClose: handleSidebar
                     }, void 0, false, {
                         fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                        lineNumber: 101,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this),
                     breadcrumbTitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$layout$2f$Breadcrumb$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         breadcrumbTitle: breadcrumbTitle
                     }, void 0, false, {
                         fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                        lineNumber: 104,
+                        lineNumber: 108,
                         columnNumber: 29
                     }, this),
                     children,
@@ -3251,14 +3258,14 @@ function Layout(param) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                lineNumber: 96,
+                lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Medicinsk$2f$components$2f$elements$2f$BackToTop$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 scroll: isScrolled
             }, void 0, false, {
                 fileName: "[project]/Medicinsk/components/layout/Layout.tsx",
-                lineNumber: 111,
+                lineNumber: 115,
                 columnNumber: 7
             }, this)
         ]
