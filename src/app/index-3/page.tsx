@@ -1,6 +1,6 @@
 
 import Layout from "../../../components/layout/Layout";
-import Portfolio from "../../../components/sections/home1/Portfolio";
+import Portfolio from "../../../components/sections/home2/Portfolio";
 import About from "../../../components/sections/home3/About";
 import Banner from "../../../components/sections/home3/Banner";
 import Clients from "../../../components/sections/home3/Clients";
