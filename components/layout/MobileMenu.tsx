@@ -37,17 +37,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
             <ul className="navigation clearfix">
 
               {/* Home */}
-              <li className={`dropdown ${activeDropdown === 1 ? "current" : ""}`}>
-                <Link href="/">Home</Link>
-                <ul style={{ display: activeDropdown === 1 ? "block" : "none" }}>
-                  <li><Link href="/">Home Page One</Link></li>
-                  <li><Link href="/index-2">Home Page Two</Link></li>
-                  <li><Link href="/index-3">Home Page Three</Link></li>
-                </ul>
-                <div className={`dropdown-btn ${activeDropdown === 1 ? "open" : ""}`} onClick={() => toggleDropdown(1)}>
-                  <span className="fa fa-angle-right" />
-                </div>
-              </li>
+              <li><Link href="/">Home</Link></li>
 
               {/* About */}
               <li><Link href="/about">About Us</Link></li>

@@ -16,15 +16,15 @@ export default function Departments_Details() {
                                         <div className="col-lg-6 col-md-6 col-sm-12 news-block">
                                             <div className="news-block-one">
                                                 <div className="inner-box">
-                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/news/news-1.jpg" alt="Image" width={416} height={287} priority /></Link></figure>
+                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/resource/healthylife.webp" alt="Image" width={416} height={287} priority /></Link></figure>
                                                     <div className="lower-content">
                                                         <span className="comment-box">2Comment</span>
-                                                        <h3><Link href="/blog-details">Prepare to Speak with Your Eye Specialist.</Link></h3>
+                                                        <h3><Link href="/blog-details">Kinesio Taping: Athletic Performance & Recovery</Link></h3>
                                                         <ul className="post-info clearfix">
                                                             <li><i className="icon-59"></i>March 6, 2023</li>
                                                             <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                         </ul>
-                                                        <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
+                                                        <p>Learn how kinesio taping can enhance athletic performance, prevent injuries, and accelerate recovery. Our certified therapists use specialized taping techniques to support muscles, improve circulation, and provide stability during physical activities.</p>
                                                         <div className="link">
                                                             <Link href="/blog-details">Read More</Link>
                                                         </div>
@@ -35,15 +35,15 @@ export default function Departments_Details() {
                                         <div className="col-lg-6 col-md-6 col-sm-12 news-block">
                                             <div className="news-block-one">
                                                 <div className="inner-box">
-                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/news/news-2.jpg" alt="Image" width={416} height={287} priority /></Link></figure>
+                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/service/physiotherapy.webp" alt="Image" width={416} height={287} priority /></Link></figure>
                                                     <div className="lower-content">
                                                         <span className="comment-box">5Comment</span>
-                                                        <h3><Link href="/blog-details">Prepare to Speak with Your Eye Specialist.</Link></h3>
+                                                        <h3><Link href="/blog-details">Chiropractic Adjustments: Restoring Spinal Health</Link></h3>
                                                         <ul className="post-info clearfix">
                                                             <li><i className="icon-59"></i>March 5, 2023</li>
                                                             <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                         </ul>
-                                                        <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
+                                                        <p>Discover how chiropractic adjustments can provide immediate relief from back pain, neck pain, and headaches. Our skilled chiropractors use gentle spinal manipulation techniques to correct misalignments, improve nervous system function, and enhance overall wellness.</p>
                                                         <div className="link">
                                                             <Link href="/blog-details">Read More</Link>
                                                         </div>
@@ -54,15 +54,15 @@ export default function Departments_Details() {
                                         <div className="col-lg-6 col-md-6 col-sm-12 news-block">
                                             <div className="news-block-one">
                                                 <div className="inner-box">
-                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/news/news-3.jpg" alt="Image" width={416} height={287} priority /></Link></figure>
+                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/resource/modern technology1.webp" alt="Image" width={416} height={287} priority /></Link></figure>
                                                     <div className="lower-content">
                                                         <span className="comment-box">0Comment</span>
-                                                        <h3><Link href="/blog-details">Transforming Health Equity: Addressing</Link></h3>
+                                                        <h3><Link href="/blog-details">Massage Therapy: Healing Through Touch</Link></h3>
                                                         <ul className="post-info clearfix">
                                                             <li><i className="icon-59"></i>March 4, 2023</li>
                                                             <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                         </ul>
-                                                        <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
+                                                        <p>Discover how chiropractic adjustments can provide immediate relief from back pain, neck pain, and headaches. Our skilled chiropractors use gentle spinal manipulation techniques to correct misalignments, improve nervous system function, and enhance overall wellness.</p>
                                                         <div className="link">
                                                             <Link href="/blog-details">Read More</Link>
                                                         </div>
@@ -73,15 +73,15 @@ export default function Departments_Details() {
                                         <div className="col-lg-6 col-md-6 col-sm-12 news-block">
                                             <div className="news-block-one">
                                                 <div className="inner-box">
-                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/news/news-4.jpg" alt="Image" width={416} height={287} priority /></Link></figure>
+                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/service/massage1.webp" alt="Image" width={416} height={287} priority /></Link></figure>
                                                     <div className="lower-content">
                                                         <span className="comment-box">3Comment</span>
-                                                        <h3><Link href="/blog-details">From Healthcare Provider to Healthcare Partner</Link></h3>
+                                                        <h3><Link href="/blog-details">Orthotics: Custom Solutions for Foot Health</Link></h3>
                                                         <ul className="post-info clearfix">
                                                             <li><i className="icon-59"></i>March 3, 2023</li>
                                                             <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                         </ul>
-                                                        <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
+                                                        <p>Discover how chiropractic adjustments can provide immediate relief from back pain, neck pain, and headaches. Our skilled chiropractors use gentle spinal manipulation techniques to correct misalignments, improve nervous system function, and enhance overall wellness.</p>
                                                         <div className="link">
                                                             <Link href="/blog-details">Read More</Link>
                                                         </div>
@@ -92,15 +92,15 @@ export default function Departments_Details() {
                                         <div className="col-lg-6 col-md-6 col-sm-12 news-block">
                                             <div className="news-block-one">
                                                 <div className="inner-box">
-                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/news/news-5.jpg" alt="Image" width={416} height={287} priority /></Link></figure>
+                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/service/Chiropractic Adjustments.webp" alt="Image" width={416} height={287} priority /></Link></figure>
                                                     <div className="lower-content">
                                                         <span className="comment-box">7Comment</span>
-                                                        <h3><Link href="/blog-details">Prepare to Speak with Your Eye Specialist.</Link></h3>
+                                                        <h3><Link href="/blog-details">Physiotherapy: Complete Guide to Rehabilitation</Link></h3>
                                                         <ul className="post-info clearfix">
                                                             <li><i className="icon-59"></i>March 2, 2023</li>
                                                             <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                         </ul>
-                                                        <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
+                                                        <p>Comprehensive guide to physiotherapy rehabilitation techniques. Learn about exercise therapy, manual therapy, and specialized treatments for injury recovery and chronic condition management.</p>
                                                         <div className="link">
                                                             <Link href="/blog-details">Read More</Link>
                                                         </div>
@@ -111,15 +111,15 @@ export default function Departments_Details() {
                                         <div className="col-lg-6 col-md-6 col-sm-12 news-block">
                                             <div className="news-block-one">
                                                 <div className="inner-box">
-                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/news/news-6.jpg" alt="Image" width={416} height={287} priority /></Link></figure>
+                                                    <figure className="image-box"><Link href="/blog-details"><Image src="/assets/images/service/kinesiotaping.webp" alt="Image" width={416} height={287} priority /></Link></figure>
                                                     <div className="lower-content">
                                                         <span className="comment-box">1Comment</span>
-                                                        <h3><Link href="/blog-details">Unlocking the Secrets of the Human Body</Link></h3>
+                                                        <h3><Link href="/blog-details">Electrotherapy: Modern Pain Management</Link></h3>
                                                         <ul className="post-info clearfix">
                                                             <li><i className="icon-59"></i>March 1, 2023</li>
                                                             <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                         </ul>
-                                                        <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
+                                                        <p>Explore how electrotherapy uses electrical stimulation to treat pain and promote healing. Our advanced electrotherapy treatments can accelerate tissue repair, reduce inflammation, and provide drug-free pain relief for various conditions.</p>
                                                         <div className="link">
                                                             <Link href="/blog-details">Read More</Link>
                                                         </div>
@@ -156,12 +156,12 @@ export default function Departments_Details() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/blog-details">Cardiology</Link></li>
-                                                <li><Link href="/blog-details">Dental</Link></li>
-                                                <li><Link href="/blog-details">Gastroenterology</Link></li>
-                                                <li><Link href="/blog-details">Neurology</Link></li>
-                                                <li><Link href="/blog-details">Orthopaedics</Link></li>
-                                                <li><Link href="/blog-details">Dental Caring</Link></li>
+                                                <li><Link href="/department-details">Physiotherapy</Link></li>
+                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
+                                                <li><Link href="/department-details-5">Kinesio Taping</Link></li>
+                                                <li><Link href="/department-details-6">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@ export default function Departments_Details() {
                                         </div>
                                         <div className="post-inner">
                                             <div className="post">
-                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/news/post-1.jpg" alt="Image" width={100} height={101} priority /></Link></figure>
+                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/resource/checkup.webp" alt="Image" width={100} height={101} priority /></Link></figure>
                                                 <h3><Link href="/blog-details">Prepare to Speak with Your Eye Specialist.</Link></h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 6, 2023</li>
@@ -179,7 +179,7 @@ export default function Departments_Details() {
                                                 </ul>
                                             </div>
                                             <div className="post">
-                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/news/post-2.jpg" alt="Image" width={100} height={101} priority /></Link></figure>
+                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/resource/appointment.webp" alt="Image" width={100} height={101} priority /></Link></figure>
                                                 <h3><Link href="/blog-details">From Diagnosis to Cure: The Role.</Link></h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 5, 2023</li>
@@ -187,7 +187,7 @@ export default function Departments_Details() {
                                                 </ul>
                                             </div>
                                             <div className="post">
-                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/news/post-3.jpg" alt="Image" width={100} height={101} priority /></Link></figure>
+                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/service/electrotherapy.webp" alt="Image" width={100} height={101} priority /></Link></figure>
                                                 <h3><Link href="/blog-details">Empowering Patients in through</Link></h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 4, 2023</li>

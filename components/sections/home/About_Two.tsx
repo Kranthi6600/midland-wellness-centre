@@ -2,8 +2,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import CountUp from "react-countup";
+import { useState, useEffect } from "react";
 
 export default function Service() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   return (
     <section className="about-style-three pb_60">
       <div className="auto-container">
@@ -61,7 +74,7 @@ export default function Service() {
 
           {/* Image Column */}
           <div className="col-lg-7 col-md-12 col-sm-12 image-column">
-            <div className="image_block_two">
+            <div className="image_block_two" style={{ display: isMobile ? 'none' : 'block' }}>
               <div className="image-box">
                 <figure className="image image-1">
                   <Image
@@ -89,7 +102,7 @@ export default function Service() {
                 </figure>
 
                 {/* Experience Box */}
-                <div className="experience-box">
+                <div className="experience-box" style={{ display: isMobile ? 'none' : 'block' }}>
                   <div className="inner">
                     <h2>30</h2>
                     <span>Years of Experience in This Field</span>

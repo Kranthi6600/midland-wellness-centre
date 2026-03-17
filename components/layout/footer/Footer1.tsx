@@ -1,13 +1,31 @@
 
 import Image from "next/image";
 import Link from "next/link"
+import { useState, useEffect } from "react"
 
 export default function Footer1() {
+    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    const toggleServicesDropdown = () => {
+        setIsServicesDropdownOpen(!isServicesDropdownOpen);
+    };
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
     return (
         <>
 
             <footer className="main-footer">
-                <div className="widget-section p_relative">
+                <div className="p_relative">
                     <div className="pattern-layer">
                         <div className="pattern-1" style={{ backgroundImage: "url(assets/images/shape/shape-21.png)" }}></div>
                         <div className="pattern-2" style={{ backgroundImage: "url(assets/images/shape/shape-22.png)" }}></div>
@@ -16,7 +34,7 @@ export default function Footer1() {
                     </div>
                     <div className="auto-container">
                         <div className="row clearfix">
-                            <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div className="col-lg-3 col-md-6 col-sm-12 footer-column mt-5">
                                 <div className="footer-widget about-widget">
                                     <div className="widget-title">
                                         <h3>About Us</h3>
@@ -49,11 +67,31 @@ export default function Footer1() {
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
                                 <div className="footer-widget links-widget ml_70">
-                                    <div className="widget-title">
+                                    <div className="widget-title" style={{ 
+                                        display: 'flex', 
+                                        justifyContent: 'space-between', 
+                                        alignItems: 'center',
+                                        cursor: isMobile ? 'pointer' : 'default'
+                                    }} onClick={isMobile ? toggleServicesDropdown : undefined}>
                                         <h3>Services</h3>
+                                        {isMobile && (
+                                            <span style={{ 
+                                                display: 'inline-block',
+                                                transition: 'transform 0.3s ease',
+                                                transform: isServicesDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)'
+                                            }}>
+                                                ▼
+                                            </span>
+                                        )}
                                     </div>
                                     <div className="widget-content">
-                                        <ul className="links-list clearfix">
+                                        <ul className="links-list clearfix" style={{
+                                            maxHeight: isMobile ? (isServicesDropdownOpen ? '500px' : '0') : 'none',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out, opacity 0.3s ease-in-out',
+                                            opacity: isMobile ? (isServicesDropdownOpen ? 1 : 0) : 1,
+                                            display: isMobile ? 'block' : 'block'
+                                        }}>
                                             <li><Link href="/department-details">Physiotherapy</Link></li>
                                             <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
                                             <li><Link href="/department-details-3">Massage Therapy</Link></li>
@@ -81,9 +119,6 @@ export default function Footer1() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="footer-logo mt_60">
-                            <figure className="logo-box"><Link href="/"><Image src="/assets/images/header_logo.png" alt="Footer Logo" width={203} height={40} priority /></Link></figure>
                         </div>
                     </div>
                 </div>

@@ -20,29 +20,29 @@ export default function Departments_Details() {
                                     </div>
                                     <div className="news-block-one">
                                         <div className="inner-box">
-                                            <figure className="image-box"><Image src="/assets/images/news/news-7.jpg" alt="Image" width={856} height={425} priority /></figure>
+                                            <figure className="image-box"><Image src="/assets/images/resource/skeleton.webp" alt="Image" width={856} height={425} priority /></figure>
                                             <div className="lower-content">
                                                 <span className="comment-box">2Comment</span>
-                                                <h3>Prepare to Speak with Your Eye Specialist.</h3>
+                                                <h3>Advanced Physiotherapy Techniques for Faster Recovery</h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 6, 2023</li>
                                                     <li><i className="icon-60"></i><Link href="/blog-details">Author</Link></li>
                                                 </ul>
-                                                <p>Medical care is the practice of providing diagnosis, treatment, and preventive care for various illnesses, injuries, and diseases. It involves a wide range of healthcare professionals such as doctors, nurses, pharmacists, therapists, and many more, who work together to provide the best possible care for patients. Medical care encompasses various aspects of healthcare, including primary care, specialty care, urgent care, emergency care, and long-term care. Primary care is often the first point of contact for patients seeking medical attention and includes routine check-ups, screenings, and preventive care. Specialty care focuses on specific medical conditions or diseases, such as cardiology, oncology, or neurology. Urgent care provides immediate medical attention for non-life-threatening conditions, while emergency care is reserved for life-threatening situations. Medical care also involves the use of advanced medical technologies and treatments such as surgeries, imaging tests, laboratory tests, and medications. Medical research and development continually improve the effectiveness of treatments and the quality of care provided to patients. In addition to treating illnesses and injuries, medical care also emphasizes the importance of preventive care, such as regular check-ups, vaccinations, and lifestyle modifications, to help patients maintain optimal health and well-being. Overall, medical care plays a crucial role in promoting and maintaining good health and quality of life for individuals, families, and communities. It is essential for people to have access to high-quality medical care, regardless of their socioeconomic status or geographical location.</p>
+                                                <p>Discover how modern physiotherapy techniques are revolutionizing patient recovery. Our expert physiotherapists utilize evidence-based approaches including manual therapy, therapeutic exercises, and cutting-edge equipment to restore movement, reduce pain, and improve quality of life. Learn about specialized treatments for sports injuries, chronic conditions, and post-surgical rehabilitation that help patients return to their daily activities faster and stronger than ever before.</p>
                                                 <blockquote>
-                                                    <h2>How Pauloag&apos;s Conversion Optimization Techniques Inform His Design Work</h2>
-                                                    <span className="designation">Jane Cooper</span>
+                                                    <h2>How Evidence-Based Physiotherapy Improves Treatment Outcomes</h2>
+                                                    <span className="designation">Dr. Sarah Johnson, PT</span>
                                                 </blockquote>
-                                                <p>In addition to treating illnesses and injuries, medical care also emphasizes the importance of preventive care, such as regular check-ups, vaccinations, and lifestyle modifications, to help patients maintain optimal health and well-being.teh Overall, medical care plays a crucial role in promoting and maintaining good health and quality of life for individuals, shfamilies, and communities. It is essential for people to have access to high-quality medical care, regardless of their socioeconomic status or geographical location.</p>
+                                                <p>Evidence-based physiotherapy has transformed how we approach musculoskeletal conditions. By integrating clinical research with hands-on techniques, we're achieving remarkable results in pain management and functional restoration. Our patients experience faster recovery times, improved mobility, and long-lasting relief from chronic conditions. This approach combines traditional therapeutic methods with modern technology to create personalized treatment plans that address each patient's unique needs and goals.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="post-share-option mb_60">
                                         <ul className="post-tags clearfix">
                                             <li><h4>Tags:</h4></li>
-                                            <li><Link href="/blog-details">Medical</Link></li>
-                                            <li><Link href="/blog-details">Surgery</Link></li>
-                                            <li><Link href="/blog-details">Doctors</Link></li>
+                                            <li><Link href="/blog-details">Physiotherapy</Link></li>
+                                            <li><Link href="/blog-details">Chiropractic</Link></li>
+                                            <li><Link href="/blog-details">Massage Therapy</Link></li>
                                         </ul>
                                         <ul className="post-share clearfix">
                                             <li><h4>Share:</h4></li>
@@ -52,9 +52,9 @@ export default function Departments_Details() {
                                         </ul>
                                     </div>
                                     <div className="author-box mb_60">
-                                        <figure className="author-thumb"><Image src="/assets/images/news/author-1.jpg" alt="Image" width={172} height={172} priority /></figure>
-                                        <h3>Jane Cooper</h3>
-                                        <p>In addition to treating illnesses and injuries, medical care also emphasizes the importance of preventive care, such as regular check-ups, vaccinations, and lifestyle modifications, to help patients maintain optimal health and well-being.</p>
+                                        <figure className="author-thumb"><Image src="/assets/images/banner/docprofile1.webp" alt="Image" width={172} height={172} priority /></figure>
+                                        <h3>Dr. Sarah Johnson, PT</h3>
+                                        <p>Dr. Sarah Johnson is a licensed physiotherapist with over 15 years of experience in musculoskeletal rehabilitation. She specializes in sports injury recovery, chronic pain management, and post-operative rehabilitation. Dr. Johnson is passionate about helping patients achieve their optimal physical function through evidence-based treatment approaches and personalized care plans.</p>
                                         <ul className="social-links clearfix">
                                             <li><Link href="/blog-details"><i className="fab fa-facebook-f"></i></Link></li>
                                             <li><Link href="/blog-details"><i className="fab fa-dribbble"></i></Link></li>
@@ -64,15 +64,15 @@ export default function Departments_Details() {
                                     <div className="comment-box mb_60">
                                         <h3>Comments(02)</h3>
                                         <div className="comment">
-                                            <figure className="thumb-box"><Image src="/assets/images/news/comment-1.jpg" alt="Image" width={88} height={86} priority /></figure>
-                                            <h4>Farrel Collins<span>March 19, 2022</span></h4>
-                                            <p>Cum amet sagittis convallis lacus arcu. Ultricies tempor diam facilisi erat dictum. Egestas eu vitae suspendisse nunc quis nisi egestas lorem. Purus lacus, fames commodo velit gravida lacus, sed turpis. Consequat, faucibus nec egestas nisl convallis.</p>
+                                            <figure className="thumb-box"><Image src="/assets/images/banner/docprofile2.webp" alt="Image" width={88} height={86} priority /></figure>
+                                            <h4>Michael Chen<span>March 19, 2022</span></h4>
+                                            <p>The evidence-based approach described in this article has completely transformed my recovery experience. After struggling with chronic back pain for years, the personalized physiotherapy program helped me return to normal activities within 3 months. The combination of manual therapy and targeted exercises made a significant difference that other treatments couldn't achieve.</p>
                                             <Link href="/blog-details" className="reply-btn"><i className="icon-58"></i></Link>
                                         </div>
                                         <div className="comment replay-comment">
-                                            <figure className="thumb-box"><Image src="/assets/images/news/comment-2.jpg" alt="Image" width={88} height={86} priority /></figure>
-                                            <h4>Jane Cooper<span>March 19, 2022</span></h4>
-                                            <p>Cum amet sagittis convallis lacus arcu. Ultricies tempor diam facilisi erat dictum. Egestas eu vitae suspendisse nunc quis nisi egestas lorem. Purus lacus, fames commodo velit gravida lacus, sed turpis. Consequat.</p>
+                                            <figure className="thumb-box"><Image src="/assets/images/banner/docprofile3.webp" alt="Image" width={88} height={86} priority /></figure>
+                                            <h4>Emily Rodriguez<span>March 19, 2022</span></h4>
+                                            <p>As a former athlete, I was skeptical about physiotherapy until I experienced the advanced techniques firsthand. The integration of modern equipment with traditional therapeutic methods not only accelerated my recovery but also provided me with tools to prevent future injuries. This holistic approach is exactly what active individuals need.</p>
                                             <Link href="/blog-details" className="reply-btn"><i className="icon-58"></i></Link>
                                         </div>
                                     </div>
@@ -114,12 +114,12 @@ export default function Departments_Details() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/blog-details">Cardiology</Link></li>
-                                                <li><Link href="/blog-details">Dental</Link></li>
-                                                <li><Link href="/blog-details">Gastroenterology</Link></li>
-                                                <li><Link href="/blog-details">Neurology</Link></li>
-                                                <li><Link href="/blog-details">Orthopaedics</Link></li>
-                                                <li><Link href="/blog-details">Dental Caring</Link></li>
+                                                <li><Link href="/department-details">Physiotherapy</Link></li>
+                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
+                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
+                                                <li><Link href="/department-details-5">Kinesio Taping</Link></li>
+                                                <li><Link href="/department-details-6">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -129,7 +129,7 @@ export default function Departments_Details() {
                                         </div>
                                         <div className="post-inner">
                                             <div className="post">
-                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/news/post-1.jpg" alt="Image" width={100} height={101} priority /></Link></figure>
+                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/resource/ambulance.webp" alt="Image" width={100} height={101} priority /></Link></figure>
                                                 <h3><Link href="/blog-details">Prepare to Speak with Your Eye Specialist.</Link></h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 6, 2023</li>
@@ -137,7 +137,7 @@ export default function Departments_Details() {
                                                 </ul>
                                             </div>
                                             <div className="post">
-                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/news/post-2.jpg" alt="Image" width={100} height={101} priority /></Link></figure>
+                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/resource/img1.webp" alt="Image" width={100} height={101} priority /></Link></figure>
                                                 <h3><Link href="/blog-details">From Diagnosis to Cure: The Role.</Link></h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 5, 2023</li>
@@ -145,7 +145,7 @@ export default function Departments_Details() {
                                                 </ul>
                                             </div>
                                             <div className="post">
-                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/news/post-3.jpg" alt="Image" width={100} height={101} priority /></Link></figure>
+                                                <figure className="post-thumb"><Link href="/blog-details"><Image src="/assets/images/resource/img2.webp" alt="Image" width={100} height={101} priority /></Link></figure>
                                                 <h3><Link href="/blog-details">Empowering Patients in through</Link></h3>
                                                 <ul className="post-info clearfix">
                                                     <li><i className="icon-59"></i>March 4, 2023</li>
@@ -155,7 +155,7 @@ export default function Departments_Details() {
                                         </div>
                                     </div>
                                     <div className="consulting-widget">
-                                        <div className="bg-layer" style={{ backgroundImage: "url(assets/images/resource/sidebar-1.jpg)" }}></div>
+                                        <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>
                                         <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
                                         <Link href="/contact" className="theme-btn btn-two"><span>get a quote</span></Link>

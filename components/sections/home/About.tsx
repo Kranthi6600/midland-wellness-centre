@@ -78,14 +78,15 @@ export default function About() {
                                         style={{
                                             position: 'relative',
                                             display: 'block',
-                                            width: '70%',
-                                            height: '45px',
+                                            width: '80%',
+                                            minHeight: '45px',
+                                            height: 'auto',
                                             border: '1px solid rgba(189, 189, 189, 0.6)',
                                             borderRadius: '5px',
                                             fontSize: '14px',
                                             color: 'black',
                                             background: '#fff',
-                                            padding: '8px 20px 8px 46px',
+                                            padding: '8px 30px 8px 15px',
                                             transition: 'all 500ms ease',
                                             cursor: 'pointer',
                                             WebkitAppearance: 'none',
@@ -93,8 +94,9 @@ export default function About() {
                                             appearance: 'none',
                                             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23BDBDBD' d='M6 8L0 0h12z'/%3E%3C/svg%3E")`,
                                             backgroundRepeat: 'no-repeat',
-                                            backgroundPosition: 'right 20px center',
-                                            backgroundSize: '12px 8px'
+                                            backgroundPosition: 'right 15px center',
+                                            backgroundSize: '12px 8px',
+                                            boxSizing: 'border-box'
                                         }}
                                         onFocus={(e) => {
                                             e.target.style.borderColor = 'var(--theme-color)';
@@ -121,21 +123,25 @@ export default function About() {
                                         style={{
                                             position: 'relative',
                                             display: 'block',
-                                            width: '100%',
-                                            maxWidth: '300px',
-                                            height: '45px',
+                                            width: '80%',
+                                            minHeight: '45px',
+                                            height: 'auto',
                                             border: '1px solid rgba(189, 189, 189, 0.6)',
                                             borderRadius: '5px',
                                             fontSize: '14px',
                                             color: date ? 'black' : '#BDBDBD',
                                             background: '#fff',
-                                            padding: '8px 20px 8px 46px',
+                                            padding: '12px 30px 12px 15px',
                                             transition: 'all 500ms ease',
                                             cursor: 'pointer',
                                             boxSizing: 'border-box',
+                                            lineHeight: '20px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
                                             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23BDBDBD' d='M6 8L0 0h12z'/%3E%3C/svg%3E")`,
                                             backgroundRepeat: 'no-repeat',
-                                            backgroundPosition: 'right 20px center',
+                                            backgroundPosition: 'right 15px center',
                                             backgroundSize: '12px 8px'
                                         }}
                                         onClick={() => setShowCalendar(!showCalendar)}
@@ -154,7 +160,9 @@ export default function About() {
                                             borderRadius: '5px',
                                             marginTop: '5px',
                                             zIndex: 1000,
-                                            boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+                                            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                                            maxHeight: '400px',
+                                            overflowY: 'auto'
                                         }}>
                                             {/* Calendar Header */}
                                             <div style={{
@@ -257,17 +265,20 @@ export default function About() {
                                     style={{
                                         position: 'relative',
                                         display: 'block',
-                                        width: '100%',
-                                        maxWidth: '300px',
-                                        height: '45px',
+                                        width: '80%',
+                                        minHeight: '45px',
+                                        height: 'auto',
                                         border: '1px solid rgba(189, 189, 189, 0.6)',
                                         borderRadius: '5px',
                                         fontSize: '14px',
-                                        color: '#BDBDBD',
+                                        color: 'black',
                                         background: '#fff',
-                                        padding: '8px 20px 8px 46px',
+                                        padding: '12px 15px',
                                         transition: 'all 500ms ease',
-                                        boxSizing: 'border-box'
+                                        boxSizing: 'border-box',
+                                        lineHeight: '20px',
+                                        overflow: 'hidden',
+                                        textOverflow: 'ellipsis'
                                     }}
                                 />
                             </div>

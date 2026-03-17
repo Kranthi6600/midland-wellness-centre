@@ -53,7 +53,7 @@ export default function Service() {
                         </div>
                     </div>
                 </div>
-                <div className="btn-box centred mt_60">
+                <div className="btn-box centred">
                     <Link href="/departments" className="theme-btn btn-one">
                         <span>Our Services</span>
                     </Link>
