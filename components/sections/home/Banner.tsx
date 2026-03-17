@@ -122,18 +122,8 @@ export default function Banner() {
                                     />
                                 </li>
                             </ul>
-                            <h3 style={{
-                                fontSize: 'clamp(16px, 3vw, 20px)',
-                                marginBottom: '5px',
-                                textAlign: 'center',
-                                width: '100%'
-                            }}>100K</h3>
-                            <span style={{
-                                fontSize: 'clamp(12px, 2.5vw, 14px)',
-                                textAlign: 'center',
-                                display: 'block',
-                                width: '100%'
-                            }}>Professional Doctors</span>
+                            <h3>100K</h3>
+                            <span>Professional Doctors</span>
                         </div>
                     </div>
                 </div>
