@@ -58,8 +58,8 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                 </div>
               </li>
 
-              {/* Appointments */}
-              <li><Link href="/appointments">Appointments</Link></li>
+              {/* Appointment */}
+              <li><Link href="/appointments">Appointment</Link></li>
 
               {/* Contact */}
               <li><Link href="/contact">Contact Us</Link></li>
