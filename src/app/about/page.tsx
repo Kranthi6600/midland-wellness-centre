@@ -1,3 +1,5 @@
+// About page - Server component with SEO metadata
+// Interactive components moved to separate client components to avoid metadata export conflicts
 import Layout from "../../../components/layout/Layout";
 import Working from "../../../components/sections/home/Working";
 import Cta from "../../../components/sections/home/Cta";
