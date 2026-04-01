@@ -4,16 +4,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "../MobileMenu";
-
-// ✅ Define props type
-type Header1Props = {
-  scroll: boolean;
-  handleMobileMenu: () => void;
-  isMobileMenu?: boolean;
-  handlePopup?: () => void;
-  isSidebar?: boolean;
-  handleSidebar?: () => void;
-};
+import { HeaderProps, NavigationItem } from "@/types";
+import { SITE_CONFIG, BUSINESS_HOURS, SOCIAL_LINKS, NAVIGATION_ITEMS } from "@/constants";
+import { formatBusinessHours } from "@/utils/formatting";
 
 export default function Header1({
   scroll,
@@ -22,7 +15,7 @@ export default function Header1({
   handlePopup,
   isSidebar,
   handleSidebar
-}: Header1Props) {
+}: HeaderProps) {
   return (
     <>
       {/* main header */}
@@ -33,30 +26,28 @@ export default function Header1({
               <ul className="info-list clearfix">
                 <li>
                   <i className="icon-46"></i>
-                  <a href="mailto:info@midlandwellness.ca">info@midlandwellness.ca</a>
+                  <a href={`mailto:${SITE_CONFIG.email}`}>{SITE_CONFIG.email}</a>
                 </li>
                 <li>
                   <i className="icon-2"></i>
-                  <Link href="/index-2">Pay your bill</Link>
+                  <Link href="/appointments">Pay your bill</Link>
                 </li>
                 <li>
                   <i className="icon-3"></i>
-                  Open Hours: <span>Mon-Tue-Thu-Fri: 10 AM - 6 PM | Wed: 10 AM - 7 PM | Sat: 12 PM - 3 PM | Sun: Closed</span>
+                  Open Hours: <span>{formatBusinessHours(BUSINESS_HOURS)}</span>
                 </li>
               </ul>
               <ul className="social-links clearfix">
                 <li>
                   <h6>Follow Us</h6>
                 </li>
-                <li>
-                  <Link href="/index-2"><i className="icon-4"></i></Link>
-                </li>
-                <li>
-                  <Link href="/index-2"><i className="icon-5"></i></Link>
-                </li>
-                <li>
-                  <Link href="/index-2"><i className="icon-6"></i></Link>
-                </li>
+                {SOCIAL_LINKS.map((social, index) => (
+                  <li key={index}>
+                    <Link href={social.href} aria-label={social.name}>
+                      <i className={social.icon}></i>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -85,43 +76,20 @@ export default function Header1({
                     id="navbarSupportedContent"
                   >
                     <ul className="navigation clearfix">
-                      <li className="current">
-                        <Link href="/">Home</Link>
-                      </li>
-                      <li>
-                        <Link href="/about">About Us</Link>
-                      </li>
-                      <li className="dropdown">
-                        <Link href="/departments">Our Services</Link>
-                        <ul>
-                          <li>
-                            <Link href="/department-details">Physiotherapy
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/department-details-2">Chiropractic Adjustments</Link>
-                          </li>
-                          <li>
-                            <Link href="/department-details-3">Massage Therapy
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/department-details-4">Electrotherapy</Link>
-                          </li>
-                          <li>
-                            <Link href="/department-details-5">Kinesio Taping
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/department-details-6">Orthotics
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <Link href="/contact">Contact Us</Link>
-                      </li>
-                      <li><Link href="/blog">Blog</Link></li>
+                      {NAVIGATION_ITEMS.map((item: NavigationItem, index: number) => (
+                        <li key={index} className={item.children ? "dropdown" : ""}>
+                          <Link href={item.href}>{item.name}</Link>
+                          {item.children && (
+                            <ul>
+                              {item.children.map((child: NavigationItem, childIndex: number) => (
+                                <li key={childIndex}>
+                                  <Link href={child.href}>{child.name}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </nav>
@@ -134,7 +102,7 @@ export default function Header1({
                   </div>
                   <span>Emergency Call</span>
                   <h6>
-                    <a href="tel:+41 416-261-7246">+41 416-261-7246</a>
+                    <a href={`tel:${SITE_CONFIG.phone}`}>{SITE_CONFIG.phone}</a>
                   </h6>
                 </div>
                 <div className="btn-box">
@@ -216,7 +184,7 @@ export default function Header1({
                   </div>
                   <span>Emergency Call</span>
                   <h6>
-                    <a href="tel:+41 416-261-7246">+41 416-261-7246</a>
+                    <a href={`tel:${SITE_CONFIG.phone}`}>{SITE_CONFIG.phone}</a>
                   </h6>
                 </div>
                 <div className="btn-box">

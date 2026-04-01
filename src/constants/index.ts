@@ -1,0 +1,147 @@
+// Constants for Midland Wellness Centre
+import { ServiceItem, TeamMember, NavigationItem } from '@/types';
+
+export const SITE_CONFIG = {
+  name: 'Midland Wellness Centre',
+  domain: 'midlandwellness.ca',
+  phone: '+1 705-527-7770',
+  email: 'info@midlandwellness.ca',
+  address: 'Midland, Ontario, Canada',
+} as const;
+
+export const BUSINESS_HOURS = {
+  monday: '10:00 AM - 6:00 PM',
+  tuesday: '10:00 AM - 6:00 PM',
+  wednesday: '10:00 AM - 7:00 PM',
+  thursday: '10:00 AM - 6:00 PM',
+  friday: '10:00 AM - 6:00 PM',
+  saturday: '12:00 PM - 3:00 PM',
+  sunday: 'Closed',
+} as const;
+
+export const SERVICES: ServiceItem[] = [
+  {
+    id: 'physiotherapy',
+    title: 'Physiotherapy',
+    description: 'Restoring movement and function through specialized therapeutic techniques.',
+    image: '/assets/images/service/physiotherapy2.webp',
+    icon: 'icon-18',
+    link: '/services/physiotherapy',
+  },
+  {
+    id: 'chiropractic',
+    title: 'Chiropractic Adjustments',
+    description: 'Spinal health and alignment for optimal wellness and pain relief.',
+    image: '/assets/images/service/chiropractic1.webp',
+    icon: 'icon-19',
+    link: '/services/chiropractic',
+  },
+  {
+    id: 'massage',
+    title: 'Massage Therapy',
+    description: 'Healing through therapeutic touch for relaxation and recovery.',
+    image: '/assets/images/service/massage1.webp',
+    icon: 'icon-19',
+    link: '/services/massage-therapy',
+  },
+  {
+    id: 'electrotherapy',
+    title: 'Electrotherapy',
+    description: 'Advanced electrical stimulation for pain management and healing.',
+    image: '/assets/images/service/electrotherapy1.webp',
+    icon: 'icon-20',
+    link: '/services/electrotherapy',
+  },
+  {
+    id: 'kinesio-taping',
+    title: 'Kinesio Taping',
+    description: 'Therapeutic taping techniques for support and performance enhancement.',
+    image: '/assets/images/service/kinesio1.webp',
+    icon: 'icon-20',
+    link: '/services/kinesio-taping',
+  },
+  {
+    id: 'orthotics',
+    title: 'Orthotics',
+    description: 'Custom orthopedic solutions for foot and body alignment.',
+    image: '/assets/images/service/Orthotics1.webp',
+    icon: 'icon-20',
+    link: '/services/orthotics',
+  },
+];
+
+export const TEAM_MEMBERS: TeamMember[] = [
+  {
+    id: '1',
+    name: 'Dr. Sarah Johnson',
+    role: 'Physiotherapist',
+    image: '/assets/images/team/team-1.jpg',
+    bio: 'Specializing in sports rehabilitation and movement therapy.',
+    specialties: ['Sports Injuries', 'Movement Therapy', 'Rehabilitation'],
+  },
+  {
+    id: '2',
+    name: 'Dr. Michael Chen',
+    role: 'Chiropractor',
+    image: '/assets/images/team/team-2.jpg',
+    bio: 'Expert in spinal health and holistic wellness approaches.',
+    specialties: ['Spinal Adjustment', 'Wellness Care', 'Pain Management'],
+  },
+  {
+    id: '3',
+    name: 'Emily Rodriguez',
+    role: 'Massage Therapist',
+    image: '/assets/images/team/team-3.jpg',
+    bio: 'Certified massage therapist with expertise in deep tissue and relaxation techniques.',
+    specialties: ['Deep Tissue', 'Relaxation', 'Therapeutic Massage'],
+  },
+  {
+    id: '4',
+    name: 'Dr. James Wilson',
+    role: 'Orthotics Specialist',
+    image: '/assets/images/team/team-4.jpg',
+    bio: 'Specializing in custom orthotic solutions and gait analysis.',
+    specialties: ['Custom Orthotics', 'Gait Analysis', 'Foot Care'],
+  },
+];
+
+export const SOCIAL_LINKS = [
+  { name: 'Facebook', href: '#', icon: 'icon-4' },
+  { name: 'Twitter', href: '#', icon: 'icon-5' },
+  { name: 'Instagram', href: '#', icon: 'icon-6' },
+] as const;
+
+export const NAVIGATION_ITEMS: NavigationItem[] = [
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
+  { 
+    name: 'Our Services', 
+    href: '/services',
+    children: SERVICES.map(service => ({
+      name: service.title,
+      href: service.link,
+    }))
+  },
+  { name: 'Contact Us', href: '/contact' },
+  { name: 'Blog', href: '/blog' },
+] as const;
+
+export const FORM_VALIDATION = {
+  email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+  phone: /^[\d\s\-\+\(\)]+$/,
+  name: /^[a-zA-Z\s\-']+$/,
+  required: (value: string) => value.trim().length > 0,
+} as const;
+
+export const ANIMATION_DURATIONS = {
+  fast: 150,
+  normal: 300,
+  slow: 500,
+} as const;
+
+export const BREAKPOINTS = {
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+} as const;

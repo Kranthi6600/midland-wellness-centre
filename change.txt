@@ -1,0 +1,4 @@
+change
+remove medicinsk from this project
+refactor the complete code for midland wellness centre
+improve seo

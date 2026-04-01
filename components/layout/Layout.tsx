@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { useMobileMenu } from "@/hooks/useMobileMenu";
 import BackToTop from "../elements/BackToTop";
 import DataBg from "../elements/DataBg";
 import Breadcrumb from "./Breadcrumb";
@@ -8,14 +10,7 @@ import SidebarPopup from "./SidebarPopup";
 import Header1 from "./header/Header1";
 import Footer1 from "./footer/Footer1";
 import { Analytics } from "@vercel/analytics/next";
-
-type LayoutProps = {
-  headerStyle?: 1 | 2 | 3;
-  footerStyle?: 1;
-  breadcrumbTitle?: string;
-  children: React.ReactNode;
-  wrapperCls?: string;
-};
+import { LayoutProps } from "@/types";
 
 export default function Layout({
   headerStyle = 1,
@@ -24,21 +19,8 @@ export default function Layout({
   children,
   wrapperCls,
 }: LayoutProps) {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // Mobile Menu
-  const [isMobileMenu, setMobileMenu] = useState(false);
-  const handleMobileMenu = () => {
-    setMobileMenu((prev) => {
-      const newState = !prev;
-      if (newState) {
-        document.body.classList.add("mobile-menu-visible");
-      } else {
-        document.body.classList.remove("mobile-menu-visible");
-      }
-      return newState;
-    });
-  };
+  const { isScrolled } = useScrollPosition(100);
+  const { isOpen: isMobileMenu, toggleMobileMenu, closeMobileMenu } = useMobileMenu();
 
   // Search Popup
   const [isPopup, setPopup] = useState(false);
@@ -56,20 +38,16 @@ export default function Layout({
       wow.init();
     })();
 
-    const onScroll = () => setIsScrolled(window.scrollY > 100);
-    document.addEventListener("scroll", onScroll);
-
     return () => {
-      document.removeEventListener("scroll", onScroll);
-      document.body.classList.remove("mobile-menu-visible");
+      closeMobileMenu();
     };
-  }, []);
+  }, [closeMobileMenu]);
 
   const renderHeader = () => {
     const headerProps = {
       scroll: isScrolled,
       isMobileMenu,
-      handleMobileMenu,
+      handleMobileMenu: toggleMobileMenu,
       handlePopup,
       isSidebar,
       handleSidebar,

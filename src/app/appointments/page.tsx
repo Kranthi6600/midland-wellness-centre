@@ -3,6 +3,10 @@ import { useState } from "react";
 import Image from "next/image";
 import Layout from "../../../components/layout/Layout";
 import Cta from "../../../components/sections/home/Cta";
+import AppointmentForm from "../../components/forms/AppointmentForm";
+import { SITE_CONFIG, BUSINESS_HOURS } from "@/constants";
+import { formatBusinessHours } from "@/utils/formatting";
+import { validateAppointmentForm } from "@/utils/validation";
 
 export default function Appointments_Page() {
     const [formData, setFormData] = useState({
@@ -23,21 +27,19 @@ export default function Appointments_Page() {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log('Appointment Form Data:', formData);
-        // Here you would typically send the data to your backend
-        alert('Appointment request submitted successfully! We will contact you soon.');
-        setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            date: '',
-            time: '',
-            department: '',
-            doctor: '',
-            message: ''
-        });
+    const handleAppointmentSubmit = async (formData: any) => {
+        try {
+            // Here you would typically send the data to your backend API
+            console.log('Appointment Form Data:', formData);
+            
+            // Simulate API call
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            alert('Appointment request submitted successfully! We will contact you soon.');
+        } catch (error) {
+            console.error('Error submitting appointment:', error);
+            alert('Error submitting appointment. Please try again.');
+        }
     };
 
     const departments = [
@@ -90,151 +92,7 @@ export default function Appointments_Page() {
                                         <p>Fill out the form below to book your appointment</p>
                                     </div>
 
-                                    <form onSubmit={handleSubmit} className="appointment-form default-form">
-                                        <div className="row clearfix" style={{ gap: '20px' }}>
-                                            {/* Name Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-45"></i></div>
-                                                    <input 
-                                                        type="text" 
-                                                        name="name" 
-                                                        placeholder="Full Name" 
-                                                        value={formData.name}
-                                                        onChange={handleInputChange}
-                                                        required 
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Email Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-46"></i></div>
-                                                    <input 
-                                                        type="email" 
-                                                        name="email" 
-                                                        placeholder="Email Address" 
-                                                        value={formData.email}
-                                                        onChange={handleInputChange}
-                                                        required 
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Phone Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><Image src="/assets/images/icons/icon-18.svg" alt="Phone" width={14} height={15} priority /></div>
-                                                    <input 
-                                                        type="tel" 
-                                                        name="phone" 
-                                                        placeholder="Phone Number" 
-                                                        value={formData.phone}
-                                                        onChange={handleInputChange}
-                                                        required 
-                                                        style={{ paddingLeft: '50px', height: '60px', border: '1px solid #e1e1e1', borderRadius: '5px', fontSize: '16px', transition: 'all 500ms ease' }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Date Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-50"></i></div>
-                                                    <input 
-                                                        type="date" 
-                                                        name="date" 
-                                                        placeholder="Appointment Date" 
-                                                        value={formData.date}
-                                                        onChange={handleInputChange}
-                                                        required 
-                                                        style={{ paddingLeft: '50px', height: '60px', border: '1px solid #e1e1e1', borderRadius: '5px', fontSize: '16px', transition: 'all 500ms ease', appearance: 'none' }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Department Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-51"></i></div>
-                                                    <select 
-                                                        name="department" 
-                                                        value={formData.department}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        style={{ paddingLeft: '50px', appearance: 'none', backgroundImage: "url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"%3e%3cpolyline points=\"6,9 12,15 18,9\"%3e%3c/polyline%3e%3c/svg%3e')", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 15px center', backgroundSize: '20px' }}
-                                                    >
-                                                        <option value="">Select Department</option>
-                                                        {departments.map((dept, index) => (
-                                                            <option key={index} value={dept}>{dept}</option>
-                                                        ))}
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            {/* Doctor Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-52"></i></div>
-                                                    <select 
-                                                        name="doctor" 
-                                                        value={formData.doctor}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        style={{ paddingLeft: '50px', appearance: 'none', backgroundImage: "url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"%3e%3cpolyline points=\"6,9 12,15 18,9\"%3e%3c/polyline%3e%3c/svg%3e')", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 15px center', backgroundSize: '20px' }}
-                                                    >
-                                                        <option value="">Select Doctor</option>
-                                                        {doctors.map((doctor, index) => (
-                                                            <option key={index} value={doctor}>{doctor}</option>
-                                                        ))}
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            {/* Time Field */}
-                                            <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-53"></i></div>
-                                                    <select 
-                                                        name="time" 
-                                                        value={formData.time}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        style={{ paddingLeft: '50px', appearance: 'none', backgroundImage: "url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"%3e%3cpolyline points=\"6,9 12,15 18,9\"%3e%3c/polyline%3e%3c/svg%3e')", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 15px center', backgroundSize: '20px' }}
-                                                    >
-                                                        <option value="">Select Time</option>
-                                                        {timeSlots.map((time, index) => (
-                                                            <option key={index} value={time}>{time}</option>
-                                                        ))}
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            {/* Message Field */}
-                                            <div className="col-lg-12 col-md-12 col-sm-12 single-column">
-                                                <div className="form-group">
-                                                    <div className="icon"><i className="icon-48"></i></div>
-                                                    <textarea 
-                                                        name="message" 
-                                                        placeholder="Additional Message (Optional)" 
-                                                        value={formData.message}
-                                                        onChange={handleInputChange}
-                                                        rows={4}
-                                                    ></textarea>
-                                                </div>
-                                            </div>
-
-                                            {/* Submit Button */}
-                                            <div className="col-lg-12 col-md-12 col-sm-12 single-column">
-                                                <div className="form-group message-btn">
-                                                    <button type="submit" className="theme-btn btn-two">
-                                                        <span>Book Appointment</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                        <AppointmentForm onSubmit={handleAppointmentSubmit} />
                                 </div>
                             </div>
 
@@ -247,9 +105,7 @@ export default function Appointments_Page() {
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Emergency Contact</h4>
                                         </div>
                                         <p>For urgent medical needs</p>
-                                        <a href="tel:+41 416-261-7246" className="phone">+41 416-261-7246</a>
-                                        <br />
-                                        <a href="tel:+41 416-261-9813" className="phone">+41 416-261-9813</a>
+                                        <a href={`tel:${SITE_CONFIG.phone}`} className="phone">{SITE_CONFIG.phone}</a>
                                     </div>
 
                                     <div className="info-box" style={{ marginBottom: '30px' }}>
@@ -260,10 +116,7 @@ export default function Appointments_Page() {
                                             </svg>
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Working Hours</h4>
                                         </div>
-                                        <p>Monday - Tuesday - Thursday - Friday: 10 AM – 6 PM</p>
-                                        <p>Wednesday: 10 AM – 7 PM</p>
-                                        <p>Saturday: 12 PM – 3 PM</p>
-                                        <p>Sunday: Closed</p>
+                                        <p>{formatBusinessHours(BUSINESS_HOURS)}</p>
                                     </div>
 
                                     <div className="info-box" style={{ marginBottom: '30px' }}>
@@ -279,7 +132,7 @@ export default function Appointments_Page() {
                                             <Image src="/assets/images/icons/icon-5.svg" alt="Email" width={20} height={20} priority />
                                             <h4 style={{ marginLeft: '10px', marginBottom: '0' }}>Email Us</h4>
                                         </div>
-                                        <p><a href="mailto:info@midlandwellnesscentre.com">info@midlandwellnesscentre.com</a></p>
+                                        <p><a href={`mailto:${SITE_CONFIG.email}`}>{SITE_CONFIG.email}</a></p>
                                     </div>
                                 </div>
                             </div>
