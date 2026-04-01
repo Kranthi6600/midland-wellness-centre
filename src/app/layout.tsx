@@ -3,10 +3,6 @@ import { Roboto, Caveat } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 
-import "../../public/assets/css/bootstrap.css";
-import "../../public/assets/css/style.css";
-import "../../public/assets/css/responsive.css";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

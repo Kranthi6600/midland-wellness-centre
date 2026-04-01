@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Cta() {
   return (
-        <section className="cta-section">
+        <section className="cta-section" style={{ marginBottom: '30px' }}>
             <div className="auto-container">
                 <div className="inner-container">
                     <div className="content-box">

@@ -1,6 +1,11 @@
 /* Midland Wellness Centre - Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
+/* Import existing CSS files */
+@import '../../public/assets/css/bootstrap.css';
+@import '../../public/assets/css/style.css';
+@import '../../public/assets/css/responsive.css';
+
 :root {
   /* Brand Colors */
   --primary-color: #007acc;
@@ -10,6 +15,12 @@
   --text-light: #6c757d;
   --bg-light: #f8f9fa;
   --border-color: #dee2e6;
+  
+  /* Theme Colors from original CSS */
+  --theme-color: #F3A952;
+  --secondary-color: #064ACB;
+  --pink-color: #FFC0CB;
+  --violet-color: #7F00FF;
   
   /* Typography */
   --font-primary: 'Source Sans Pro', sans-serif;
@@ -71,6 +82,51 @@ body {
   outline-offset: 2px;
 }
 
+/* Remove focus outline from buttons */
+button:focus,
+.theme-btn:focus,
+.btn:focus,
+button:hover,
+.theme-btn:hover,
+.btn:hover {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove default button borders */
+button,
+.theme-btn,
+.btn,
+a.theme-btn,
+a.btn,
+input[type="submit"],
+input[type="button"] {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Remove focus and hover states */
+button:focus,
+.theme-btn:focus,
+.btn:focus,
+a.theme-btn:focus,
+a.btn:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+button:hover,
+.theme-btn:hover,
+.btn:hover,
+a.theme-btn:hover,
+a.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 /* Skip to content link */
 .skip-link {
   position: absolute;
@@ -85,6 +141,11 @@ body {
 
 .skip-link:focus {
   top: 6px;
+}
+
+/* Navbar font weight */
+.main-menu .navigation > li > a {
+  font-weight: 700 !important;
 }
 
 /* Image optimization */

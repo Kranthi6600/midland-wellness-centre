@@ -31,12 +31,28 @@ export default function Layout({
   const handleSidebar = () => setSidebar((s) => !s);
 
   useEffect(() => {
-    (async () => {
-      // @ts-expect-error: WOW types not provided
-      const { WOW } = await import("wowjs");
-      const wow = new WOW({ live: false });
-      wow.init();
-    })();
+    // TODO: Fix WOW.js initialization - temporarily disabled
+    // Initialize WOW.js only on client-side
+    if (typeof window !== 'undefined') {
+      console.log("WOW.js temporarily disabled to prevent runtime errors");
+      // Original WOW.js code commented out until fixed
+      /*
+      try {
+        // Direct import with proper error handling
+        import('wowjs').then((wowModule) => {
+          const WOW = wowModule.default;
+          if (WOW && typeof WOW === 'function') {
+            const wow = new WOW({ live: false });
+            wow.init();
+          }
+        }).catch((error) => {
+          console.error("Failed to load WOW.js:", error);
+        });
+      } catch (error) {
+        console.error("Failed to initialize WOW.js:", error);
+      }
+      */
+    }
 
     return () => {
       closeMobileMenu();

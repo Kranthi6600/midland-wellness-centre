@@ -33,7 +33,7 @@ export default function Footer1() {
                         <div className="pattern-4" style={{ backgroundImage: "url(assets/images/shape/shape-24.png)" }}></div>
                     </div>
                     <div className="auto-container">
-                        <div className="row clearfix">
+                        <div className="row clearfix" style={{padding: '30px'}}>
                             <div className="col-lg-3 col-md-6 col-sm-12 footer-column mt-5">
                                 <div className="footer-widget about-widget">
                                     <div className="widget-title">
