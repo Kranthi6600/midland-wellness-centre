@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Caveat } from "next/font/google";
 import styles from "./globals.css";
-import Script from "next/script";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 
 import "../../public/assets/css/bootstrap.css";

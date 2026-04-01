@@ -41,7 +41,7 @@ export default function About() {
             const date = new Date(dateString);
             const options: Intl.DateTimeFormatOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             return date.toLocaleDateString('en-US', options);
-        } catch (error) {
+        } catch {
             return "Select a date";
         }
     };

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 interface SchemaMarkupProps {
-  schemas: Record<string, any>[];
+  schemas: Record<string, unknown>[];
 }
 
 export default function SchemaMarkup({ schemas }: SchemaMarkupProps) {

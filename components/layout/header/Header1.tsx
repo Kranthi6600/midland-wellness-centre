@@ -11,8 +11,6 @@ import { formatBusinessHours } from "@/utils/formatting";
 export default function Header1({
   scroll,
   handleMobileMenu,
-  isMobileMenu,
-  handlePopup,
   isSidebar,
   handleSidebar
 }: HeaderProps) {
