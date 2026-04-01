@@ -106,3 +106,54 @@ export interface ApiResponse<T> {
   error?: string;
   message?: string;
 }
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone?: string;
+  subject?: string;
+  message: string;
+}
+
+export interface ContactSubmission extends ContactFormData {
+  id: string;
+  createdAt: Date;
+  status: 'pending' | 'processed' | 'archived';
+  source: string;
+  userAgent?: string;
+  ipAddress?: string;
+}
+
+export interface EmailProvider {
+  name: 'sendgrid' | 'resend' | 'smtp';
+  apiKey?: string;
+  host?: string;
+  port?: number;
+  user?: string;
+  pass?: string;
+  from: string;
+  to: string[];
+}
+
+export interface ContactEmailData {
+  to: string;
+  subject: string;
+  html: string;
+  text?: string;
+  replyTo?: string;
+}
+
+export interface RateLimitConfig {
+  windowMs: number;
+  maxRequests: number;
+  skipSuccessfulRequests?: boolean;
+  message?: string;
+}
+
+export interface SecurityConfig {
+  enableCSRF: boolean;
+  enableRateLimit: boolean;
+  enableInputSanitization: boolean;
+  maxMessageLength: number;
+  allowedDomains?: string[];
+}
