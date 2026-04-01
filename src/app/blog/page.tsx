@@ -156,12 +156,12 @@ export default function Departments_Details() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/department-details">Physiotherapy</Link></li>
-                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
-                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
-                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
-                                                <li><Link href="/department-details-5">Kinesio Taping</Link></li>
-                                                <li><Link href="/department-details-6">Orthotics</Link></li>
+                                                <li><Link href="/physiotherapy">Physiotherapy</Link></li>
+                                                <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/massage-therapy">Massage Therapy</Link></li>
+                                                <li><Link href="/electrotherapy">Electrotherapy</Link></li>
+                                                <li><Link href="/kinesio-taping">Kinesio Taping</Link></li>
+                                                <li><Link href="/orthotics">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>

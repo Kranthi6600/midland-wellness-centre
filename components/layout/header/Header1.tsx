@@ -144,25 +144,25 @@ export default function Header1({
                         <Link href="/about">About Us</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href="/departments">Our Services</Link>
+                        <Link href="/services">Our Services</Link>
                         <ul>
                           <li>
-                            <Link href="/department-details">Physiotherapy</Link>
+                            <Link href="/physiotherapy">Physiotherapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-2">Chiropractic Adjustments</Link>
+                            <Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-3">Massage Therapy</Link>
+                            <Link href="/massage-therapy">Massage Therapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-4">Electrotherapy</Link>
+                            <Link href="/electrotherapy">Electrotherapy</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-5">Kinesio Taping</Link>
+                            <Link href="/kinesio-taping">Kinesio Taping</Link>
                           </li>
                           <li>
-                            <Link href="/department-details-6">Orthotics</Link>
+                            <Link href="/orthotics">Orthotics</Link>
                           </li>
                         </ul>
                       </li>

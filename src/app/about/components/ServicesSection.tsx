@@ -32,7 +32,7 @@ export default function ServicesSection() {
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box"><i className="icon-18"></i></div>
-                                        <h3><Link href="/department-details">Physiotherapy</Link></h3>
+                                        <li><Link href="/physiotherapy">Physiotherapy</Link></li>
                                         <p>Physiotherapists manage chronic conditions.</p>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@ export default function ServicesSection() {
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box"><i className="icon-19"></i></div>
-                                        <h3><Link href="/department-details-2">Massage Therapy</Link></h3>
+                                        <li><Link href="/massage-therapy">Massage Therapy</Link></li>
                                         <p>Massage Therapists are healthcare professionals.</p>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@ export default function ServicesSection() {
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box"><i className="icon-20"></i></div>
-                                        <h3><Link href="/department-details-3">Orthotics</Link></h3>
+                                        <li><Link href="/orthotics">Orthotics</Link></li>
                                         <p>Orthotics are healthcare professionals.</p>
                                     </div>
                                 </div>
