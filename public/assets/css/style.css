@@ -847,7 +847,9 @@ img {
   position: absolute;
   left: 0px;
   top: 0px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   line-height: 50px;

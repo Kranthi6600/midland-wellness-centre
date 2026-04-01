@@ -4,7 +4,7 @@ import { ServiceItem, TeamMember, NavigationItem } from '@/types';
 export const SITE_CONFIG = {
   name: 'Midland Wellness Centre',
   domain: 'midlandwellness.ca',
-  phone: '+1 705-527-7770',
+  phone: '+41 416-261-7246',
   email: 'info@midlandwellness.ca',
   address: 'Midland, Ontario, Canada',
 } as const;
