@@ -80,7 +80,7 @@ export default function Departments_Page() {
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-19"></i></div>
-                                                <h3><Link href="/department-details-2">Chiropractic Adjustments</Link></h3>
+                                                <h3><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></h3>
                                                 <p>A chiropractor treats neuromuscular disorders.</p>
                                             </div>
                                         </div>
@@ -94,7 +94,7 @@ export default function Departments_Page() {
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-20"></i></div>
-                                                <h3><Link href="/department-details-3">Massage Therapy</Link></h3>
+                                                <h3><Link href="/massage-therapy">Massage Therapy</Link></h3>
                                                 <p>Your massage is done in a private clinic setting in Scarborough.</p>
                                             </div>
                                         </div>
@@ -108,7 +108,7 @@ export default function Departments_Page() {
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-28"></i></div>
-                                                <h3><Link href="/department-details-4">Electrotherapy</Link></h3>
+                                                <h3><Link href="/electrotherapy">Electrotherapy</Link></h3>
                                                 <p>Electrotherapy is nerve and muscle stimulation using electrical current.</p>
                                             </div>
                                         </div>
@@ -122,7 +122,7 @@ export default function Departments_Page() {
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-29"></i></div>
-                                                <h3><Link href="/department-details-5">Kinesio Taping</Link></h3>
+                                                <h3><Link href="/kinesio-taping">Kinesio Taping</Link></h3>
                                                 <p>Midland Wellness Centre uses Kinesio Taping because of its proven benefits.</p>
                                             </div>
                                         </div>
@@ -136,7 +136,7 @@ export default function Departments_Page() {
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-37"></i></div>
-                                                <h3><Link href="/department-details-6">Orthotics</Link></h3>
+                                                <h3><Link href="/orthotics">Orthotics</Link></h3>
                                                 <p>Midland Wellness Centre offers high-quality custom orthotics.</p>
                                             </div>
                                         </div>

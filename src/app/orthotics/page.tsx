@@ -2,11 +2,26 @@ import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../components/sections/home/Cta";
-export default function Departments_Details_Five() {
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Orthotics Services | Midland Wellness Centre - Scarborough",
+  description: "Custom orthotics and foot care services in Scarborough. Professional orthopedic solutions for foot pain, alignment, and mobility. Book your orthotics consultation today.",
+  keywords: "orthotics scarborough, custom orthotics, foot pain treatment, orthopedic shoes, gait analysis, foot care, orthotic inserts",
+  openGraph: {
+    title: "Professional Orthotics Services | Midland Wellness Centre",
+    description: "Expert custom orthotics and foot care solutions for pain relief and improved mobility in Scarborough.",
+  },
+  canonical: "/orthotics"
+});
+
+export default function OrthoticsPage() {
 
     return (
         <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Kinesio Taping">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Orthotics">
                 <section className="service-details pt_120 pb_110">
                     <div className="auto-container">
                         <div className="row clearfix">
@@ -20,11 +35,11 @@ export default function Departments_Details_Five() {
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
                                                 <li><Link href="/physiotherapy">Physiotherapy</Link></li>
-                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
-                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
-                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
-                                                <li><Link href="/department-details-5" className="current">Kinesio Taping</Link></li>
-                                                <li><Link href="/department-details-6">Orthotics</Link></li>
+                                                <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/massage-therapy">Massage Therapy</Link></li>
+                                                <li><Link href="/electrotherapy">Electrotherapy</Link></li>
+                                                <li><Link href="/kinesio-taping">Kinesio Taping</Link></li>
+                                                <li><Link href="/orthotics" className="current">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -100,29 +115,28 @@ export default function Departments_Details_Five() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/kinesiotaping1.jpg" alt="Image" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/orthotics1.jpg" alt="Image" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
                                         <div className="text-box">
-                                            <h2>Kinesio Taping</h2>
-                                            <p>Kinesio Taping is a therapeutic taping technique that uses specialized elastic tape to support muscles and joints without restricting movement. Developed by Dr. Kenzo Kase in the 1970s, this innovative approach differs from traditional athletic taping by allowing full range of motion while providing therapeutic benefits through the tape's unique elastic properties and application techniques.<br />At Midland Wellness Centre, our certified Kinesio Taping practitioners use this technique to enhance healing, reduce pain, improve circulation, and support muscle function. The tape is applied in specific patterns and tensions depending on the treatment goals, whether it&apos;s to support weak muscles, facilitate muscle contraction, or reduce inflammation and swelling.<br />Kinesio Taping effectively treats numerous conditions including sports injuries, muscle strains, joint instability, postural imbalances, lymphatic drainage issues, and neurological conditions affecting muscle function. It's particularly beneficial for athletes, individuals&apos; with repetitive strain injuries, and patients recovering from surgery or injury.<br />The tape can be worn for several days and is water-resistant, allowing patients to continue their daily activities and even shower while receiving continuous therapeutic benefits.</p>
-                                            <p>Kinesio Taping works by lifting the skin slightly to create space between the muscle and dermis, which improves circulation and lymphatic drainage while reducing pressure on pain receptors. This creates a neurosensory effect that helps retrain movement patterns and improve proprioception.</p>
-                                            <p>In summary, Kinesio Taping at Midland Wellness Centre offers a non-invasive, drug-free approach to pain management and functional improvement. Our skilled practitioners combine precise application techniques with comprehensive assessment to provide personalized taping solutions that support healing and enhance performance.</p>
+                                            <h2>Orthotics</h2>
+                                            <p>Orthotics is a specialized healthcare field focused on designing, fabricating, and fitting custom orthotic devices to correct biomechanical issues and improve patient mobility. At Midland Wellness Centre, our orthotics specialists provide comprehensive solutions for foot, ankle, and lower limb problems through personalized assessment and custom device creation.<br />Orthotic devices are medical appliances designed to support, align, or correct musculoskeletal abnormalities. These can include shoe inserts, braces, splints, and other custom-fabricated devices that help patients walk, stand, and move more comfortably and efficiently.<br />Our orthotics specialists conduct thorough gait analysis, pressure mapping, and biomechanical assessments to determine the most effective orthotic solutions for each patient&apos;s specific needs and lifestyle requirements.</p>
+                                            <p>Custom orthotics effectively treat numerous conditions including flat feet, high arches, plantar fasciitis, bunions, heel pain, ankle instability, and alignment issues affecting walking and standing. They&apos;re particularly beneficial for athletes, individuals with chronic foot pain, diabetes patients requiring special footwear accommodations, and those recovering from lower limb injuries or surgeries.<br />The orthotic devices we provide are made from high-quality materials and can be designed for various activities including sports, work, and daily wear, ensuring optimal comfort and therapeutic benefit.</p>
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/kinesiotaping2.jpg" alt="Image" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/orthotics2.jpg" alt="Image" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
-                                        <p>Our Kinesio Taping practitioners are certified healthcare professionals with specialized training in taping techniques and human anatomy. They conduct comprehensive assessments to identify the most effective taping applications for each patient&apos;s condition and goals. Common applications include muscle support, joint stabilization, pain reduction, and lymphatic drainage facilitation.</p>
+                                        <p>Our orthotics practitioners are certified healthcare professionals with extensive training in biomechanics, gait analysis, and orthotic device fabrication. They conduct comprehensive assessments including pressure mapping, range of motion testing, and functional movement analysis to create precise, effective orthotic solutions. Common services include custom shoe inserts, ankle braces, foot orthoses, and specialized devices for specific medical conditions.</p>
                                         <ul className="list-style-one clearfix">
-                                            <li>Certified Kinesio Taping practitioners with advanced training</li>
-                                            <li>Customized taping applications for specific conditions</li>
-                                            <li>Integration with exercise and manual therapy programs</li>
-                                            <li>Water-resistant tape for extended wear time</li>
-                                            <li>Evidence-based applications for sports and rehabilitation</li>
+                                            <li>Certified orthotics specialists with advanced biomechanical training</li>
+                                            <li>Comprehensive gait analysis and pressure mapping</li>
+                                            <li>Custom-fabricated orthotic devices for precise fit</li>
+                                            <li>Integration with physiotherapy and rehabilitation programs</li>
+                                            <li>Specialized solutions for sports, work, and daily activities</li>
                                         </ul>
                                     </div>
                                 </div>

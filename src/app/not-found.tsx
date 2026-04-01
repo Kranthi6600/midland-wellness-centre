@@ -31,7 +31,7 @@ export default function NotFound() {
             <div className="quick-links">
               <h3>Popular Pages:</h3>
               <ul>
-                <li><Link href="/departments">Our Services</Link></li>
+                <li><Link href="/services">Our Services</Link></li>
                 <li><Link href="/about">About Us</Link></li>
                 <li><Link href="/appointments">Book Appointment</Link></li>
                 <li><Link href="/doctors">Our Team</Link></li>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Caveat } from "next/font/google";
-import styles from "./globals.css";
+import "./globals.css";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 
 import "../../public/assets/css/bootstrap.css";
@@ -119,7 +119,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${roboto.variable} ${caveat.variable} ${styles.fontBody}`}>
+      <body className={`${roboto.variable} ${caveat.variable} font-body`}>
         {children}
         <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
       </body>

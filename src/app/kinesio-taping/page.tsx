@@ -2,11 +2,26 @@ import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../components/sections/home/Cta";
-export default function Departments_Details_Two() {
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Kinesio Taping Services | Midland Wellness Centre - Scarborough",
+  description: "Professional Kinesio taping therapy in Scarborough. Therapeutic taping techniques for pain relief, injury support, and performance enhancement. Book your Kinesio taping session today.",
+  keywords: "kinesio taping scarborough, therapeutic taping, athletic taping, injury support, pain relief, sports therapy, rehabilitation taping",
+  openGraph: {
+    title: "Professional Kinesio Taping Therapy | Midland Wellness Centre",
+    description: "Expert therapeutic taping techniques for pain relief and performance enhancement in Scarborough.",
+  },
+  canonical: "/kinesio-taping"
+});
+
+export default function KinesioTapingPage() {
 
     return (
         <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Chiropractic Adjustments">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Kinesio Taping">
                 <section className="service-details pt_120 pb_110">
                     <div className="auto-container">
                         <div className="row clearfix">
@@ -20,11 +35,11 @@ export default function Departments_Details_Two() {
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
                                                 <li><Link href="/physiotherapy">Physiotherapy</Link></li>
-                                                <li><Link href="/department-details-2" className="current">Chiropractic Adjustments</Link></li>
-                                                <li><Link href="/department-details-3">Massage Therapy</Link></li>
-                                                <li><Link href="/department-details-4">Electrotherapy</Link></li>
-                                                <li><Link href="/department-details-5">Kinesio Taping</Link></li>
-                                                <li><Link href="/department-details-6">Orthotics</Link></li>
+                                                <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/massage-therapy">Massage Therapy</Link></li>
+                                                <li><Link href="/electrotherapy">Electrotherapy</Link></li>
+                                                <li><Link href="/kinesio-taping" className="current">Kinesio Taping</Link></li>
+                                                <li><Link href="/orthotics">Orthotics</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -100,29 +115,29 @@ export default function Departments_Details_Two() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/chiropracticadjustments1.png" alt="Image" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/kinesiotaping1.jpg" alt="Image" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
                                         <div className="text-box">
-                                            <h2>Chiropractic Adjustments</h2>
-                                            <p>Chiropractic adjustments are specialized manual therapies focused on restoring proper alignment and function to the musculoskeletal system, particularly the spine. Through precise, controlled movements, chiropractors address misalignments (subluxations) that can interfere with nervous system function and cause pain, discomfort, and reduced mobility.<br />At Midland Wellness Centre, our chiropractic services emphasize a holistic approach to health, recognizing that proper spinal alignment is essential for overall wellness. Our experienced chiropractors use various adjustment techniques tailored to each patient&apos;s specific needs, including manual adjustments, instrument-assisted techniques, and gentle low-force methods suitable for all ages.<br />Chiropractic care effectively treats a wide range of conditions including back pain, neck pain, headaches, sciatica, joint pain, sports injuries, and chronic pain conditions. We also provide care for wellness maintenance, injury prevention, and performance optimization for athletes and active individuals.<br />Beyond spinal adjustments, our chiropractic services may include soft tissue therapy, rehabilitative exercises, lifestyle counseling, and ergonomic advice to support long-term health and prevent future problems.</p>
-                                            <p>Preventative chiropractic care is fundamental to our approach, helping patients maintain optimal spinal health, improve posture, and enhance overall body function. Regular adjustments can help prevent injuries, manage chronic conditions, and support the body&apos;s natural healing abilities.</p>
-                                            <p>In summary, chiropractic adjustments at Midland Wellness Centre offer safe, effective, and drug-free solutions for pain relief and improved function. Our patient-centered approach combines advanced techniques with compassionate care to help patients achieve lasting health and wellness through proper spinal alignment and nervous system optimization.</p>
+                                            <h2>Kinesio Taping</h2>
+                                            <p>Kinesio Taping is a therapeutic taping technique that uses specialized elastic tape to support muscles and joints without restricting movement. Developed by Dr. Kenzo Kase in the 1970s, this innovative approach differs from traditional athletic taping by allowing full range of motion while providing therapeutic benefits through the tape's unique elastic properties and application techniques.<br />At Midland Wellness Centre, our certified Kinesio Taping practitioners use this technique to enhance healing, reduce pain, improve circulation, and support muscle function. The tape is applied in specific patterns and tensions depending on the treatment goals, whether it&apos;s to support weak muscles, facilitate muscle contraction, or reduce inflammation and swelling.<br />Kinesio Taping effectively treats numerous conditions including sports injuries, muscle strains, joint instability, postural imbalances, lymphatic drainage issues, and neurological conditions affecting muscle function. It's particularly beneficial for athletes, individuals&apos; with repetitive strain injuries, and patients recovering from surgery or injury.<br />The tape can be worn for several days and is water-resistant, allowing patients to continue their daily activities and even shower while receiving continuous therapeutic benefits.</p>
+                                            <p>Kinesio Taping works by lifting the skin slightly to create space between the muscle and dermis, which improves circulation and lymphatic drainage while reducing pressure on pain receptors. This creates a neurosensory effect that helps retrain movement patterns and improve proprioception.</p>
+                                            <p>In summary, Kinesio Taping at Midland Wellness Centre offers a non-invasive, drug-free approach to pain management and functional improvement. Our skilled practitioners combine precise application techniques with comprehensive assessment to provide personalized taping solutions that support healing and enhance performance.</p>
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/chiropracticadjustments2.png" alt="Image" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/kinesiotaping2.jpg" alt="Image" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
-                                        <p>Our chiropractors are highly trained healthcare professionals who specialize in neuromusculoskeletal health and spinal correction. They conduct comprehensive assessments to identify structural and functional issues, then develop personalized treatment plans that may include spinal adjustments, soft tissue therapy, and rehabilitative exercises. Common conditions treated include herniated discs, sciatica, whiplash, sports injuries, and chronic pain syndromes.</p>
+                                        <p>Our Kinesio Taping practitioners are certified healthcare professionals with specialized training in taping techniques and human anatomy. They conduct comprehensive assessments to identify the most effective taping applications for each patient&apos;s condition and goals. Common applications include muscle support, joint stabilization, pain reduction, and lymphatic drainage facilitation.</p>
                                         <ul className="list-style-one clearfix">
-                                            <li>Gentle yet effective spinal adjustment techniques</li>
-                                            <li>Comprehensive neurological and musculoskeletal assessments</li>
-                                            <li>Customized treatment plans for individual needs</li>
-                                            <li>Integration with other therapeutic modalities</li>
-                                            <li>Focus on long-term wellness and prevention</li>
+                                            <li>Certified Kinesio Taping practitioners with advanced training</li>
+                                            <li>Customized taping applications for specific conditions</li>
+                                            <li>Integration with exercise and manual therapy programs</li>
+                                            <li>Water-resistant tape for extended wear time</li>
+                                            <li>Evidence-based applications for sports and rehabilitation</li>
                                         </ul>
                                     </div>
                                 </div>

@@ -20,7 +20,7 @@ export default function Departments_Details_Three() {
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
                                                 <li><Link href="/physiotherapy">Physiotherapy</Link></li>
-                                                <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
+                                                <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
                                                 <li><Link href="/department-details-3" className="current">Massage Therapy</Link></li>
                                                 <li><Link href="/department-details-4">Electrotherapy</Link></li>
                                                 <li><Link href="/department-details-5">Kinesio Taping</Link></li>

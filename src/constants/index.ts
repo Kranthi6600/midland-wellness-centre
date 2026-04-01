@@ -34,7 +34,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Spinal health and alignment for optimal wellness and pain relief.',
     image: '/assets/images/service/chiropractic1.webp',
     icon: 'icon-19',
-    link: '/department-details-2',
+    link: '/chiropractic-adjustments',
   },
   {
     id: 'massage',
@@ -42,7 +42,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Healing through therapeutic touch for relaxation and recovery.',
     image: '/assets/images/service/massage1.webp',
     icon: 'icon-19',
-    link: '/department-details-3',
+    link: '/massage-therapy',
   },
   {
     id: 'electrotherapy',
@@ -50,7 +50,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Advanced electrical stimulation for pain management and healing.',
     image: '/assets/images/service/electrotherapy1.webp',
     icon: 'icon-20',
-    link: '/department-details-4',
+    link: '/electrotherapy',
   },
   {
     id: 'kinesio-taping',
@@ -58,7 +58,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Therapeutic taping techniques for support and performance enhancement.',
     image: '/assets/images/service/kinesio1.webp',
     icon: 'icon-20',
-    link: '/department-details-5',
+    link: '/kinesio-taping',
   },
   {
     id: 'orthotics',
@@ -66,7 +66,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Custom orthopedic solutions for foot and body alignment.',
     image: '/assets/images/service/Orthotics1.webp',
     icon: 'icon-20',
-    link: '/department-details-6',
+    link: '/orthotics',
   },
 ];
 
