@@ -57,7 +57,7 @@ export default function Footer1() {
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
                                             <li><Link href="/about">About</Link></li>
-                                            <li><Link href="/departments">Departments</Link></li>
+                                            <li><Link href="/services">Departments</Link></li>
                                             <li><Link href="/appointments">Appointments</Link></li>
                                             <li><Link href="/doctors">Our Team</Link></li>
                                             <li><Link href="/contact">Contact</Link></li>
@@ -92,12 +92,12 @@ export default function Footer1() {
                                             opacity: isMobile ? (isServicesDropdownOpen ? 1 : 0) : 1,
                                             display: isMobile ? 'block' : 'block'
                                         }}>
-                                            <li><Link href="/department-details">Physiotherapy</Link></li>
-                                            <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
-                                            <li><Link href="/department-details-3">Massage Therapy</Link></li>
-                                            <li><Link href="/department-details-4">Electrotherapy</Link></li>
-                                            <li><Link href="/department-details-5">Kinesio Taping</Link></li>
-                                            <li><Link href="/department-details-6">Orthotics</Link></li>
+                                            <li><Link href="/physiotherapy">Physiotherapy</Link></li>
+                                            <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
+                                            <li><Link href="/massage-therapy">Massage Therapy</Link></li>
+                                            <li><Link href="/electrotherapy">Electrotherapy</Link></li>
+                                            <li><Link href="/kinesio-taping">Kinesio Taping</Link></li>
+                                            <li><Link href="/orthotics">Orthotics</Link></li>
                                         </ul>
                                     </div>
                                 </div>
