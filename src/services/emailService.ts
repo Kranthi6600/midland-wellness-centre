@@ -246,7 +246,7 @@ export function createEmailService(): EmailService {
     name: providerName as 'sendgrid' | 'resend' | 'smtp',
     apiKey: process.env.SENDGRID_API_KEY || process.env.RESEND_API_KEY,
     from: process.env.EMAIL_FROM || 'noreply@midlandwellness.ca',
-    to: (process.env.EMAIL_TO || 'sriramkrantikumar7672@gmail.com').split(','),
+    to: (process.env.EMAIL_TO || 'info@midlandwellness.ca').split(','),
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT ? parseInt(process.env.SMTP_PORT) : undefined,
     user: process.env.SMTP_USER,
