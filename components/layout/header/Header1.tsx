@@ -119,7 +119,7 @@ export default function Header1({
             <div className="outer-box">
               <div className="logo-box">
                 <figure className="logo">
-                  <Link href="/index-2">
+                  <Link href="/">
                     <Image src="/assets/images/header_logo.png" alt="Logo Image" width={203} height={40} priority />
                   </Link>
                 </figure>
