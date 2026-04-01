@@ -3,6 +3,7 @@
 
 .google-map-section{
   position: relative;
+  padding: 80px 0px;
 }
 
 .google-map-section #contact-google-map{
@@ -46,6 +47,294 @@
   position: relative;
   display: block;
   padding: 28px 30px 48px 30px;
+}
+
+/** Enhanced Contact Form Styles **/
+.contact-form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #11111170 !important;
+}
+
+.contact-form .form-group input[type="tel"]::placeholder {
+  font-weight: 400;
+}
+
+.contact-form .form-group input.error,
+.contact-form .form-group textarea.error {
+  border-color: #ff4444 !important;
+  box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.1) !important;
+}
+
+.contact-form .error-message {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: #ff4444;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.contact-form .form-status {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contact-form .form-status.loading {
+  background: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.contact-form .form-status.success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.contact-form .form-status.error {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/** Business Hours Section **/
+.business-hours-section {
+  background: #f8f9fa;
+}
+
+.hours-box {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hours-inner {
+  padding: 40px;
+}
+
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecef;
+  margin: 0;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list .day {
+  font-weight: 600;
+  color: var(--title-color);
+  font-size: 16px;
+}
+
+.hours-list .time {
+  color: var(--theme-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.hours-info {
+  padding: 40px;
+  background: linear-gradient(135deg, var(--theme-color), #0056b3);
+  color: #fff;
+}
+
+.hours-info h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.hours-info p {
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.emergency-contact h4 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.emergency-contact p {
+  margin-bottom: 0;
+}
+
+.emergency-contact a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.emergency-contact a:hover {
+  text-decoration: none;
+}
+
+/** Social Media Section **/
+.social-section {
+  background: #fff;
+}
+
+.social-links-box {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: var(--theme-color);
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: var(--title-color);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.social-link i {
+  font-size: 18px;
+}
+
+.social-link span {
+  font-size: 14px;
+}
+
+/** Contact Map Styling **/
+.contact-map {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/** FAQ Section **/
+.faq-section {
+  background: #f8f9fa;
+}
+
+.faq-content {
+  margin-top: 50px;
+}
+
+.faq-column {
+  padding: 0 15px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.faq-item h4 {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/** Responsive Design **/
+@media (max-width: 768px) {
+  .hours-inner,
+  .hours-info {
+    padding: 30px 20px;
+  }
+  
+  .hours-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-link {
+    width: 200px;
+    justify-content: center;
+  }
+  
+  .google-map-section {
+    padding: 60px 0px;
+  }
+  
+  .contact-map {
+    height: 300px;
+  }
+  
+  .faq-column {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    padding: 20px;
+  }
+  
+  .faq-item h4 {
+    font-size: 16px;
+  }
+  
+  .faq-item p {
+    font-size: 14px;
+  }
 }
 
 .google-map-section .content-box .schedule-list li{

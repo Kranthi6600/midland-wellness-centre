@@ -114,7 +114,9 @@
 
 .info-block-two .inner-box .icon-box{
   position: absolute;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
   line-height: 100px;
