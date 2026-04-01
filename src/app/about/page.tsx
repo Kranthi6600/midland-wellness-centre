@@ -1,279 +1,31 @@
-"use client";
-import React from "react";
-import CountUp from "react-countup";
-import Image from "next/image";
-import Link from "next/link";
 import Layout from "../../../components/layout/Layout";
 import Working from "../../../components/sections/home/Working";
 import Cta from "../../../components/sections/home/Cta";
-export default function About_Page() {
+import AboutContent from "./components/AboutContent";
+import ServicesSection from "./components/ServicesSection";
+import FunFactSection from "./components/FunFactSection";
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "About Us - 30+ Years of Excellence | Midland Wellness Centre",
+  description: "Learn about Midland Wellness Centre's 30+ years of providing expert physiotherapy, chiropractic care, and wellness services in Scarborough. Discover our mission and specialized care approach.",
+  keywords: "about midland wellness centre, physiotherapy scarborough, chiropractic care, wellness center history, healthcare professionals",
+  openGraph: {
+    title: "About Midland Wellness Centre | 30+ Years of Healthcare Excellence",
+    description: "Discover our story of providing comprehensive physiotherapy and wellness care in Scarborough for over 30 years.",
+  },
+  canonical: "/about"
+});
+
+export default function About_Page() {
     return (
         <div className="boxed_wrapper">
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Us">
-                <section className="about-section about-page p_relative pb_50">
-                    <div className="auto-container">
-                        <div className="upper-content mb_80">
-                            <div className="row clearfix">
-                                <div className="col-lg-6 col-md-12 col-sm-12 content-column">
-                                    <div className="content-block-one">
-                                        <div className="content-box">
-                                            <div className="sec-title mb_15">
-                                                <span className="sub-title mb_5">About the company</span>
-                                                <h2>Expertise and compassion saved my life</h2>
-                                            </div>
-                                            <div className="text-box mb_30 pb_30">
-                                                <p>Midland Wellness Centre is a multi-disciplinary health clinic located in the heart of Scarborough Our main goal is to help you restore your health and maximize your function. Combining evidence-based chiropractic care with specialized techniques such as Kinesio Taping, acupuncture, laser and massage therapy, we can provide you with customized care to suit your needs.</p>
-                                            </div>
-                                            <div className="inner-box">
-                                                <div className="row clearfix">
-                                                    <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                        <div className="specialities-box">
-                                                            <h4>Our Specialities</h4>
-                                                            <ul className="list-style-one clearfix">
-                                                                <li>Preventive care</li>
-                                                                <li>Diagnostic testing</li>
-                                                                <li>Mental health services</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                        <div className="specialities-box">
-                                                            <h4>Our Vision</h4>
-                                                            <ul className="list-style-one clearfix">
-                                                                <li>To provide accessible and equitable</li>
-                                                                <li>To use innovative technology</li>
-                                                                <li>To empower patients</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-                                    <div className="image-block-one">
-                                        <div className="image-box">
-                                            <div className="shape">
-                                                <div className="shape-2" style={{ backgroundImage: "url(assets/images/shape/shape-10.png)" }}></div>
-                                            </div>
-                                            <figure className="image">
-                                            <Image 
-                                                src="/assets/images/resource/img2.webp" 
-                                                alt="Midland Wellness Centre - Professional healthcare team providing physiotherapy and wellness services" 
-                                                width={523} 
-                                                height={399} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '15px',
-                                                    objectFit: 'cover'
-                                                }}
-                                            />
-                                        </figure>
-                                            <div className="text-box">
-                                                <div className="image-shape" style={{ backgroundImage: "url(assets/images/shape/shape-7.png)" }}></div>
-                                                <h2>30</h2>
-                                                <span>Years of Experience in This Field</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="service-section alternat-2 p_relative">
-                    <div className="pattern-layer" style={{ backgroundImage: "url(assets/images/shape/shape-13.png)" }}></div>
-                    <div className="auto-container">
-                        <div className="sec-title mb_60 centred">
-                            <span className="sub-title mb_5">What we do for our patients</span>
-                            <h2>Our Medical Departments <br />Services</h2>
-                            <p>Medical care is the practice of providing diagnosis, treatment, and preventive care for various <br />illnesses, injuries, and diseases. It</p>
-                        </div>
-                        <div className="row clearfix">
-                            <div className="col-lg-4 col-md-6 col-sm-12 service-block">
-                                <div className="service-block-one">
-                                    <div className="inner-box">
-                                        <figure className="image-box">
-                                            <Image 
-                                                src="/assets/images/service/physiotherapy2.webp" 
-                                                alt="Professional physiotherapy treatment at Midland Wellness Centre" 
-                                                width={416} 
-                                                height={358} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '15px',
-                                                    objectFit: 'cover'
-                                                }}
-                                            />
-                                        </figure>
-                                        <div className="lower-content">
-                                            <div className="inner">
-                                                <div className="icon-box"><i className="icon-18"></i></div>
-                                                <h3><Link href="/department-details">Physiotherapy</Link></h3>
-                                                <p>Physiotherapists manage chronic conditions.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 service-block">
-                                <div className="service-block-one">
-                                    <div className="inner-box">
-                                        <figure className="image-box">
-                                            <Image 
-                                                src="/assets/images/service/massage1.webp" 
-                                                alt="Therapeutic massage therapy session for relaxation and muscle recovery" 
-                                                width={416} 
-                                                height={358} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '15px',
-                                                    objectFit: 'cover'
-                                                }}
-                                            />
-                                        </figure>
-                                        <div className="lower-content">
-                                            <div className="inner">
-                                                <div className="icon-box"><i className="icon-19"></i></div>
-                                                <h3><Link href="/department-details-2">Massage Therapy</Link></h3>
-                                                <p>Massage Therapists are healthcare professionals.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 service-block">
-                                <div className="service-block-one">
-                                    <div className="inner-box">
-                                        <figure className="image-box">
-                                            <Image 
-                                                src="/assets/images/service/Orthotics1.webp" 
-                                                alt="Custom orthotics and foot care services at Midland Wellness Centre" 
-                                                width={416} 
-                                                height={358} 
-                                                priority 
-                                                style={{
-                                                    borderRadius: '15px',
-                                                    objectFit: 'cover'
-                                                }}
-                                            />
-                                        </figure>
-                                        <div className="lower-content">
-                                            <div className="inner">
-                                                <div className="icon-box"><i className="icon-20"></i></div>
-                                                <h3><Link href="/department-details-3">Orthotics</Link></h3>
-                                                <p>Orthotics are healthcare professionals.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                
-                <section className="funfact-section">
-                    {/* Background patterns */}
-                    <div className="pattern-layer">
-                        <div className="pattern-1">
-                            <svg
-                                width="318"
-                                height="131"
-                                viewBox="0 0 318 131"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M0 69.0468L74.0685 69.0468L98.2276 40.7213L125.459 121L164.762 10L191.919 105.268L208.417 57.4162L233.167 87.0291L249.076 69.0468L308 69.0468"
-                                    stroke="#BDBDBD"
-                                    strokeOpacity="0.15"
-                                    strokeWidth="20"
-                                    strokeMiterlimit="10"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div className="auto-container">
-                        <div className="inner-container">
-                            <div
-                                className="shape"
-                                style={{ backgroundImage: "url(/assets/images/shape/shape-34.png)" }}
-                            ></div>
-
-                            <div className="row clearfix">
-                                {/* Block 1 */}
-                                <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                                    <div className="funfact-block-two">
-                                        <div className="inner-box">
-                                            <div className="icon-box">
-                                                <i className="icon-37"></i>
-                                            </div>
-                                            <div className="count-outer count-box">
-                                                <CountUp end={180} duration={1.5} />
-                                                <span>+</span>
-                                            </div>
-                                            <p>Expert Doctors</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Block 2 */}
-                                <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                                    <div className="funfact-block-two">
-                                        <div className="inner-box">
-                                            <div className="icon-box">
-                                                <i className="icon-38"></i>
-                                            </div>
-                                            <div className="count-outer count-box">
-                                                <CountUp end={12.2} duration={1.5} decimals={1} />
-                                                <span>+</span>
-                                            </div>
-                                            <p>Different Services</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Block 3 */}
-                                <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                                    <div className="funfact-block-two">
-                                        <div className="inner-box">
-                                            <div className="icon-box">
-                                                <i className="icon-39"></i>
-                                            </div>
-                                            <div className="count-outer count-box">
-                                                <CountUp end={200} duration={1.5} />
-                                                <span>+</span>
-                                            </div>
-                                            <p>Multi Services</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Block 4 */}
-                                <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                                    <div className="funfact-block-two">
-                                        <div className="inner-box">
-                                            <div className="icon-box">
-                                                <i className="icon-40"></i>
-                                            </div>
-                                            <div className="count-outer count-box">
-                                                <CountUp end={8} duration={1.5} />
-                                            </div>
-                                            <p>Awards Win</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <AboutContent />
+                <ServicesSection />
+                <FunFactSection />
                 <Working />
                 <Cta />
             </Layout>
