@@ -19,7 +19,7 @@ export const metadata: Metadata = generateMetadata({
   canonical: "/about"
 });
 
-export default function About_Page() {
+export default function AboutPage() {
     return (
         <div className="boxed_wrapper">
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Us">
