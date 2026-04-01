@@ -13,7 +13,7 @@ export default function Portfolio_Page() {
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-block">
                         <div className="portfolio-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-1.jpg" alt="Image" width={480} height={600} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-1.jpg" alt="Dental cleaning procedure with professional tools" width={480} height={600} priority /></figure>
                                 <div className="view-btn"><Link href="assets/images/gallery/portfolio-1.jpg" className="lightbox-image" data-fancybox="gallery"><i className="icon-24"></i></Link></div>
                                 <div className="text-box">
                                     <h3><Link href="/">Regular Dental Cleaning</Link></h3>
@@ -25,7 +25,7 @@ export default function Portfolio_Page() {
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-block">
                         <div className="portfolio-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-2.jpg" alt="Image" width={480} height={600} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-2.jpg" alt="Public speaking preparation with confidence coaching" width={480} height={600} priority /></figure>
                                 <div className="view-btn"><Link href="assets/images/gallery/portfolio-2.jpg" className="lightbox-image" data-fancybox="gallery"><i className="icon-24"></i></Link></div>
                                 <div className="text-box">
                                     <h3><Link href="/">Prepare to Speak</Link></h3>
@@ -37,7 +37,7 @@ export default function Portfolio_Page() {
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-block">
                         <div className="portfolio-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-7.jpg" alt="Image" width={480} height={600} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-7.jpg" alt="Medical diagnosis process with doctor consultation" width={480} height={600} priority /></figure>
                                 <div className="view-btn"><Link href="assets/images/gallery/portfolio-7.jpg" className="lightbox-image" data-fancybox="gallery"><i className="icon-24"></i></Link></div>
                                 <div className="text-box">
                                     <h3><Link href="/">From Diagnosis to Cure</Link></h3>
@@ -49,7 +49,7 @@ export default function Portfolio_Page() {
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-block">
                         <div className="portfolio-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-8.jpg" alt="Image" width={480} height={600} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-8.jpg" alt="Patient empowerment through healthcare education" width={480} height={600} priority /></figure>
                                 <div className="view-btn"><Link href="assets/images/gallery/portfolio-8.jpg" className="lightbox-image" data-fancybox="gallery"><i className="icon-24"></i></Link></div>
                                 <div className="text-box">
                                     <h3><Link href="/">Empowering Patients</Link></h3>
@@ -61,7 +61,7 @@ export default function Portfolio_Page() {
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-block">
                         <div className="portfolio-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-5.jpg" alt="Image" width={480} height={600} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/gallery/portfolio-5.jpg" alt="Healthcare provider consulting with patient" width={480} height={600} priority /></figure>
                                 <div className="view-btn"><Link href="assets/images/gallery/portfolio-5.jpg" className="lightbox-image" data-fancybox="gallery"><i className="icon-24"></i></Link></div>
                                 <div className="text-box">
                                     <h3><Link href="/">From Healthcare Provider</Link></h3>

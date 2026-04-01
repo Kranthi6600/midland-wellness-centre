@@ -24,7 +24,7 @@ export default function Portfolio_Page() {
                             <div className="pricing-table">
                                 <div className="table-header centred">
                                     <div className="title-box">
-                                        <div className="icon-box"><Image src="/assets/images/icons/icon-20.svg" alt="Icon" width={51} height={79} priority /></div>
+                                        <div className="icon-box"><Image src="/assets/images/icons/icon-20.svg" alt="Price tag icon for basic plan" width={51} height={79} priority /></div>
                                         <h3>Basic Plan</h3>
                                         <span>Save 25%</span>
                                     </div>
@@ -51,7 +51,7 @@ export default function Portfolio_Page() {
                                 <span className="popular-tags">Popular</span>
                                 <div className="table-header centred">
                                     <div className="title-box">
-                                        <div className="icon-box"><Image src="/assets/images/icons/icon-20.svg" alt="Icon" width={51} height={79} priority /></div>
+                                        <div className="icon-box"><Image src="/assets/images/icons/icon-20.svg" alt="Price tag icon for silver plan" width={51} height={79} priority /></div>
                                         <h3>Silver Plan</h3>
                                         <span>Save 30%</span>
                                     </div>
@@ -77,7 +77,7 @@ export default function Portfolio_Page() {
                             <div className="pricing-table">
                                 <div className="table-header centred">
                                     <div className="title-box">
-                                        <div className="icon-box"><Image src="/assets/images/icons/icon-20.svg" alt="Icon" width={51} height={79} priority /></div>
+                                        <div className="icon-box"><Image src="/assets/images/icons/icon-20.svg" alt="Price tag icon for gold plan" width={51} height={79} priority /></div>
                                         <h3>Gold Plan</h3>
                                         <span>Save 20%</span>
                                     </div>

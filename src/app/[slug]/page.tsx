@@ -82,13 +82,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                                     <div className="comment-box mb_60">
                                         <h3>Comments({post.comments.toString().padStart(2, '0')})</h3>
                                         <div className="comment">
-                                            <figure className="thumb-box"><Image src="/assets/images/banner/docprofile2.webp" alt="Image" width={88} height={86} priority /></figure>
+                                            <figure className="thumb-box"><Image src="/assets/images/banner/docprofile2.webp" alt="Dr. Michael Chen - Physiotherapy specialist" width={88} height={86} priority /></figure>
                                             <h4>Michael Chen<span>March 19, 2022</span></h4>
                                             <p>The evidence-based approach described in this article has completely transformed my recovery experience. After struggling with chronic back pain for years, the personalized physiotherapy program helped me return to normal activities within 3 months. The combination of manual therapy and targeted exercises made a significant difference that other treatments couldn't achieve.</p>
                                             <Link href={`/blog/${post.slug}`} className="reply-btn"><i className="icon-58"></i></Link>
                                         </div>
                                         <div className="comment replay-comment">
-                                            <figure className="thumb-box"><Image src="/assets/images/banner/docprofile3.webp" alt="Image" width={88} height={86} priority /></figure>
+                                            <figure className="thumb-box"><Image src="/assets/images/banner/docprofile3.webp" alt="Dr. Emily Rodriguez - Healthcare professional" width={88} height={86} priority /></figure>
                                             <h4>Emily Rodriguez<span>March 19, 2022</span></h4>
                                             <p>As a former athlete, I was skeptical about physiotherapy until I experienced the advanced techniques firsthand. The integration of modern equipment with traditional therapeutic methods not only accelerated my recovery but also provided me with tools to prevent future injuries. This holistic approach is exactly what active individuals need.</p>
                                             <Link href={`/blog/${post.slug}`} className="reply-btn"><i className="icon-58"></i></Link>
@@ -122,7 +122,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                                         <form method="post" action={`/blog/${post.slug}`}>
                                             <div className="form-group">
                                                 <input type="search" name="search-field" placeholder="keywords" required/>
-                                                <button type="submit"><Image src="/assets/images/icons/icon-22.svg" alt="Icon" width={20} height={20} priority /></button>
+                                                <button type="submit"><Image src="/assets/images/icons/icon-22.svg" alt="Search icon magnifying glass" width={20} height={20} priority /></button>
                                             </div>
                                         </form>
                                     </div>

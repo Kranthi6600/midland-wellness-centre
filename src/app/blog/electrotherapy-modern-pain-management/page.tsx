@@ -241,7 +241,7 @@ export default function ElectrotherapyBlogPost() {
                                                 <button type="submit">
                                                     <Image 
                                                         src="/assets/images/icons/icon-22.svg" 
-                                                        alt="Icon" 
+                                                        alt="Blog post search button" 
                                                         width={20} 
                                                         height={20} 
                                                         priority 

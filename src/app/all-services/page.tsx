@@ -62,7 +62,7 @@ export default function Departments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/physiotherapy2.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box"><Image src="/assets/images/service/physiotherapy2.webp" alt="Physiotherapy treatment session with patient" width={416} height={358} priority /></figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-18"></i></div>
@@ -76,7 +76,7 @@ export default function Departments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/Chiropractic Adjustments.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box"><Image src="/assets/images/service/Chiropractic Adjustments.webp" alt="Chiropractic spinal adjustment procedure" width={416} height={358} priority /></figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-19"></i></div>
@@ -90,7 +90,7 @@ export default function Departments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/massage1.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box"><Image src="/assets/images/service/massage1.webp" alt="Therapeutic massage therapy session" width={416} height={358} priority /></figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-20"></i></div>
@@ -104,7 +104,7 @@ export default function Departments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/electrotherapy.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box"><Image src="/assets/images/service/electrotherapy.webp" alt="Electrotherapy treatment with electrodes" width={416} height={358} priority /></figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-28"></i></div>
@@ -118,7 +118,7 @@ export default function Departments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/kinesiotaping.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box"><Image src="/assets/images/service/kinesiotaping.webp" alt="Kinesio taping application on muscle" width={416} height={358} priority /></figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-29"></i></div>
@@ -132,7 +132,7 @@ export default function Departments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                                 <div className="service-block-one">
                                     <div className="inner-box">
-                                        <figure className="image-box"><Image src="/assets/images/service/Orthotics1.webp" alt="Image" width={416} height={358} priority /></figure>
+                                        <figure className="image-box"><Image src="/assets/images/service/Orthotics1.webp" alt="Custom orthotics fitting session" width={416} height={358} priority /></figure>
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-37"></i></div>
@@ -242,7 +242,7 @@ export default function Departments_Page() {
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-12 single-column">
                                         <div className="form-group">
-                                            <div className="icon"><Image src="/assets/images/icons/icon-18.svg" alt="Image" width={14} height={15} priority /></div>
+                                            <div className="icon"><Image src="/assets/images/icons/icon-18.svg" alt="Phone contact icon" width={14} height={15} priority /></div>
                                             <input type="text" name="phone" placeholder="Phone" required/>
                                         </div>
                                     </div>

@@ -64,7 +64,7 @@ export default function BlogPage() {
                                             <li><Link href="/blog"><i className="icon-21"></i></Link></li>
                                             <li><Link href="/blog" className="current">01</Link></li>
                                             <li><Link href="/blog">02</Link></li>
-                                            <li className="dotted"><Image src="/assets/images/icons/icon-21.svg" alt="Icon" width={23} height={5} priority /></li>
+                                            <li className="dotted"><Image src="/assets/images/icons/icon-21.svg" alt="Pagination separator dots" width={23} height={5} priority /></li>
                                             <li><Link href="/blog"><i className="icon-22"></i></Link></li>
                                         </ul>
                                     </div>
@@ -77,7 +77,7 @@ export default function BlogPage() {
                                         <form method="post" action="/blog">
                                             <div className="form-group">
                                                 <input type="search" name="search-field" placeholder="keywords" required/>
-                                                <button type="submit"><Image src="/assets/images/icons/icon-22.svg" alt="Icon" width={20} height={20} priority /></button>
+                                                <button type="submit"><Image src="/assets/images/icons/icon-22.svg" alt="Blog search button" width={20} height={20} priority /></button>
                                             </div>
                                         </form>
                                     </div>
