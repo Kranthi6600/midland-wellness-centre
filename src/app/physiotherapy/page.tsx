@@ -2,7 +2,22 @@ import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../components/sections/home/Cta";
-export default function Departments_Details() {
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Physiotherapy Services | Midland Wellness Centre - Scarborough",
+  description: "Expert physiotherapy services in Scarborough. Professional treatment for injury recovery, pain management, and mobility improvement. Book your physiotherapy appointment today.",
+  keywords: "physiotherapy scarborough, physical therapy, injury rehabilitation, pain management, sports physiotherapy, mobility treatment",
+  openGraph: {
+    title: "Professional Physiotherapy Services | Midland Wellness Centre",
+    description: "Expert physiotherapy treatment for injury recovery, pain management, and improved mobility in Scarborough.",
+  },
+  canonical: "/physiotherapy"
+});
+
+export default function PhysiotherapyPage() {
 
     return (
         <div className="boxed_wrapper">
@@ -19,7 +34,7 @@ export default function Departments_Details() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/department-details" className="current">Physiotherapy</Link></li>
+                                                <li><Link href="/physiotherapy" className="current">Physiotherapy</Link></li>
                                                 <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
                                                 <li><Link href="/department-details-3">Massage Therapy</Link></li>
                                                 <li><Link href="/department-details-4">Electrotherapy</Link></li>

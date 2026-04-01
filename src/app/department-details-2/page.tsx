@@ -19,7 +19,7 @@ export default function Departments_Details_Two() {
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
-                                                <li><Link href="/department-details">Physiotherapy</Link></li>
+                                                <li><Link href="/physiotherapy">Physiotherapy</Link></li>
                                                 <li><Link href="/department-details-2" className="current">Chiropractic Adjustments</Link></li>
                                                 <li><Link href="/department-details-3">Massage Therapy</Link></li>
                                                 <li><Link href="/department-details-4">Electrotherapy</Link></li>

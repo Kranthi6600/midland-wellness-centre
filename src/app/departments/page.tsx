@@ -66,7 +66,7 @@ export default function Departments_Page() {
                                         <div className="lower-content">
                                             <div className="inner">
                                                 <div className="icon-box"><i className="icon-18"></i></div>
-                                                <h3><Link href="/department-details">Physiotherapy</Link></h3>
+                                                <h3><Link href="/physiotherapy">Physiotherapy</Link></h3>
                                                 <p>We provide physiotherapy to restore mobility and help you return to daily life.</p>
                                             </div>
                                         </div>

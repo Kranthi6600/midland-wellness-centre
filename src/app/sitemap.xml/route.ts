@@ -55,7 +55,7 @@ export async function GET() {
     },
     // Department detail pages
     {
-      url: `${baseUrl}/department-details`,
+      url: `${baseUrl}/physiotherapy`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,
