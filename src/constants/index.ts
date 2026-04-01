@@ -23,7 +23,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'physiotherapy',
     title: 'Physiotherapy',
-    description: 'Restoring movement and function through specialized therapeutic techniques.',
+    description: 'Restoring movement and function.',
     image: '/assets/images/service/physiotherapy2.webp',
     icon: 'icon-18',
     link: '/physiotherapy',
@@ -31,15 +31,15 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'chiropractic',
     title: 'Chiropractic Adjustments',
-    description: 'Spinal health and alignment for optimal wellness and pain relief.',
-    image: '/assets/images/service/chiropractic1.webp',
+    description: 'Spinal health and pain relief.',
+    image: '/assets/images/resource/chiropracticadjustments2.png',
     icon: 'icon-19',
     link: '/chiropractic-adjustments',
   },
   {
     id: 'massage',
     title: 'Massage Therapy',
-    description: 'Healing through therapeutic touch for relaxation and recovery.',
+    description: 'Healing through therapeutic touch.',
     image: '/assets/images/service/massage1.webp',
     icon: 'icon-19',
     link: '/massage-therapy',
@@ -47,7 +47,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'electrotherapy',
     title: 'Electrotherapy',
-    description: 'Advanced electrical stimulation for pain management and healing.',
+    description: 'Electrical stimulation for healing.',
     image: '/assets/images/service/electrotherapy1.webp',
     icon: 'icon-20',
     link: '/electrotherapy',
@@ -55,7 +55,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'kinesio-taping',
     title: 'Kinesio Taping',
-    description: 'Therapeutic taping techniques for support and performance enhancement.',
+    description: 'Therapeutic taping for support.',
     image: '/assets/images/service/kinesio1.webp',
     icon: 'icon-20',
     link: '/kinesio-taping',
@@ -63,7 +63,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'orthotics',
     title: 'Orthotics',
-    description: 'Custom orthopedic solutions for foot and body alignment.',
+    description: 'Custom orthopedic solutions.',
     image: '/assets/images/service/Orthotics1.webp',
     icon: 'icon-20',
     link: '/orthotics',
