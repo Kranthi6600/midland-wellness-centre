@@ -8,7 +8,7 @@ export default function Cta() {
                     <div className="content-box">
                         <h2>Need a Doctor for Check-up? Call for an Emergency Service!</h2>
                         <div className="support-box">
-                            <div className="icon-box">
+                            <div className="icon-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <Image 
                                     src="/assets/images/icons/icon-8.svg" 
                                     alt="Image" 

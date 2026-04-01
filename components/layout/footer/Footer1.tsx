@@ -125,7 +125,7 @@ export default function Footer1() {
                 <div className="footer-bottom centred">
                     <div className="auto-container">
                         <div className="copyright">
-                            <p><Link href="/">Midland Wellness Centre</Link> &copy; {new Date().getFullYear()} All Right Reserved</p>
+                            <p><Link href="/">Midland Wellness Centre</Link> &copy; {new Date().getFullYear()} All Right Reserved | Powered by Wehoware</p>
                         </div>
                     </div>
                 </div>

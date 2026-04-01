@@ -29,52 +29,52 @@ export default function Chooseus() {
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-sm-12 content-column">
-                        <div className="row clearfix">
+                        <div className="row clearfix" style={{ display: 'flex', flexWrap: 'wrap' }}>
                             <div className="col-lg-6 col-md-6 col-sm-12 chooseus-block">
-                                <div className="chooseus-block-one">
-                                    <div className="inner-box">
+                                <div className="chooseus-block-one" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                                    <div className="inner-box" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                                         <div className="icon-box">
                                             <div className="icon"><i className="icon-28"></i></div>
                                             <span className="count-text">01</span>
                                         </div>
                                         <h3>Modern Technology</h3>
-                                        <p>We utilize state-of-the-art medical equipment and cutting-edge technology to ensure accurate diagnoses and effective treatments for our patients.</p>
+                                        <p style={{ flex: 1 }}>We utilize state-of-the-art medical equipment and cutting-edge technology to ensure accurate diagnoses and provide effective treatments for our patients.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-12 chooseus-block">
-                                <div className="chooseus-block-one">
-                                    <div className="inner-box">
+                                <div className="chooseus-block-one" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                                    <div className="inner-box" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                                         <div className="icon-box">
                                             <div className="icon"><i className="icon-29"></i></div>
                                             <span className="count-text">02</span>
                                         </div>
-                                        <h3>Success of Treatments</h3>
-                                        <p>Our proven track record of successful treatments and positive patient outcomes demonstrates our commitment to delivering exceptional healthcare results.</p>
+                                        <h3>Proven Success</h3>
+                                        <p style={{ flex: 1 }}>Our proven track record of successful treatments and positive patient outcomes demonstrates our commitment to delivering exceptional healthcare results.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-12 chooseus-block">
-                                <div className="chooseus-block-one">
-                                    <div className="inner-box">
+                                <div className="chooseus-block-one" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                                    <div className="inner-box" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                                         <div className="icon-box">
                                             <div className="icon"><i className="icon-15"></i></div>
                                             <span className="count-text">03</span>
                                         </div>
                                         <h3>Certified Doctors</h3>
-                                        <p>All our medical professionals are board-certified and highly qualified, bringing expertise and experience to provide the best possible care.</p>
+                                        <p style={{ flex: 1 }}>All our medical professionals are board-certified and highly qualified, bringing extensive expertise and years of hands-on experience to provide exceptional care.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-12 chooseus-block">
-                                <div className="chooseus-block-one">
-                                    <div className="inner-box">
+                                <div className="chooseus-block-one" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                                    <div className="inner-box" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                                         <div className="icon-box">
                                             <div className="icon"><i className="icon-30"></i></div>
                                             <span className="count-text">04</span>
                                         </div>
-                                        <h3>World Class Doctor</h3>
-                                        <p>Our world-class doctors are internationally recognized leaders in their fields, offering advanced medical expertise and innovative treatment approaches.</p>
+                                        <h3>World Class Doctors</h3>
+                                        <p style={{ flex: 1 }}>Our world-class doctors are internationally recognized leaders in their fields, offering advanced medical expertise and innovative treatment approaches for patients.</p>
                                     </div>
                                 </div>
                             </div>
