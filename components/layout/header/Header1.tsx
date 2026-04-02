@@ -155,7 +155,7 @@ export default function Header1({
                         </ul>
                       </li>
                       <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact-us">Contact Us</Link>
                       </li>
                       <li><Link href="/blog">Blog</Link></li>
                     </ul>
