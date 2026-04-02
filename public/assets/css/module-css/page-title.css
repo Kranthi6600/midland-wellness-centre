@@ -65,6 +65,12 @@
   display: none;
 }
 
+/* Contact link hover effects */
+.contact-link:hover {
+  color: #F3A952 !important;
+  transition: color 0.3s ease;
+}
+
 
 
 /** RTL-CSS **/
