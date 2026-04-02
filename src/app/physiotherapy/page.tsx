@@ -201,10 +201,6 @@ export default function PhysiotherapyPage() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/physiotherapy1.webp" alt="Image" width={856} height={525} priority style={{
-                                            borderRadius: '15px',
-                                            objectFit: 'cover'
-                                        }} /></figure>
                                         <div className="text-box">
                                             <div className="sec-title mb_30">
                                                 <h2>Physiotherapy in Scarborough – Advanced Pain Relief & Rehabilitation</h2>

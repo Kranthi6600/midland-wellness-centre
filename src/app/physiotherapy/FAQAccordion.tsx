@@ -27,15 +27,12 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                         onClick={() => toggleFAQ(index)}
                         style={{
                             padding: '10px 15px',
-                            backgroundColor: activeFAQ === index ? '#f8f9fa' : '#fff',
-                            border: '1px solid #e9ecef',
-                            borderRadius: '8px',
-                            marginBottom: '8px',
                             cursor: 'pointer',
                             display: 'flex',
                             justifyContent: 'space-between',
                             alignItems: 'center',
-                            transition: 'all 0.3s ease'
+                            transition: 'all 0.3s ease',
+                            borderBottom: '1px solid #e9ecef'
                         }}
                     >
                         <h4 style={{ margin: 0, color: '#2c3e50', fontSize: '16px', fontWeight: '600' }}>
@@ -59,11 +56,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                             overflow: 'hidden',
                             transition: 'max-height 0.3s ease, padding 0.3s ease',
                             padding: activeFAQ === index ? '10px 15px' : '0 15px',
-                            backgroundColor: '#f8f9fa',
-                            borderLeft: activeFAQ === index ? '1px solid #e9ecef' : 'none',
-                            borderRight: activeFAQ === index ? '1px solid #e9ecef' : 'none',
-                            borderBottom: activeFAQ === index ? '1px solid #e9ecef' : 'none',
-                            borderRadius: activeFAQ === index ? '0 0 8px 8px' : '0'
+                            backgroundColor: 'transparent'
                         }}
                     >
                         <p style={{ margin: 0, color: '#495057', lineHeight: '1.6' }}>
