@@ -15,10 +15,10 @@ export default function Footer1() {
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };
-        
+
         checkMobile();
         window.addEventListener('resize', checkMobile);
-        
+
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
     return (
@@ -33,7 +33,7 @@ export default function Footer1() {
                         <div className="pattern-4" style={{ backgroundImage: "url(assets/images/shape/shape-24.png)" }}></div>
                     </div>
                     <div className="auto-container">
-                        <div className="row clearfix" style={{padding: '30px'}}>
+                        <div className="row clearfix" style={{ padding: '30px' }}>
                             <div className="col-lg-3 col-md-6 col-sm-12 footer-column mt-5">
                                 <div className="footer-widget about-widget">
                                     <div className="widget-title">
@@ -42,9 +42,9 @@ export default function Footer1() {
                                     <div className="widget-content">
                                         <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
                                         <ul className="social-links clearfix">
-                                            <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                            <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
+                                            <li><Link href="https://www.facebook.com/midlandwellnesscentre" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
+                                            <li><Link href="https://www.instagram.com/midlandwellness/" target="_blank"><i className="fab fa-instagram"></i></Link></li>
+                                            <li><Link href="https://ca.linkedin.com/in/midland-wellness-center-83a214141" target="_blank"><i className="fab fa-linkedin-in"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -60,22 +60,22 @@ export default function Footer1() {
                                             <li><Link href="/services">Our Services</Link></li>
                                             <li><Link href="/appointments">Appointments</Link></li>
                                             <li><Link href="/doctors">Our Team</Link></li>
-                                            <li><Link href="/contact">Contact</Link></li>
+                                            <li><Link href="/contact-us">Contact Us</Link></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
                                 <div className="footer-widget links-widget ml_70">
-                                    <div className="widget-title" style={{ 
-                                        display: 'flex', 
-                                        justifyContent: 'space-between', 
+                                    <div className="widget-title" style={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
                                         alignItems: 'center',
                                         cursor: isMobile ? 'pointer' : 'default'
                                     }} onClick={isMobile ? toggleServicesDropdown : undefined}>
                                         <h3>Services</h3>
                                         {isMobile && (
-                                            <span style={{ 
+                                            <span style={{
                                                 display: 'inline-block',
                                                 transition: 'transform 0.3s ease',
                                                 transform: isServicesDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)'

@@ -42,7 +42,7 @@ export default function Service() {
                     <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div className="service-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/resource/electrotherapy2.png" alt="Image" width={416} height={358} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/resource/electrotherapy2.webp" alt="Image" width={416} height={358} priority /></figure>
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
@@ -56,7 +56,7 @@ export default function Service() {
                     <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div className="service-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/resource/kinesiotaping2.jpg" alt="Image" width={416} height={358} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/resource/kinesiotaping2.webp" alt="Image" width={416} height={358} priority /></figure>
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
@@ -84,7 +84,7 @@ export default function Service() {
                     <div className="col-lg-4 col-md-6 col-sm-12 service-block">
                         <div className="service-block-one">
                             <div className="inner-box">
-                                <figure className="image-box"><Image src="/assets/images/resource/chiropracticadjustments1.png" alt="Image" width={416} height={358} priority /></figure>
+                                <figure className="image-box"><Image src="/assets/images/resource/chiropracticadjustments1.webp" alt="Image" width={416} height={358} priority /></figure>
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-19"></i></div>
