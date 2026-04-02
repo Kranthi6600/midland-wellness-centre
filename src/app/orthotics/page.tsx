@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadata({
   ...defaultSEO,
-  title: "Orthotics Services | Midland Wellness Centre - Scarborough",
-  description: "Custom orthotics and foot care services in Scarborough. Professional orthopedic solutions for foot pain, alignment, and mobility. Book your orthotics consultation today.",
+  title: "Best Custom Orthotics in Scarborough | Foot Support Care",
+  description: "Looking for custom orthotics in Scarborough? Improve posture, reduce pain & enhance mobility with expert orthotic solutions.",
   keywords: "orthotics scarborough, custom orthotics, foot pain treatment, orthopedic shoes, gait analysis, foot care, orthotic inserts",
   openGraph: {
-    title: "Professional Orthotics Services | Midland Wellness Centre",
-    description: "Expert custom orthotics and foot care solutions for pain relief and improved mobility in Scarborough.",
+    title: "Best Custom Orthotics in Scarborough | Foot Support Care",
+    description: "Looking for custom orthotics in Scarborough? Improve posture, reduce pain & enhance mobility with expert orthotic solutions.",
   },
   canonical: "/orthotics"
 });
@@ -114,30 +114,179 @@ export default function OrthoticsPage() {
                             </div>
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
-                                    <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/orthotics1.webp" alt="Image" width={856} height={525} priority style={{
-                                            borderRadius: '15px',
-                                            objectFit: 'cover'
-                                        }} /></figure>
-                                        <div className="text-box">
-                                            <h2>Orthotics</h2>
-                                            <p>Orthotics is a specialized healthcare field focused on designing, fabricating, and fitting custom orthotic devices to correct biomechanical issues and improve patient mobility. At Midland Wellness Centre, our orthotics specialists provide comprehensive solutions for foot, ankle, and lower limb problems through personalized assessment and custom device creation.<br />Orthotic devices are medical appliances designed to support, align, or correct musculoskeletal abnormalities. These can include shoe inserts, braces, splints, and other custom-fabricated devices that help patients walk, stand, and move more comfortably and efficiently.<br />Our orthotics specialists conduct thorough gait analysis, pressure mapping, and biomechanical assessments to determine the most effective orthotic solutions for each patient&apos;s specific needs and lifestyle requirements.</p>
-                                            <p>Custom orthotics effectively treat numerous conditions including flat feet, high arches, plantar fasciitis, bunions, heel pain, ankle instability, and alignment issues affecting walking and standing. They&apos;re particularly beneficial for athletes, individuals with chronic foot pain, diabetes patients requiring special footwear accommodations, and those recovering from lower limb injuries or surgeries.<br />The orthotic devices we provide are made from high-quality materials and can be designed for various activities including sports, work, and daily wear, ensuring optimal comfort and therapeutic benefit.</p>
+                                    <div className="inner-box">
+                                        <div className="sec-title mb_30">
+                                            <h2>Custom Orthotics in Scarborough – Improve Alignment & Relieve Pain</h2>
                                         </div>
-                                    </div>
-                                    <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/orthotics2.webp" alt="Image" width={856} height={525} priority style={{
-                                            borderRadius: '15px',
-                                            objectFit: 'cover'
-                                        }} /></figure>
-                                        <p>Our orthotics practitioners are certified healthcare professionals with extensive training in biomechanics, gait analysis, and orthotic device fabrication. They conduct comprehensive assessments including pressure mapping, range of motion testing, and functional movement analysis to create precise, effective orthotic solutions. Common services include custom shoe inserts, ankle braces, foot orthoses, and specialized devices for specific medical conditions.</p>
-                                        <ul className="list-style-one clearfix">
-                                            <li>Certified orthotics specialists with advanced biomechanical training</li>
-                                            <li>Comprehensive gait analysis and pressure mapping</li>
-                                            <li>Custom-fabricated orthotic devices for precise fit</li>
-                                            <li>Integration with physiotherapy and rehabilitation programs</li>
-                                            <li>Specialized solutions for sports, work, and daily activities</li>
-                                        </ul>
+                                        <div className="text mb_30">
+                                            <p>If you are looking for custom orthotics in Scarborough, Midland Wellness Centre offers advanced solutions to improve foot alignment, reduce pain, and enhance overall body function. Our clinic provides high-quality orthotic devices designed using modern technology to ensure precision and comfort. Whether you suffer from foot pain, posture issues, or joint discomfort, orthotics can significantly improve your daily movement and quality of life.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>At our clinic, custom orthotics in Scarborough are created using accurate 3D laser casting technology to ensure a perfect fit for your feet. This advanced approach helps improve biomechanics, reduce strain on joints, and prevent long-term injuries. Our goal is to provide effective and affordable orthotic solutions tailored to your unique needs.</p>
+                                        </div>
+                                        <div className="image-box mb_40">
+                                            <figure className="image">
+                                                <Image 
+                                                    src="/assets/images/resource/orthotics1.webp" 
+                                                    alt="Professional custom orthotics fitting at Midland Wellness Centre" 
+                                                    width={770} 
+                                                    height={450} 
+                                                    priority 
+                                                    style={{
+                                                        borderRadius: '15px',
+                                                        objectFit: 'cover'
+                                                    }}
+                                                />
+                                            </figure>
+                                        </div>
+                                        <h1>What Are Orthotics & How Do They Work?</h1>
+                                        <div className="text mb_30">
+                                            <p>Orthotics are specially designed shoe inserts that support, align, and improve the function of your feet. They are commonly used to correct imbalances, relieve pressure, and enhance posture. Poor foot alignment can lead to pain not only in the feet but also in the knees, hips, and lower back.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>Choosing professional custom orthotics in Scarborough ensures that your orthotics are tailored to your foot structure and lifestyle. Whether you need custom foot orthotics Toronto, orthotic insoles Scarborough, or shoe inserts for foot pain, these devices help restore proper movement and reduce stress on your body.</p>
+                                        </div>
+                                        <h1>Conditions Treated with Custom Orthotics</h1>
+                                        <div className="text mb_30">
+                                            <p>Custom orthotics are highly effective in treating a wide range of conditions related to foot imbalance and body mechanics. Our clinic focuses on both pain relief and long-term correction.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Foot Pain and Plantar Fasciitis</h4>
+                                                    <p>Orthotics help reduce pressure on the heel and arch, relieving pain and improving walking comfort. They provide essential support for long-term foot health.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Knee, Hip, and Back Pain</h4>
+                                                    <p>Misalignment in the feet can affect the entire body. Orthotics improve posture and reduce strain on joints, helping alleviate pain in multiple areas.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Flat Feet and High Arches</h4>
+                                                    <p>Custom orthotics correct structural imbalances and provide proper support. This improves stability and prevents further complications.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Sports Injuries and Performance Issues</h4>
+                                                    <p>Athletes benefit from improved biomechanics and reduced injury risk. Orthotics enhance performance by providing better support and alignment.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Our Custom Orthotics Process</h1>
+                                        <div className="text mb_30">
+                                            <p>At Midland Wellness Centre, we follow a comprehensive approach to ensure the best results for every patient. Our process is designed to deliver precision, comfort, and effectiveness.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Detailed Assessment and Gait Analysis</h4>
+                                                    <p>We evaluate your foot structure, walking pattern, and medical history. This helps identify the root cause of your pain and discomfort.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Advanced 3D Laser Foot Scanning</h4>
+                                                    <p>Using modern technology, we create accurate measurements of your feet. This ensures that your orthotics fit perfectly and provide maximum support.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Custom Design and Fabrication</h4>
+                                                    <p>Each orthotic is tailored to your specific needs and lifestyle. This personalized approach improves comfort and long-term effectiveness.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Fitting and Follow-Up Care</h4>
+                                                    <p>We ensure your orthotics are properly fitted and provide guidance on usage. Regular follow-ups help optimize your results.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Why Choose Our Orthotics Clinic in Scarborough?</h1>
+                                        <div className="text mb_30">
+                                            <p>Choosing the right provider for orthotics is essential for achieving the best outcomes. Our clinic offers advanced solutions backed by expertise and technology.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>High-Quality Custom Orthotics</h4>
+                                                    <p>We provide durable and effective orthotics designed for long-term use. This ensures maximum comfort and performance.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Personalised Treatment Approach</h4>
+                                                    <p>Every patient receives a customized plan based on their condition. This improves recovery and prevents recurring issues.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Advanced Technology and Expertise</h4>
+                                                    <p>Our clinic uses cutting-edge tools and techniques for precise results. This ensures better alignment and faster pain relief.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Benefits of Custom Orthotics for Daily Life</h1>
+                                        <div className="text mb_30">
+                                            <p>Orthotics offer a wide range of benefits that go beyond foot comfort. They improve overall body mechanics and enhance your quality of life.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Improved Posture and Alignment</h4>
+                                                    <p>Orthotics correct imbalances and support proper posture. This reduces strain on the entire body.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Pain Relief and Injury Prevention</h4>
+                                                    <p>By distributing pressure evenly, orthotics reduce pain and prevent injuries. This is especially beneficial for active individuals.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Enhanced Mobility and Comfort</h4>
+                                                    <p>Orthotics make walking and standing more comfortable. This helps you stay active and productive.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Better Athletic Performance</h4>
+                                                    <p>Athletes experience improved stability and reduced fatigue. This leads to better performance and fewer injuries.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Frequently Asked Questions</h1>
+                                        <div className="text mb_30">
+                                            <p><strong>What are custom orthotics used for?</strong><br />
+                                            Custom orthotics are used to correct foot alignment, relieve pain, and improve mobility. They also help prevent injuries.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p><strong>Do orthotics help with back pain?</strong><br />
+                                            Yes, orthotics improve posture and reduce strain on the spine, which helps relieve back pain.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p><strong>How long do custom orthotics last?</strong><br />
+                                            Most orthotics last several years depending on usage and care. Regular check-ups ensure optimal performance.</p>
+                                        </div>
+                                        <h1>Custom Orthotics Near You in Scarborough</h1>
+                                        <div className="text mb_30">
+                                            <p>If you are searching for best custom orthotics in Scarborough, orthotics clinic near me, or foot pain treatment Toronto, Midland Wellness Centre is your trusted destination. We provide expert care using advanced techniques to deliver long-term results.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>Our clinic specialises in custom orthotics in Scarborough designed to improve posture, reduce pain, and enhance overall function. Whether you need support for daily activities or sports performance, we have the right solution for you.</p>
+                                        </div>
+                                        <h1>Book Your Orthotics Consultation Today</h1>
+                                        <div className="text mb_30">
+                                            <p>Take the first step toward better foot health with expert custom orthotics in Scarborough. Our team is dedicated to providing personalised care and advanced solutions to help you live pain-free.</p>
+                                        </div>
+                                        <div className="text">
+                                            <p>Contact Midland Wellness Centre today and experience the benefits of professionally designed orthotics.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadata({
   ...defaultSEO,
-  title: "Massage Therapy | Midland Wellness Centre - Scarborough",
-  description: "Professional massage therapy services in Scarborough. Therapeutic massage for pain relief, relaxation, and muscle recovery. Book your massage therapy appointment today.",
+  title: "Best Massage Therapy in Scarborough | Relax & Recover",
+  description: "Looking for massage therapy in Scarborough? Enjoy deep tissue, sports & relaxation massage for pain relief. Book now.",
   keywords: "massage therapy scarborough, therapeutic massage, deep tissue massage, relaxation massage, sports massage, wellness therapy",
   openGraph: {
-    title: "Professional Massage Therapy | Midland Wellness Centre",
-    description: "Expert therapeutic massage services for pain relief and wellness in Scarborough.",
+    title: "Best Massage Therapy in Scarborough | Relax & Recover",
+    description: "Looking for massage therapy in Scarborough? Enjoy deep tissue, sports & relaxation massage for pain relief. Book now.",
   },
   canonical: "/massage-therapy"
 });
@@ -76,18 +76,18 @@ export default function MassageTherapyPage() {
                                 <div className="service-details-content">
                                     <div className="inner-box">
                                         <div className="sec-title mb_30">
-                                            <h2>Massage Therapy</h2>
+                                            <h2>Massage Therapy in Scarborough – Relaxation, Pain Relief & Recovery</h2>
                                         </div>
                                         <div className="text mb_30">
-                                            <p>Massage therapy is a comprehensive treatment involving the manipulation of the body's soft tissues to enhance health and well-being. Our experienced massage therapists use various techniques to address specific needs, from relaxation to therapeutic rehabilitation.</p>
+                                            <p>If you are searching for professional massage therapy in Scarborough, Midland Wellness Centre offers personalised treatments designed to relieve stress, reduce pain, and improve overall wellness. Our expert therapists use proven techniques to target muscle tension, enhance circulation, and support faster recovery from injuries. Whether you need relaxation or therapeutic care, we deliver results that improve your quality of life.</p>
                                         </div>
                                         <div className="text mb_30">
-                                            <p>At Midland Wellness Centre, we offer a range of massage therapy services designed to reduce stress, relieve pain, improve circulation, and promote overall wellness. Each session is tailored to your individual needs and health goals.</p>
+                                            <p>At our clinic, massage therapy in Scarborough is tailored to your specific needs, ensuring maximum benefits from every session. From chronic pain relief to sports recovery, our treatments are designed to promote healing and restore balance. Patients trust us for effective and long-lasting results.</p>
                                         </div>
                                         <div className="image-box mb_40">
                                             <figure className="image">
                                                 <Image 
-                                                    src="/assets/images/resource/massage-therapy.webp" 
+                                                    src="/assets/images/resource/massagetherapy1.webp" 
                                                     alt="Professional massage therapy session at Midland Wellness Centre" 
                                                     width={770} 
                                                     height={450} 
@@ -99,79 +99,153 @@ export default function MassageTherapyPage() {
                                                 />
                                             </figure>
                                         </div>
-                                        <h3>Our Massage Therapy Services</h3>
+                                        <h1>What is Massage Therapy & How Does It Help?</h1>
                                         <div className="text mb_30">
-                                            <p>We provide various massage therapy techniques to address different health concerns and wellness goals:</p>
+                                            <p>Massage therapy is a hands-on treatment that focuses on manipulating muscles, soft tissues, and joints to improve physical function and reduce discomfort. It is widely used for pain management, stress relief, and injury recovery. With the right techniques, massage therapy can significantly improve both physical and mental well-being.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>Choosing expert massage therapy in Scarborough ensures that your treatment is customised based on your condition. Whether you are looking for deep tissue massage Scarborough, sports massage therapy Toronto, or relaxation massage near me, our clinic provides comprehensive solutions for all your needs.</p>
+                                        </div>
+                                        <h1>Conditions Treated with Massage Therapy</h1>
+                                        <div className="text mb_30">
+                                            <p>Our treatments are designed to address a wide range of health concerns, focusing on both immediate relief and long-term wellness. We use advanced techniques to ensure effective results for every patient.</p>
                                         </div>
                                         <div className="row clearfix mb_50">
                                             <div className="col-md-6 col-sm-12 single-column">
                                                 <div className="service-list">
-                                                    <h4>Therapeutic Massage</h4>
-                                                    <p>Targeted treatment for specific injuries, chronic pain, and rehabilitation needs.</p>
+                                                    <h4>Muscle Pain and Tension Relief</h4>
+                                                    <p>Massage therapy helps reduce tightness and improve blood circulation. This leads to faster recovery and improved muscle flexibility.</p>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 col-sm-12 single-column">
                                                 <div className="service-list">
-                                                    <h4>Relaxation Massage</h4>
-                                                    <p>Gentle techniques to reduce stress, promote relaxation, and improve overall well-being.</p>
+                                                    <h4>Stress and Anxiety Management</h4>
+                                                    <p>Therapeutic massage promotes relaxation and reduces stress hormones. It enhances mental clarity and overall emotional well-being.</p>
                                                 </div>
                                             </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Sports Injury Recovery</h4>
+                                                    <p>Our sports massage therapy Toronto approach supports faster healing and improves performance. It is ideal for athletes and active individuals.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Chronic Pain and Joint Issues</h4>
+                                                    <p>Massage therapy helps manage conditions like arthritis and long-term pain. It improves mobility and reduces stiffness effectively.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Types of Massage Therapy We Offer</h1>
+                                        <div className="text mb_30">
+                                            <p>At Midland Wellness Centre, we provide a variety of massage techniques tailored to individual needs. Each treatment is designed to deliver maximum therapeutic benefits.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
                                             <div className="col-md-6 col-sm-12 single-column">
                                                 <div className="service-list">
                                                     <h4>Deep Tissue Massage</h4>
-                                                    <p>Intensive treatment focusing on deeper muscle layers to release chronic tension.</p>
+                                                    <p>This technique targets deeper muscle layers to relieve chronic tension and pain. It is highly effective for back pain and muscle injuries.</p>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 col-sm-12 single-column">
                                                 <div className="service-list">
-                                                    <h4>Sports Massage</h4>
-                                                    <p>Specialized techniques for athletes and active individuals to enhance performance and recovery.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h3>Benefits of Massage Therapy</h3>
-                                        <div className="text mb_30">
-                                            <p>Regular massage therapy offers numerous health benefits that contribute to your overall wellness:</p>
-                                        </div>
-                                        <div className="row clearfix mb_40">
-                                            <div className="col-md-6 col-sm-12 single-column">
-                                                <div className="benefits-list">
-                                                    <ul className="list-style-one">
-                                                        <li>Reduces muscle tension and pain</li>
-                                                        <li>Improves circulation and blood flow</li>
-                                                        <li>Enhances joint flexibility and range of motion</li>
-                                                        <li>Promotes relaxation and stress reduction</li>
-                                                        <li>Speeds up injury recovery</li>
-                                                        <li>Improves sleep quality</li>
-                                                    </ul>
+                                                    <h4>Swedish Massage Therapy</h4>
+                                                    <p>A gentle and relaxing massage that improves circulation and reduces stress. It is perfect for overall wellness and relaxation.</p>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 col-sm-12 single-column">
-                                                <div className="benefits-list">
-                                                    <ul className="list-style-one">
-                                                        <li>Boosts immune system function</li>
-                                                        <li>Reduces anxiety and depression</li>
-                                                        <li>Improves posture and body awareness</li>
-                                                        <li>Enhances athletic performance</li>
-                                                        <li>Relieves headache frequency</li>
-                                                        <li>Promotes overall well-being</li>
-                                                    </ul>
+                                                <div className="service-list">
+                                                    <h4>Sports Massage Therapy</h4>
+                                                    <p>Designed for athletes, this treatment enhances performance and prevents injuries. It also speeds up recovery after intense physical activity.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Prenatal Massage Therapy</h4>
+                                                    <p>Safe and effective for expectant mothers, helping reduce discomfort and improve relaxation during pregnancy.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <h3>What to Expect During Your Session</h3>
+                                        <h1>Why Choose Our Massage Therapy Clinic in Scarborough?</h1>
                                         <div className="text mb_30">
-                                            <p>Your massage therapy session begins with a consultation to discuss your health concerns and treatment goals. Our registered massage therapists will then customize the treatment to address your specific needs, using appropriate pressure and techniques.</p>
+                                            <p>Finding the right clinic is essential for achieving the best results. Our team focuses on delivering personalised care with a strong emphasis on quality and effectiveness.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Certified and Experienced Therapists</h4>
+                                                    <p>Our professionals are trained in advanced massage techniques. They ensure safe and effective treatment for all conditions.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Personalised Treatment Plans</h4>
+                                                    <p>Every session is customized based on your needs and goals. This approach improves outcomes and enhances overall satisfaction.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Holistic Wellness Approach</h4>
+                                                    <p>We combine massage therapy with other treatments for better results. This helps in achieving long-term health and pain relief.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Benefits of Massage Therapy for Overall Health</h1>
+                                        <div className="text mb_30">
+                                            <p>Massage therapy provides a wide range of physical and mental health benefits. It is an effective solution for improving overall well-being and preventing future issues.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Natural Pain Relief</h4>
+                                                    <p>Massage therapy reduces muscle tension and inflammation without medication. It is a safe and effective treatment option.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Improved Blood Circulation</h4>
+                                                    <p>Enhanced circulation promotes faster healing and better oxygen flow. This supports overall body function and recovery.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Stress Reduction and Relaxation</h4>
+                                                    <p>Regular sessions help reduce stress and improve mental clarity. This leads to better sleep and emotional balance.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Enhanced Mobility and Flexibility</h4>
+                                                    <p>Massage therapy improves joint movement and reduces stiffness. This helps you stay active and pain-free.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Frequently Asked Questions</h1>
+                                        <div className="text mb_30">
+                                            <p><strong>What is massage therapy used for?</strong><br />
+                                            Massage therapy is used for pain relief, stress reduction, and improving circulation. It also helps in injury recovery and relaxation.</p>
                                         </div>
                                         <div className="text mb_30">
-                                            <p>We provide a comfortable, private environment with professional-grade equipment and high-quality massage oils. Sessions typically range from 30 to 90 minutes, depending on your needs and preferences.</p>
+                                            <p><strong>How often should you get massage therapy?</strong><br />
+                                            The frequency depends on your condition and goals. Many people benefit from weekly or bi-weekly sessions.</p>
                                         </div>
-                                        <h3>Why Choose Midland Wellness Centre?</h3>
                                         <div className="text mb_30">
-                                            <p>Our massage therapy team consists of registered and experienced professionals who are committed to providing exceptional care. We integrate massage therapy with our other wellness services to offer comprehensive treatment plans that address your health from multiple angles.</p>
+                                            <p><strong>Is massage therapy good for chronic pain?</strong><br />
+                                            Yes, massage therapy is highly effective in managing chronic pain by reducing muscle tension and improving mobility.</p>
+                                        </div>
+                                        <h1>Massage Therapy Near You in Scarborough</h1>
+                                        <div className="text mb_30">
+                                            <p>If you are searching for the best massage therapy in Scarborough, massage therapist near me, or relaxation massage Toronto, Midland Wellness Centre is your trusted choice. We offer professional treatments designed to meet your specific needs and ensure long-term benefits.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>Our clinic is known for providing high-quality massage therapy in Scarborough using advanced techniques and personalised care. We are committed to helping you achieve better health, reduced pain, and improved relaxation.</p>
+                                        </div>
+                                        <h1>Book Your Massage Therapy Session Today</h1>
+                                        <div className="text mb_30">
+                                            <p>Experience the benefits of expert massage therapy in Scarborough and take the first step toward a healthier, stress-free life. Our team is dedicated to delivering exceptional care that meets your needs and exceeds expectations.</p>
                                         </div>
                                         <div className="text">
-                                            <p>Whether you're seeking relief from chronic pain, recovering from an injury, or simply looking to enhance your overall wellness, our massage therapy services are designed to help you achieve your health goals in a safe and supportive environment.</p>
+                                            <p>Contact Midland Wellness Centre today to book your appointment and start your journey to wellness.</p>
                                         </div>
                                     </div>
                                 </div>

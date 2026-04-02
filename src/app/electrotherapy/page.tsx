@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadata({
   ...defaultSEO,
-  title: "Electrotherapy Services | Midland Wellness Centre - Scarborough",
-  description: "Advanced electrotherapy treatments in Scarborough. Professional electrical stimulation for pain management, muscle recovery, and rehabilitation. Book your electrotherapy session today.",
+  title: "Electrotherapy in Scarborough | Pain Relief & Rehab Care",
+  description: "Get expert electrotherapy in Scarborough for pain relief, muscle recovery & rehab. Book advanced treatment today.",
   keywords: "electrotherapy scarborough, electrical stimulation, pain management, muscle stimulation, TENS therapy, rehabilitation equipment",
   openGraph: {
-    title: "Professional Electrotherapy Treatments | Midland Wellness Centre",
-    description: "Advanced electrical stimulation therapy for pain relief and rehabilitation in Scarborough.",
+    title: "Electrotherapy in Scarborough | Pain Relief & Rehab Care",
+    description: "Get expert electrotherapy in Scarborough for pain relief, muscle recovery & rehab. Book advanced treatment today.",
   },
   canonical: "/electrotherapy"
 });
@@ -114,31 +114,179 @@ export default function ElectrotherapyPage() {
                             </div>
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
-                                    <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/electrotherapy1.webp" alt="Image" width={856} height={525} priority style={{
-                                            borderRadius: '15px',
-                                            objectFit: 'cover'
-                                        }} /></figure>
-                                        <div className="text-box">
-                                            <h2>Electrotherapy</h2>
-                                            <p>Electrotherapy is a therapeutic modality that uses electrical energy to treat various medical conditions and promote healing. Through controlled electrical stimulation, electrotherapy can reduce pain, improve muscle function, enhance circulation, and accelerate tissue repair. This non-invasive treatment modality is widely used in physiotherapy and rehabilitation settings to complement manual therapies and exercise programs.<br />At Midland Wellness Centre, we utilize advanced electrotherapy equipment including TENS (Transcutaneous Electrical Nerve Stimulation), electrical muscle stimulation, ultrasound therapy, and laser therapy. These modalities are applied by trained therapists who customize treatment parameters based on each patient&apos;s specific condition and response to therapy.<br />Electrotherapy effectively treats numerous conditions including acute and chronic pain, muscle weakness, inflammation, edema, nerve injuries, and post-surgical rehabilitation. It&apos;s particularly beneficial for sports injuries, arthritis, back pain, and neurological conditions affecting muscle function.<br />The electrical currents used in therapy are carefully controlled and adjusted to ensure patient comfort while maximizing therapeutic benefits. Treatment sessions are typically painless and can be combined with other therapeutic approaches for enhanced outcomes.</p>
-                                            <p>Electrotherapy also plays a crucial role in pain management by blocking pain signals and promoting the release of endorphins, the body&apos;s natural pain-relieving chemicals. This makes it an effective alternative or complement to pain medications.</p>
-                                            <p>In summary, electrotherapy at Midland Wellness Centre offers safe, effective, and evidence-based electrical stimulation treatments to support healing, reduce pain, and improve function. Our advanced equipment and skilled therapists ensure optimal therapeutic outcomes through personalized treatment protocols.</p>
+                                    <div className="inner-box">
+                                        <div className="sec-title mb_30">
+                                            <h2>Electrotherapy in Scarborough – Advanced Pain Relief & Muscle Recovery</h2>
                                         </div>
-                                    </div>
-                                    <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/electrotherapy2.webp" alt="Image" width={856} height={525} priority style={{
-                                            borderRadius: '15px',
-                                            objectFit: 'cover'
-                                        }} /></figure>
-                                        <p>Our electrotherapy treatments are administered by trained healthcare professionals who understand the principles of electrical stimulation and tissue response. They conduct thorough assessments to determine the most appropriate electrotherapy modalities and parameters for each patient&apos;s condition. Common applications include pain management, muscle re-education, wound healing, and inflammation reduction.</p>
-                                        <ul className="list-style-one clearfix">
-                                            <li>Multiple electrotherapy modalities including TENS and ultrasound</li>
-                                            <li>Pain-free and non-invasive treatment sessions</li>
-                                            <li>Customized treatment parameters for individual needs</li>
-                                            <li>Integration with manual therapy and exercise programs</li>
-                                            <li>Evidence-based applications for various conditions</li>
-                                        </ul>
+                                        <div className="text mb_30">
+                                            <p>If you are looking for effective electrotherapy in Scarborough, Midland Wellness Centre provides advanced treatments designed to reduce pain, improve circulation, and accelerate healing. Electrotherapy is a modern physiotherapy technique that uses controlled electrical stimulation to target muscles and nerves. It is widely used for pain management, injury recovery, and improving muscle function.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>At our clinic, electrotherapy in Scarborough is integrated into personalised rehabilitation programs to deliver optimal results. Whether you are dealing with chronic pain, muscle injuries, or post-surgical recovery, our expert therapists ensure safe and effective treatment tailored to your condition. Patients trust us for advanced care that supports long-term healing.</p>
+                                        </div>
+                                        <div className="image-box mb_40">
+                                            <figure className="image">
+                                                <Image 
+                                                    src="/assets/images/resource/electrotherapy1.webp" 
+                                                    alt="Professional electrotherapy treatment at Midland Wellness Centre" 
+                                                    width={770} 
+                                                    height={450} 
+                                                    priority 
+                                                    style={{
+                                                        borderRadius: '15px',
+                                                        objectFit: 'cover'
+                                                    }}
+                                                />
+                                            </figure>
+                                        </div>
+                                        <h1>What is Electrotherapy & How Does It Work?</h1>
+                                        <div className="text mb_30">
+                                            <p>Electrotherapy is a therapeutic treatment that uses electrical currents to stimulate muscles, nerves, and tissues. It helps reduce pain signals, improve blood flow, and promote faster healing. This non-invasive method is commonly used in physiotherapy for both acute and chronic conditions.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>Choosing professional electrotherapy in Scarborough ensures proper application and maximum effectiveness. Whether you need electrotherapy treatment Scarborough, muscle stimulation therapy Toronto, or pain relief electrotherapy near me, this technique provides a safe and efficient solution for recovery.</p>
+                                        </div>
+                                        <h1>Conditions Treated with Electrotherapy</h1>
+                                        <div className="text mb_30">
+                                            <p>Electrotherapy is highly effective in treating various conditions related to pain, injury, and muscle dysfunction. Our clinic focuses on both immediate relief and long-term recovery.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Chronic Pain Management</h4>
+                                                    <p>Electrotherapy reduces pain signals and relaxes muscles. It is ideal for conditions like back pain, neck pain, and arthritis.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Muscle Weakness and Injury Recovery</h4>
+                                                    <p>Electrical stimulation improves muscle activation and strength. This helps patients recover faster after injuries or surgery.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Sports Injuries and Rehabilitation</h4>
+                                                    <p>Athletes benefit from faster healing and reduced inflammation. Electrotherapy supports recovery and enhances performance.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Post-Surgical Rehabilitation</h4>
+                                                    <p>This therapy improves circulation and reduces swelling. It accelerates healing and restores function after surgery.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Types of Electrotherapy Treatments We Offer</h1>
+                                        <div className="text mb_30">
+                                            <p>At Midland Wellness Centre, we provide a range of advanced electrotherapy techniques tailored to your needs. Each treatment is designed to deliver maximum therapeutic benefits.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>TENS (Transcutaneous Electrical Nerve Stimulation)</h4>
+                                                    <p>TENS therapy blocks pain signals and provides immediate relief. It is commonly used for chronic pain and muscle discomfort.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>EMS (Electrical Muscle Stimulation)</h4>
+                                                    <p>EMS stimulates muscles to improve strength and function. It is ideal for rehabilitation and muscle recovery.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Ultrasound Therapy</h4>
+                                                    <p>This treatment uses sound waves to promote deep tissue healing. It improves circulation and reduces inflammation.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Interferential Therapy (IFT)</h4>
+                                                    <p>IFT uses electrical currents to relieve pain and improve blood flow. It is highly effective for musculoskeletal conditions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Why Choose Our Electrotherapy Clinic in Scarborough?</h1>
+                                        <div className="text mb_30">
+                                            <p>Choosing the right clinic ensures better outcomes and faster recovery. Our team is dedicated to providing high-quality care using advanced techniques.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Experienced and Certified Therapists</h4>
+                                                    <p>Our professionals are trained in modern electrotherapy methods. They ensure safe and effective treatment for every patient.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Personalised Treatment Plans</h4>
+                                                    <p>Each patient receives a customized plan based on their condition. This improves results and enhances recovery speed.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Advanced Technology and Equipment</h4>
+                                                    <p>We use the latest electrotherapy devices for precise and effective treatment. This ensures better pain relief and healing outcomes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Benefits of Electrotherapy for Recovery</h1>
+                                        <div className="text mb_30">
+                                            <p>Electrotherapy offers numerous benefits that make it a valuable part of modern rehabilitation. It is widely used for both pain relief and performance improvement.</p>
+                                        </div>
+                                        <div className="row clearfix mb_50">
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Effective Pain Relief Without Medication</h4>
+                                                    <p>Electrotherapy reduces pain naturally by blocking nerve signals. This makes it a safe alternative to medication.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Improved Blood Circulation and Healing</h4>
+                                                    <p>Electrical stimulation enhances blood flow and oxygen supply. This speeds up tissue repair and recovery.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Enhanced Muscle Strength and Function</h4>
+                                                    <p>Electrotherapy activates muscles and improves coordination. This is especially beneficial for rehabilitation.</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-12 single-column">
+                                                <div className="service-list">
+                                                    <h4>Reduced Inflammation and Swelling</h4>
+                                                    <p>The therapy helps decrease swelling and promotes faster healing. This improves overall recovery outcomes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Frequently Asked Questions</h1>
+                                        <div className="text mb_30">
+                                            <p><strong>What is electrotherapy used for?</strong><br />
+                                            Electrotherapy is used to relieve pain, improve muscle function, and promote healing. It is commonly used in physiotherapy and rehabilitation.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p><strong>Is electrotherapy safe?</strong><br />
+                                            Yes, electrotherapy is a safe and non-invasive treatment when performed by trained professionals.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p><strong>How many electrotherapy sessions are needed?</strong><br />
+                                            The number of sessions depends on your condition and recovery goals. Many patients experience improvement within a few sessions.</p>
+                                        </div>
+                                        <h1>Electrotherapy Near You in Scarborough</h1>
+                                        <div className="text mb_30">
+                                            <p>If you are searching for electrotherapy near me, pain relief therapy Scarborough, or rehabilitation clinic Toronto, Midland Wellness Centre is your trusted destination. We provide expert care using advanced techniques to ensure fast and effective recovery.</p>
+                                        </div>
+                                        <div className="text mb_30">
+                                            <p>Our clinic specialises in electrotherapy in Scarborough designed to reduce pain, improve mobility, and enhance overall function. Whether you need treatment for injuries or chronic conditions, we offer the right solution for your needs.</p>
+                                        </div>
+                                        <h1>Book Your Electrotherapy Session Today</h1>
+                                        <div className="text mb_30">
+                                            <p>Take the first step toward pain relief and recovery with expert electrotherapy in Scarborough. Our team is committed to providing personalised care and advanced treatment solutions for optimal results.</p>
+                                        </div>
+                                        <div className="text">
+                                            <p>Contact Midland Wellness Centre today and experience the benefits of professional electrotherapy treatment.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

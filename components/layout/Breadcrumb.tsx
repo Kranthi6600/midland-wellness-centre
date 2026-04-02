@@ -8,7 +8,7 @@ interface BreadcrumbProps {
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle }) => {
   // Define different background images for different routes
   const getBackgroundImage = (title: string) => {
-    switch(title) {
+    switch (title) {
       case 'Blog':
         return 'url(/assets/images/banner/breadcrumb10.png)';
       case 'Blog Details':
@@ -40,17 +40,20 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle }) => {
 
   return (
     <section className="page-title p_relative centred">
-            <div className="bg-layer" style={{ backgroundImage: getBackgroundImage(breadcrumbTitle) }}
+      <div className="bg-layer" style={{ backgroundImage: getBackgroundImage(breadcrumbTitle) }}
       ></div>
-            <div className="auto-container">
-                <div className="content-box" style={{padding: '20px', borderRadius: '10px', maxWidth: '600px', margin: '0 auto', position: 'absolute', top: '20px', left: '50%', transform: 'translateX(-50%)' }}>
-                    <h1 style={{ fontSize: 'clamp(24px, 5vw, 48px)', marginBottom: 'clamp(8px, 2vw, 15px)' }}>{breadcrumbTitle}</h1>
-                    <ul className="bread-crumb clearfix" style={{ fontSize: 'clamp(12px, 3vw, 16px)' }}>
-                        <li><Link href="/">Home</Link></li>
-                        <li>{breadcrumbTitle}</li>
-                    </ul>
-                </div>
-            </div>
+      <div className="auto-container">
+        <div className="content-box" style={{ padding: '20px', borderRadius: '10px', maxWidth: '600px', margin: '0 auto', position: 'absolute', top: '20px', left: '50%', transform: 'translateX(-50%)' }}>
+          <h2 style={{ fontSize: 'clamp(24px, 5vw, 48px)', marginBottom: 'clamp(8px, 2vw, 15px)' }}>{breadcrumbTitle}</h2>
+          <ul className="bread-crumb clearfix" style={{ fontSize: 'clamp(12px, 3vw, 16px)' }}>
+            <li><Link href="/">Home</Link></li>
+            <li className="current-page" style={{ 
+              color: 'white !important',
+              fontWeight: 'bold'
+            }}>{breadcrumbTitle}</li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
