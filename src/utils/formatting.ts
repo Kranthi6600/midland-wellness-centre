@@ -31,10 +31,52 @@ export const formatBusinessHours = (hours: Record<string, string>): string => {
   const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
   const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   
-  return days.map((day, index) => {
-    const hoursText = hours[day as keyof typeof hours];
-    return `${dayNames[index]}: ${hoursText}`;
-  }).join(' | ');
+  // Group days by their hours first
+  const hoursGroups: Record<string, string[]> = {};
+  
+  days.forEach((day, index) => {
+    const dayHours = hours[day as keyof typeof hours] || 'Closed';
+    if (!hoursGroups[dayHours]) {
+      hoursGroups[dayHours] = [];
+    }
+    hoursGroups[dayHours].push(dayNames[index]);
+  });
+  
+  // Format each group into ranges
+  const formattedGroups: string[] = [];
+  
+  Object.entries(hoursGroups).forEach(([dayHours, dayList]) => {
+    const ranges: string[] = [];
+    let start = dayList[0];
+    let end = start;
+    
+    for (let i = 1; i < dayList.length; i++) {
+      const currentDay = dayList[i];
+      const prevDay = dayList[i - 1];
+      
+      // Check if days are consecutive (Mon->Tue, Tue->Wed, etc.)
+      const prevIndex = dayNames.indexOf(prevDay);
+      const currentIndex = dayNames.indexOf(currentDay);
+      
+      if (currentIndex === prevIndex + 1) {
+        // Consecutive day, extend the range
+        end = currentDay;
+      } else {
+        // Non-consecutive, close current range and start new one
+        ranges.push(start === end ? start : `${start}-${end}`);
+        start = currentDay;
+        end = currentDay;
+      }
+    }
+    
+    // Add the last range
+    ranges.push(start === end ? start : `${start}-${end}`);
+    
+    // Format the final string for this hours group
+    formattedGroups.push(`${ranges.join(', ')}: ${dayHours}`);
+  });
+  
+  return formattedGroups.join(' | ');
 };
 
 export const slugify = (text: string): string => {

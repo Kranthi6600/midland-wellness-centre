@@ -10,12 +10,12 @@ export const SITE_CONFIG = {
 } as const;
 
 export const BUSINESS_HOURS = {
-  monday: '10:00 AM - 6:00 PM',
-  tuesday: '10:00 AM - 6:00 PM',
-  wednesday: '10:00 AM - 7:00 PM',
-  thursday: '10:00 AM - 6:00 PM',
-  friday: '10:00 AM - 6:00 PM',
-  saturday: '12:00 PM - 3:00 PM',
+  monday: '9AM-5PM',
+  tuesday: '9AM-5PM',
+  wednesday: '9AM-5PM',
+  thursday: '9AM-5PM',
+  friday: '9AM-5PM',
+  saturday: '10AM-2PM',
   sunday: 'Closed',
 } as const;
 
