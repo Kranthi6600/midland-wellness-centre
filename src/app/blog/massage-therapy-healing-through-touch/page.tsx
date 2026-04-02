@@ -124,7 +124,7 @@ export default function MassageTherapyBlogPost() {
                                                 <div className="call-to-action mt_50">
                                                     <h4>Ready to Experience Healing Touch?</h4>
                                                     <p>Transform your physical and mental well-being through the power of therapeutic massage. Our expert therapists are ready to help you achieve optimal health and relaxation.</p>
-                                                    <Link href="/contact" className="theme-btn btn-two">
+                                                    <Link href="/contact-us" className="theme-btn btn-two">
                                                         <span>Book Session</span>
                                                     </Link>
                                                 </div>
@@ -290,7 +290,7 @@ export default function MassageTherapyBlogPost() {
                                         <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>
                                         <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
-                                        <Link href="/contact" className="theme-btn btn-two"><span>get a quote</span></Link>
+                                        <Link href="/contact-us" className="theme-btn btn-two"><span>get a quote</span></Link>
                                     </div>
                                 </div>
                             </div>

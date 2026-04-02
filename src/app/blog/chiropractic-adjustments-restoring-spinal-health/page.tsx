@@ -102,7 +102,7 @@ export default function ChiropracticAdjustmentsBlogPost() {
                                                 <div className="call-to-action mt_50">
                                                     <h4>Ready for Pain-Free Living?</h4>
                                                     <p>Don't let spinal misalignments affect your quality of life. Our expert chiropractors are ready to help you achieve optimal health through natural, effective treatments.</p>
-                                                    <Link href="/contact" className="theme-btn btn-two">
+                                                    <Link href="/contact-us" className="theme-btn btn-two">
                                                         <span>Book Appointment</span>
                                                     </Link>
                                                 </div>
@@ -268,7 +268,7 @@ export default function ChiropracticAdjustmentsBlogPost() {
                                         <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>
                                         <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
-                                        <Link href="/contact" className="theme-btn btn-two"><span>get a quote</span></Link>
+                                        <Link href="/contact-us" className="theme-btn btn-two"><span>get a quote</span></Link>
                                     </div>
                                 </div>
                             </div>

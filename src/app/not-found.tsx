@@ -24,7 +24,7 @@ export default function NotFound() {
               <Link href="/" className="theme-btn btn-one">
                 <span>Back to Homepage</span>
               </Link>
-              <Link href="/contact" className="theme-btn btn-two">
+              <Link href="/contact-us" className="theme-btn btn-two">
                 <span>Contact Us</span>
               </Link>
             </div>

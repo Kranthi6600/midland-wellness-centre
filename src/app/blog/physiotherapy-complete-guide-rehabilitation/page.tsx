@@ -124,7 +124,7 @@ export default function PhysiotherapyBlogPost() {
                                                 <div className="call-to-action mt_50">
                                                     <h4>Ready to Start Your Recovery Journey?</h4>
                                                     <p>Our expert physiotherapists are ready to help you achieve optimal physical function through evidence-based treatment and personalized care. Take the first step toward recovery today.</p>
-                                                    <Link href="/contact" className="theme-btn btn-two">
+                                                    <Link href="/contact-us" className="theme-btn btn-two">
                                                         <span>Book Consultation</span>
                                                     </Link>
                                                 </div>
@@ -290,7 +290,7 @@ export default function PhysiotherapyBlogPost() {
                                         <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>
                                         <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
-                                        <Link href="/contact" className="theme-btn btn-two"><span>get a quote</span></Link>
+                                        <Link href="/contact-us" className="theme-btn btn-two"><span>get a quote</span></Link>
                                     </div>
                                 </div>
                             </div>

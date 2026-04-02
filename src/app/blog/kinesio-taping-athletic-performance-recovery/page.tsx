@@ -80,7 +80,7 @@ export default function KinesioTapingBlogPost() {
                                                 <div className="call-to-action mt_50">
                                                     <h4>Ready to Experience the Benefits?</h4>
                                                     <p>Whether you're an athlete looking to enhance performance or recovering from an injury, our kinesio taping services can help. Contact us today to schedule a consultation with our certified therapists.</p>
-                                                    <Link href="/contact" className="theme-btn btn-two">
+                                                    <Link href="/contact-us" className="theme-btn btn-two">
                                                         <span>Schedule Consultation</span>
                                                     </Link>
                                                 </div>
@@ -246,7 +246,7 @@ export default function KinesioTapingBlogPost() {
                                         <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>
                                         <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
-                                        <Link href="/contact" className="theme-btn btn-two"><span>get a quote</span></Link>
+                                        <Link href="/contact-us" className="theme-btn btn-two"><span>get a quote</span></Link>
                                     </div>
                                 </div>
                             </div>

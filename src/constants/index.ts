@@ -122,7 +122,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
       href: service.link,
     }))
   },
-  { name: 'Contact Us', href: '/contact' },
+  { name: 'Contact Us', href: '/contact-us' },
   { name: 'Blog', href: '/blog' },
 ] as const;
 

@@ -13,7 +13,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "typeRoots": ["./node_modules/@types", "./node_modules"],
+    "typeRoots": ["./node_modules/@types"],
     "plugins": [
       {
         "name": "next"
@@ -23,8 +23,8 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/types/**/*.d.ts", "src/utils/**/*.ts"],
-  "exclude": ["node_modules", "dist", "build"],
+  "include": ["next-env.d.ts", "src/app/**/*.ts", "src/app/**/*.tsx", "src/components/**/*.ts", "src/components/**/*.tsx", "src/constants/**/*.ts", "src/data/**/*.ts", "src/hooks/**/*.ts", "src/middleware/**/*.ts", "src/services/**/*.ts", "src/types/**/*.ts", "src/utils/**/*.ts", ".next/types/**/*.ts", "src/types/emnapi.d.ts"],
+  "exclude": ["node_modules", "dist", "build", "src/tests/**/*.ts"],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"

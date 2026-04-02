@@ -18,7 +18,7 @@ export async function GET() {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/contact-us`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,

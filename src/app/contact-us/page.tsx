@@ -15,7 +15,7 @@ export const metadata: Metadata = generateMetadata({
         title: "Contact Midland Wellness Centre | Book Your Appointment Today",
         description: "Get in touch with our expert team for comprehensive wellness care in Scarborough. Call or visit us today.",
     },
-    canonical: "/contact"
+    canonical: "/contact-us"
 });
 export default function ContactPage() {
 
