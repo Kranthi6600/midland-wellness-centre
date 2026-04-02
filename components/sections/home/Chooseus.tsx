@@ -2,7 +2,9 @@ import Image from "next/image";
 export default function Chooseus() {
     return (
         <section className="chooseus-style-two p_relative pt_100 pb_110">
-            <figure className="image-layer">
+            <figure className="image-layer" style={{
+                        marginTop: '60px'
+                    }}>
                 <Image 
                     src="/assets/images/resource/hospital2.png" 
                     alt="Image" 
@@ -11,7 +13,8 @@ export default function Chooseus() {
                     priority 
                     style={{
                         borderRadius: '15px',
-                        objectFit: 'cover'
+                        objectFit: 'cover',
+                        marginTop: '60px'
                     }}
                 />
             </figure>
@@ -23,9 +26,9 @@ export default function Chooseus() {
                 <div className="row clearfix">
                     <div className="col-lg-4 col-md-12 col-sm-12 title-column">
                         <div className="sec-title mt_190">
-                            <span className="sub-title mb_5">Why Choose Us</span>
-                            <h2>What&apos;s Our Speciality</h2>
-                            <p>We pride ourselves on finding creative solutions to meet challenges we encounter. We are open to change and handle pressure with poise. We are flexible, adaptable and able to learn from our experiences.</p>
+                            <span className="sub-title mb_5">Why Choose Midland Wellness Centre</span>
+                            <h2>Your Trusted Physiotherapy & Pain Relief Specialists</h2>
+                            <p>As Scarborough's leading multidisciplinary wellness centre, we combine advanced physiotherapy techniques, chiropractic care, massage therapy, and cutting-edge rehabilitation technology to provide comprehensive pain management and injury recovery for Toronto residents.</p>
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-sm-12 content-column">
@@ -37,8 +40,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-28"></i></div>
                                             <span className="count-text">01</span>
                                         </div>
-                                        <h3>Modern Technology</h3>
-                                        <p style={{ flex: 1 }}>We utilize state-of-the-art medical equipment and cutting-edge technology to ensure accurate diagnoses and provide effective treatments for our patients.</p>
+                                        <h3>Advanced Rehabilitation Technology</h3>
+                                        <p style={{ flex: 1 }}>We utilize state-of-the-art electrotherapy, shockwave therapy, laser therapy, and ultrasound therapy equipment for advanced pain relief and accelerated injury recovery in Scarborough.</p>
                                     </div>
                                 </div>
                             </div>
@@ -49,8 +52,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-29"></i></div>
                                             <span className="count-text">02</span>
                                         </div>
-                                        <h3>Proven Success</h3>
-                                        <p style={{ flex: 1 }}>Our proven track record of successful treatments and positive patient outcomes demonstrates our commitment to delivering exceptional healthcare results.</p>
+                                        <h3>Proven Pain Relief Results</h3>
+                                        <p style={{ flex: 1 }}>Our proven track record in treating back pain, neck pain, sports injuries, and chronic pain conditions demonstrates our expertise as the best physiotherapy clinic in Scarborough.</p>
                                     </div>
                                 </div>
                             </div>
@@ -61,8 +64,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-15"></i></div>
                                             <span className="count-text">03</span>
                                         </div>
-                                        <h3>Certified Doctors</h3>
-                                        <p style={{ flex: 1 }}>All our medical professionals are board-certified and highly qualified, bringing extensive expertise and years of hands-on experience to provide exceptional care.</p>
+                                        <h3>Expert Physiotherapists & Therapists</h3>
+                                        <p style={{ flex: 1 }}>All our physiotherapists, chiropractors, and massage therapists are certified specialists with extensive experience in sports injury rehabilitation, post-surgery recovery, and musculoskeletal treatment.</p>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +76,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-30"></i></div>
                                             <span className="count-text">04</span>
                                         </div>
-                                        <h3>World Class Doctors</h3>
-                                        <p style={{ flex: 1 }}>Our world-class doctors are internationally recognized leaders in their fields, offering advanced medical expertise and innovative treatment approaches for patients.</p>
+                                        <h3>Holistic Wellness Approach</h3>
+                                        <p style={{ flex: 1 }}>Our comprehensive approach combines manual therapy, kinesio taping, custom orthotics, and personalized exercise programs for complete injury rehabilitation and mobility improvement.</p>
                                     </div>
                                 </div>
                             </div>

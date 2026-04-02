@@ -12,9 +12,9 @@ export default function Banner() {
             </div>
             <div className="auto-container">
                 <div className="content-box">
-                    <span className="sub-title">Your Health is our Priority</span>
-                    <h2>Stay Healthy, <span>Stay Happy</span></h2>
-                    <p>In addition to treating illnesses and injuries, medical care also emphasizes the importance of preventive care, such as regular check-ups, vaccinations, and lifestyle modifications.</p>
+                    <span className="sub-title">Best Physiotherapy Clinic in Scarborough & Toronto</span>
+                    <h2>Expert <span>Pain Relief & Rehabilitation</span></h2>
+                    <p>Leading multidisciplinary wellness centre in Scarborough offering expert physiotherapy, chiropractic care, massage therapy, orthotics, and sports injury treatment. 30+ years providing trusted pain management, injury rehabilitation, and posture correction near Midland Ave and Eglinton Ave.</p>
                     <div className="lower-box">
                         <div className="btn-box"><Link href="/index-2" style={{
     fontSize: 'clamp(12px, 2.5vw, 14px)',
@@ -122,8 +122,8 @@ export default function Banner() {
                                     />
                                 </li>
                             </ul>
-                            <h3>100K</h3>
-                            <span>Professional Doctors</span>
+                            <h3>30+</h3>
+                            <span>Years of Expert Care</span>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,21 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
 export default function Cta() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
         <section className="cta-section" style={{ marginBottom: '30px' }}>
             <div className="auto-container">
                 <div className="inner-container">
                     <div className="content-box">
-                        <h2>Need a Doctor for Check-up? Call for an Emergency Service!</h2>
+                        <h2>Need Expert Physiotherapy & Pain Relief in Scarborough? Book Your Appointment Today!</h2>
                         <div className="support-box">
                             <div className="icon-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <Image 
@@ -21,9 +30,12 @@ export default function Cta() {
                                     }}
                                 />
                             </div>
-                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px', fontWeight: '600', color: '#ffffff' }}>Call: <Link href="tel:+41 416-261-7246" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-7246</Link>
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px', fontWeight: '600', color: '#ffffff' }}>Book Your Physiotherapy Appointment:<br />
+                            <Link href="tel:+41 416-261-7246" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-7246</Link>
                             <br />
-                            Call: <Link href="tel:+41 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-9813</Link>
+                            <Link href="tel:+41 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-9813</Link>
+                            <br />
+                            <small style={{ fontSize: '14px', fontWeight: '400' }}>Walk-ins welcome for sports injuries & pain management</small>
                             </span>
                         </div>
                     </div>

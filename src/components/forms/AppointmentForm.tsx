@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useAppointmentForm } from "@/hooks/useFormValidation";
 import { SERVICES } from "@/constants";
 import Button from "../elements/Button";
 import ErrorMessage from "../elements/ErrorMessage";
 import LoadingSpinner from "../elements/LoadingSpinner";
+
+interface TimeSlot {
+  time: string;
+  label: string;
+  available: boolean;
+}
+
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  service: string;
+  preferredDate: string;
+  preferredTime: string;
+  message: string;
+}
 
 interface AppointmentFormProps {
   onSubmit: (data: any) => void | Promise<void>;
@@ -22,8 +39,55 @@ export default function AppointmentForm({ onSubmit, className = "" }: Appointmen
     hasError,
   } = useAppointmentForm(onSubmit);
 
+  const [availableTimeSlots, setAvailableTimeSlots] = useState<TimeSlot[]>([]);
+  const [isLoadingSlots, setIsLoadingSlots] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  // Generate time slots with mock availability
+  const generateTimeSlots = (date: string): TimeSlot[] => {
+    const slots: TimeSlot[] = [
+      { time: "09:00", label: "9:00 AM", available: Math.random() > 0.3 },
+      { time: "10:00", label: "10:00 AM", available: Math.random() > 0.2 },
+      { time: "11:00", label: "11:00 AM", available: Math.random() > 0.4 },
+      { time: "14:00", label: "2:00 PM", available: Math.random() > 0.3 },
+      { time: "15:00", label: "3:00 PM", available: Math.random() > 0.2 },
+      { time: "16:00", label: "4:00 PM", available: Math.random() > 0.3 },
+      { time: "17:00", label: "5:00 PM", available: Math.random() > 0.5 },
+    ];
+    return slots;
+  };
+
+  // Load available time slots when date changes
+  useEffect(() => {
+    if (values.preferredDate) {
+      setIsLoadingSlots(true);
+      // Simulate API call
+      setTimeout(() => {
+        const slots = generateTimeSlots(values.preferredDate);
+        setAvailableTimeSlots(slots);
+        setIsLoadingSlots(false);
+      }, 500);
+    }
+  }, [values.preferredDate]);
+
+  // Show success message only if form is submitted successfully without errors
+  useEffect(() => {
+    if (isSubmitted && !isSubmitting && Object.keys(errors).length === 0) {
+      setShowSuccessMessage(true);
+      setTimeout(() => setShowSuccessMessage(false), 5000);
+    }
+  }, [isSubmitted, isSubmitting, errors]);
+
   return (
-    <form onSubmit={handleSubmit} className={`appointment-form ${className}`} noValidate>
+    <div className="appointment-form-wrapper">
+      {showSuccessMessage && (
+        <div className="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Success!</strong> Your appointment request has been submitted successfully.
+          <button type="button" className="btn-close" onClick={() => setShowSuccessMessage(false)}></button>
+        </div>
+      )}
+      
+      <form onSubmit={handleSubmit} className={`appointment-form ${className}`} noValidate>
       <div className="row">
         <div className="col-md-6">
           <div className="form-group">
@@ -182,17 +246,22 @@ export default function AppointmentForm({ onSubmit, className = "" }: Appointmen
               onChange={handleChange}
               className={`form-control ${hasError('preferredTime') ? 'is-invalid' : ''}`}
               required
+              disabled={isLoadingSlots || !values.preferredDate}
               aria-invalid={hasError('preferredTime')}
               aria-describedby={hasError('preferredTime') ? 'preferredTime-error' : undefined}
             >
-              <option value="">Select a time</option>
-              <option value="09:00">9:00 AM</option>
-              <option value="10:00">10:00 AM</option>
-              <option value="11:00">11:00 AM</option>
-              <option value="14:00">2:00 PM</option>
-              <option value="15:00">3:00 PM</option>
-              <option value="16:00">4:00 PM</option>
-              <option value="17:00">5:00 PM</option>
+              <option value="">
+                {isLoadingSlots ? 'Loading available times...' : 'Select a time'}
+              </option>
+              {availableTimeSlots.map((slot) => (
+                <option 
+                  key={slot.time} 
+                  value={slot.time}
+                  disabled={!slot.available}
+                >
+                  {slot.label} {!slot.available && '(Unavailable)'}
+                </option>
+              ))}
             </select>
             {hasError('preferredTime') && (
               <ErrorMessage message={getFieldError('preferredTime')} id="preferredTime-error" />
@@ -217,6 +286,21 @@ export default function AppointmentForm({ onSubmit, className = "" }: Appointmen
       </div>
 
       <div className="form-group">
+        <div className="appointment-summary">
+          <h6>Appointment Summary</h6>
+          {values.service && (
+            <p><strong>Service:</strong> {SERVICES.find(s => s.id === values.service)?.title || 'Not selected'}</p>
+          )}
+          {values.preferredDate && (
+            <p><strong>Date:</strong> {new Date(values.preferredDate).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          )}
+          {values.preferredTime && (
+            <p><strong>Time:</strong> {availableTimeSlots.find(s => s.time === values.preferredTime)?.label || values.preferredTime}</p>
+          )}
+        </div>
+      </div>
+
+      <div className="form-group">
         <Button 
           type="submit" 
           disabled={isSubmitting}
@@ -232,6 +316,7 @@ export default function AppointmentForm({ onSubmit, className = "" }: Appointmen
           )}
         </Button>
       </div>
-    </form>
+      </form>
+    </div>
   );
 }

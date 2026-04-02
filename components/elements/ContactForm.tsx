@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { createEmailService } from "@/services/emailService";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -64,19 +65,12 @@ export default function ContactForm() {
     setStatus("loading");
 
     try {
-      const res = await fetch("https://formspree.io/f/mwvwqdka", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (res.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-        setErrors({});
-      } else {
-        setStatus("error");
-      }
+      const emailService = createEmailService();
+      await emailService.sendContactEmail(formData);
+      
+      setStatus("success");
+      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      setErrors({});
     } catch (err) {
       console.error(err);
       setStatus("error");

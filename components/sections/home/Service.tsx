@@ -7,8 +7,8 @@ export default function Service() {
             <div className="pattern-layer" style={{ backgroundImage: "url(assets/images/shape/shape-13.png)" }}></div>
             <div className="auto-container">
                 <div className="sec-title mb_60 centred">
-                    <h2>Our Medical Services</h2>
-                    <p>Expert care for your health and wellness.</p>
+                    <h2>Expert Physiotherapy & Wellness Services in Scarborough</h2>
+                    <p>Comprehensive pain management, injury rehabilitation, and holistic wellness therapies for Toronto residents.</p>
                 </div>
                 <div className="row clearfix">
                     <div className="col-lg-4 col-md-6 col-sm-12 service-block">
@@ -19,7 +19,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.5)' }}><i className="icon-18"></i></div>
                                         <h3><Link href="/physiotherapy">Physiotherapy</Link></h3>
-                                        <p>Restoring movement and function.</p>
+                                        <p>Expert physiotherapy for back pain, sports injuries, post-surgery rehabilitation, and mobility improvement in Scarborough.</p>
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-19"></i></div>
                                         <h3><Link href="/massage-therapy">Massage Therapy</Link></h3>
-                                        <p>Healing through therapeutic touch.</p>
+                                        <p>Deep tissue massage, sports massage, prenatal massage, and lymphatic drainage for chronic pain relief in Toronto.</p>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
                                         <h3><Link href="/electrotherapy">Electrotherapy</Link></h3>
-                                        <p>Advanced electrical stimulation for healing.</p>
+                                        <p>Advanced electrotherapy and shockwave therapy for pain relief, injury recovery, and muscle rehabilitation.</p>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
                                         <h3><Link href="/kinesio-taping">Kinesio Taping</Link></h3>
-                                        <p>Therapeutic taping for support.</p>
+                                        <p>Therapeutic kinesio taping for joint support, injury prevention, and enhanced athletic performance.</p>
                                     </div>
                                 </div>
                             </div>
@@ -74,8 +74,8 @@ export default function Service() {
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
-                                        <h3><Link href="/orthotics">Orthotics</Link></h3>
-                                        <p>Custom orthopedic solutions for foot and body alignment.</p>
+                                        <h3><Link href="/orthotics">Custom Orthotics</Link></h3>
+                                        <p>Custom orthotics and foot orthotics for posture correction, back pain relief, and musculoskeletal alignment.</p>
                                     </div>
                                 </div>
                             </div>
@@ -88,8 +88,8 @@ export default function Service() {
                                 <div className="lower-content">
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-19"></i></div>
-                                        <h3><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></h3>
-                                        <p>Spinal health and alignment for optimal wellness.</p>
+                                        <h3><Link href="/chiropractic-adjustments">Chiropractic Care</Link></h3>
+                                        <p>Expert chiropractic adjustments, spine alignment therapy, and neck pain treatment for optimal wellness.</p>
                                     </div>
                                 </div>
                             </div>

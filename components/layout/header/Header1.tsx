@@ -35,18 +35,6 @@ export default function Header1({
                   Open Hours: <span>{formatBusinessHours(BUSINESS_HOURS)}</span>
                 </li>
               </ul>
-              <ul className="social-links clearfix">
-                <li>
-                  <h6>Follow Us</h6>
-                </li>
-                {SOCIAL_LINKS.map((social, index) => (
-                  <li key={index}>
-                    <Link href={social.href} aria-label={social.name}>
-                      <i className={social.icon}></i>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

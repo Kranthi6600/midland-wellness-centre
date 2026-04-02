@@ -1,5 +1,5 @@
 # Dependencies
-node_modules
+# node_modules
 
 # Next.js
 .next/
@@ -16,8 +16,8 @@ dist/
 .env.production.local
 
 # IDE
-.vscode/
 .idea/
+!.vscode/settings.json
 
 # OS
 .DS_Store
@@ -41,3 +41,4 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+node_modules

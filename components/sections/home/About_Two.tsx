@@ -11,10 +11,10 @@ export default function Service() {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    
+
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
   return (
@@ -26,13 +26,12 @@ export default function Service() {
             <div className="content_block_four">
               <div className="content-box">
                 <div className="sec-title mb_15">
-                  <span className="sub-title mb_5">About Midland Wellness Centre</span>
-                  <h2>Expertise and compassion saved my life</h2>
+                  <span className="sub-title mb_5">About Midland Wellness Centre - Scarborough's Trusted Physiotherapy Clinic</span>
+                  <h2>Leading Pain Relief & Rehabilitation Clinic in Toronto</h2>
                 </div>
                 <div className="text-box mb_30">
                   <p>
-
-                    Midland Wellness Centre is a multi-disciplinary health clinic located in the heart of Scarborough Our main goal is to help you restore your health and maximize your function. Combining evidence-based chiropractic care with specialized techniques such as Kinesio Taping, acupuncture, laser and massage therapy, we can provide you with customized care to suit your needs.
+                    Midland Wellness Centre is the premier multidisciplinary physiotherapy clinic in Scarborough, conveniently located near Midland Ave and Eglinton Ave. As your trusted wellness centre in Toronto, we specialize in comprehensive pain management, injury rehabilitation, and musculoskeletal treatment. Our expert physiotherapists, chiropractors, and massage therapists provide evidence-based care including sports injury treatment, post-surgery rehabilitation, chronic pain management, and custom orthotics. Serving Scarborough and East Toronto for over 30 years, we combine advanced techniques like kinesio taping, electrotherapy, shockwave therapy, and manual therapy to deliver personalized treatment plans for back pain, neck pain, joint pain, and sports injuries.
                   </p>
                 </div>
 
@@ -45,7 +44,7 @@ export default function Service() {
                           <div className="count-outer count-box">
                             <CountUp end={15} duration={1.5} />k+
                           </div>
-                          <h6>Certified Doctors</h6>
+                          <h6>Happy Patients</h6>
                         </div>
                       </div>
                     </div>
@@ -55,18 +54,11 @@ export default function Service() {
                           <div className="count-outer count-box">
                             <CountUp end={15} duration={1.5} />+
                           </div>
-                          <h6>Winning Award</h6>
+                          <h6>Years of Excellence</h6>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                {/* Button */}
-                <div className="btn-box">
-                  <Link href="/about" className="theme-btn btn-two">
-                    <span>Read More</span>
-                  </Link>
                 </div>
               </div>
             </div>
@@ -105,7 +97,7 @@ export default function Service() {
                 <div className="experience-box" style={{ display: isMobile ? 'none' : 'block' }}>
                   <div className="inner">
                     <h2>30</h2>
-                    <span>Years of Experience in This Field</span>
+                    <span>Years of Expert Physiotherapy & Wellness Care</span>
                   </div>
                 </div>
               </div>
