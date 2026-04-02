@@ -14,7 +14,7 @@ export default function Banner() {
                 <div className="content-box">
                     <span className="sub-title">Best Physiotherapy Clinic in Scarborough & Toronto</span>
                     <h2>Expert <span>Pain Relief & Rehabilitation</span></h2>
-                    <p>Leading multidisciplinary wellness centre in Scarborough offering expert physiotherapy, chiropractic care, massage therapy, orthotics, and sports injury treatment. 30+ years providing trusted pain management, injury rehabilitation, and posture correction near Midland Ave and Eglinton Ave.</p>
+                    <p>Leading multidisciplinary wellness centre in Scarborough offering expert physiotherapy, chiropractic care, massage therapy, orthotics, and sports injury treatment. 30+ years providing trusted pain management, injury rehabilitation, and posture correction near Midland Ave and Eglinton Ave. Your best physiotherapy clinic in Scarborough for back pain treatment, neck pain relief, and chronic pain management. Sports injury clinic Toronto serving East Toronto with sports physiotherapy, post surgery rehabilitation, and injury rehabilitation clinic services.</p>
                     <div className="lower-box">
                         <div className="btn-box"><Link href="/index-2" style={{
     fontSize: 'clamp(12px, 2.5vw, 14px)',

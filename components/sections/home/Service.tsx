@@ -8,7 +8,7 @@ export default function Service() {
             <div className="auto-container">
                 <div className="sec-title mb_60 centred">
                     <h2>Expert Physiotherapy & Wellness Services in Scarborough</h2>
-                    <p>Comprehensive pain management, injury rehabilitation, and holistic wellness therapies for Toronto residents.</p>
+                    <p>Comprehensive pain management, injury rehabilitation, and holistic wellness therapies for Toronto residents. Rehabilitation therapy, pain management clinic, mobility improvement, and injury recovery services.</p>
                 </div>
                 <div className="row clearfix">
                     <div className="col-lg-4 col-md-6 col-sm-12 service-block">
@@ -19,7 +19,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.5)' }}><i className="icon-18"></i></div>
                                         <h3><Link href="/physiotherapy">Physiotherapy</Link></h3>
-                                        <p>Expert physiotherapy for back pain, sports injuries, post-surgery rehabilitation, and mobility improvement in Scarborough.</p>
+                                        <p>Expert physiotherapy for back pain, sports injuries, and rehabilitation in Scarborough.</p>
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-19"></i></div>
                                         <h3><Link href="/massage-therapy">Massage Therapy</Link></h3>
-                                        <p>Deep tissue massage, sports massage, prenatal massage, and lymphatic drainage for chronic pain relief in Toronto.</p>
+                                        <p>Deep tissue massage, sports massage, and prenatal massage for chronic pain relief.</p>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
                                         <h3><Link href="/electrotherapy">Electrotherapy</Link></h3>
-                                        <p>Advanced electrotherapy and shockwave therapy for pain relief, injury recovery, and muscle rehabilitation.</p>
+                                        <p>Advanced electrotherapy and shockwave therapy for pain relief and injury recovery.</p>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
                                         <h3><Link href="/kinesio-taping">Kinesio Taping</Link></h3>
-                                        <p>Therapeutic kinesio taping for joint support, injury prevention, and enhanced athletic performance.</p>
+                                        <p>Therapeutic kinesio taping for joint support and enhanced athletic performance.</p>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-20"></i></div>
                                         <h3><Link href="/orthotics">Custom Orthotics</Link></h3>
-                                        <p>Custom orthotics and foot orthotics for posture correction, back pain relief, and musculoskeletal alignment.</p>
+                                        <p>Custom orthotics for posture correction, back pain relief, and alignment.</p>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ export default function Service() {
                                     <div className="inner">
                                         <div className="icon-box" style={{ transform: 'scale(0.7)' }}><i className="icon-19"></i></div>
                                         <h3><Link href="/chiropractic-adjustments">Chiropractic Care</Link></h3>
-                                        <p>Expert chiropractic adjustments, spine alignment therapy, and neck pain treatment for optimal wellness.</p>
+                                        <p>Expert chiropractic adjustments, spine alignment therapy, and neck pain treatment.</p>
                                     </div>
                                 </div>
                             </div>

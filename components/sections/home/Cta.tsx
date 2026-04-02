@@ -15,7 +15,7 @@ export default function Cta() {
             <div className="auto-container">
                 <div className="inner-container">
                     <div className="content-box">
-                        <h2>Need Expert Physiotherapy & Pain Relief in Scarborough? Book Your Appointment Today!</h2>
+                        <h2>Expert Physiotherapy & Pain Relief in Scarborough - Book Today!</h2>
                         <div className="support-box">
                             <div className="icon-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <Image 
@@ -35,7 +35,7 @@ export default function Cta() {
                             <br />
                             <Link href="tel:+41 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-9813</Link>
                             <br />
-                            <small style={{ fontSize: '14px', fontWeight: '400' }}>Walk-ins welcome for sports injuries & pain management</small>
+                            <small style={{ fontSize: '14px', fontWeight: '400' }}>Walk-ins welcome for sports injuries & pain management. Affordable massage therapy in Scarborough. How often should you get massage therapy? Contact us today!</small>
                             </span>
                         </div>
                     </div>
