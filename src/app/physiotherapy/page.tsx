@@ -30,6 +30,11 @@ export default function PhysiotherapyPage() {
 
     return (
         <div className="boxed_wrapper">
+            <style jsx>{`
+                .whatsapp-link:hover {
+                    color: #F3A952 !important;
+                }
+            `}</style>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Physiotherapy">
                 <section className="service-details pt_120 pb_110">
                     <div className="auto-container">
@@ -98,6 +103,7 @@ export default function PhysiotherapyPage() {
                                                             <Link 
                                                                 href="https://wa.me/414162617246" 
                                                                 target="_blank" 
+                                                                className="whatsapp-link"
                                                                 style={{ 
                                                                     margin: '0', 
                                                                     fontWeight: 'bold', 
@@ -106,13 +112,13 @@ export default function PhysiotherapyPage() {
                                                                     cursor: 'pointer',
                                                                     transition: 'color 0.3s ease'
                                                                 }}
-                                                                onMouseEnter={(e) => (e.target as HTMLElement).style.color = '#F3A952'}
                                                             >
                                                                 +41 416-261-7246
                                                             </Link>
                                                             <Link 
                                                                 href="https://wa.me/414162619813" 
                                                                 target="_blank" 
+                                                                className="whatsapp-link"
                                                                 style={{ 
                                                                     margin: '0', 
                                                                     fontWeight: 'bold', 
@@ -121,7 +127,6 @@ export default function PhysiotherapyPage() {
                                                                     cursor: 'pointer',
                                                                     transition: 'color 0.3s ease'
                                                                 }}
-                                                                onMouseEnter={(e) => (e.target as HTMLElement).style.color = '#F3A952'}
                                                             >
                                                                 +41 416-261-9813
                                                             </Link>
