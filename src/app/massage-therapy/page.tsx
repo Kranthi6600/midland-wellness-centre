@@ -30,7 +30,7 @@ export default function MassageTherapyPage() {
                                     <div className="sidebar-widget category-widget mb_40">
                                         <div className="shape" style={{ backgroundImage: "url(assets/images/shape/shape-41.png)" }}></div>
                                         <div className="widget-title">
-                                            <h2>Departments</h2>
+                                            <h2>Our Services</h2>
                                         </div>
                                         <div className="widget-content">
                                             <ul className="category-list clearfix">
@@ -43,31 +43,145 @@ export default function MassageTherapyPage() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="sidebar-widget appointment-widget mb_40">
+                                    <div className="sidebar-widget schedule-widget">
                                         <div className="widget-title">
-                                            <h2>Appointment</h2>
+                                            <h2>Working Hours</h2>
                                         </div>
                                         <div className="widget-content">
-                                            <div className="text">
-                                                <p>Book your appointment today and take the first step towards better health and wellness.</p>
-                                            </div>
-                                            <div className="btn-box">
-                                                <Link href="/appointments" className="theme-btn btn-one">
-                                                    <span>Book Now</span>
+                                            <ul className="schedule-list clearfix">
+                                                <li>Sunday<span>Closed</span></li>
+                                                <li>Monday<span>10 AM – 6 PM</span></li>
+                                                <li>Tuesday<span>10 AM – 6 PM</span></li>
+                                                <li>Wednesday<span>10 AM – 7 PM</span></li>
+                                                <li>Thursday<span>10 AM – 6 PM</span></li>
+                                                <li>Friday<span>10 AM – 6 PM</span></li>
+                                                <li>Saturday<span>12 PM – 3 PM</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="sidebar-widget appointment-widget mb_10" style={{ marginTop: '60px' }}>
+                                        <div className="widget-title">
+                                            <h2>Book Appointment</h2>
+                                        </div>
+                                        <div className="widget-content">
+                                            <p style={{ color: '#ffffffd9' }}>Ready to schedule your appointment? Click below to book your visit with our specialists.</p>
+                                            <div className="btn-box mt_20">
+                                                <Link href="/appointments" className="theme-btn btn-one" style={{ width: '100%', justifyContent: 'center', border: '2px solid #ffffff' }}>
+                                                    Book Appointment Now
                                                 </Link>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="sidebar-widget contact-widget mb_40">
+                                    <div className="sidebar-widget appointment-widget contact-widget mb_40" style={{ marginTop: '40px' }}>
                                         <div className="widget-title">
-                                            <h2>Contact Us</h2>
+                                            <h2 style={{ color: 'white' }}>Contact Us</h2>
                                         </div>
                                         <div className="widget-content">
-                                            <ul className="info-list clearfix">
-                                                <li><i className="icon-14"></i>2555 Eglinton Ave. E, Scarborough, ON, M1K 5J1, CA</li>
-                                                <li><i className="icon-15"></i><Link href="tel:+1-416-261-7246">+1 416-261-7246</Link></li>
-                                                <li><i className="icon-16"></i><Link href="mailto:info@midlandwellnesscentre.com">info@midlandwellnesscentre.com</Link></li>
-                                            </ul>
+                                            <div className="contact-info" style={{ color: 'white' }}>
+                                                <div className="info-item mb_20" style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                                                    <i className="icon-17" style={{ marginRight: '10px', color: '#F3A952', fontSize: '18px' }}></i>
+                                                    <div>
+                                                        <p style={{ margin: '0', fontSize: '14px', color: 'white' }}>Phone/WhatsApp</p>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                                                            <Link 
+                                                                href="https://wa.me/414162617246" 
+                                                                target="_blank" 
+                                                                style={{ 
+                                                                    margin: '0', 
+                                                                    fontWeight: 'bold', 
+                                                                    color: 'white', 
+                                                                    textDecoration: 'none',
+                                                                    cursor: 'pointer'
+                                                                }}
+                                                                className="contact-link"
+                                                            >
+                                                                +41 416-261-7246
+                                                            </Link>
+                                                            <Link 
+                                                                href="https://wa.me/414162619813" 
+                                                                target="_blank" 
+                                                                style={{ 
+                                                                    margin: '0', 
+                                                                    fontWeight: 'bold', 
+                                                                    color: 'white', 
+                                                                    textDecoration: 'none',
+                                                                    cursor: 'pointer'
+                                                                }}
+                                                                className="contact-link"
+                                                            >
+                                                                +41 416-261-9813
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="info-item mb_20" style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                                                    <i className="icon-46" style={{ marginRight: '10px', color: '#F3A952', fontSize: '18px' }}></i>
+                                                    <div>
+                                                        <p style={{ margin: '0', fontSize: '14px', color: 'white' }}>Email</p>
+                                                        <p style={{ margin: '0', fontWeight: 'bold', color: 'white' }}>info@midlandwellness.ca</p>
+                                                    </div>
+                                                </div>
+                                                <div className="info-item mb_20" style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                                                    <i className="icon-18" style={{ marginRight: '10px', color: '#F3A952', fontSize: '18px' }}></i>
+                                                    <div>
+                                                        <p style={{ margin: '0', fontSize: '14px', color: 'white' }}>Address</p>
+                                                        <p style={{ margin: '0', fontWeight: 'bold', lineHeight: '1.4', color: 'white' }}>Midland Wellness Centre<br />Ontario, Canada</p>
+                                                    </div>
+                                                </div>
+                                                <div className="social-links mt_20">
+                                                    <p style={{ margin: '0 0 10px 0', fontSize: '14px', color: 'white' }}>Follow Us:</p>
+                                                    <ul className="clearfix" style={{ display: 'flex', gap: '10px', padding: '0', margin: '0' }}>
+                                                        <li style={{ listStyle: 'none' }}>
+                                                            <Link href="https://www.facebook.com/midlandwellnesscentre" target="_blank" style={{ 
+                                                                display: 'flex', 
+                                                                alignItems: 'center', 
+                                                                justifyContent: 'center', 
+                                                                width: '35px', 
+                                                                height: '35px', 
+                                                                backgroundColor: '#F3A952', 
+                                                                color: 'white', 
+                                                                borderRadius: '50%', 
+                                                                textDecoration: 'none',
+                                                                transition: 'all 0.3s ease'
+                                                            }}>
+                                                                <i className="fab fa-facebook-f"></i>
+                                                            </Link>
+                                                        </li>
+                                                        <li style={{ listStyle: 'none' }}>
+                                                            <Link href="https://www.instagram.com/midlandwellness/" target="_blank" style={{ 
+                                                                display: 'flex', 
+                                                                alignItems: 'center', 
+                                                                justifyContent: 'center', 
+                                                                width: '35px', 
+                                                                height: '35px', 
+                                                                backgroundColor: '#F3A952', 
+                                                                color: 'white', 
+                                                                borderRadius: '50%', 
+                                                                textDecoration: 'none',
+                                                                transition: 'all 0.3s ease'
+                                                            }}>
+                                                                <i className="fab fa-instagram"></i>
+                                                            </Link>
+                                                        </li>
+                                                        <li style={{ listStyle: 'none' }}>
+                                                            <Link href="https://ca.linkedin.com/in/midland-wellness-center-83a214141" target="_blank" style={{ 
+                                                                display: 'flex', 
+                                                                alignItems: 'center', 
+                                                                justifyContent: 'center', 
+                                                                width: '35px', 
+                                                                height: '35px', 
+                                                                backgroundColor: '#F3A952', 
+                                                                color: 'white', 
+                                                                borderRadius: '50%', 
+                                                                textDecoration: 'none',
+                                                                transition: 'all 0.3s ease'
+                                                            }}>
+                                                                <i className="fab fa-linkedin-in"></i>
+                                                            </Link>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
