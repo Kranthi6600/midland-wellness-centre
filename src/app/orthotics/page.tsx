@@ -110,6 +110,118 @@ export default function OrthoticsPage() {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="sidebar-widget appointment-widget contact-widget mb_40" style={{ marginTop: '40px' }}>
+                                        <div className="widget-title">
+                                            <h2 style={{ color: 'white' }}>Contact Us</h2>
+                                        </div>
+                                        <div className="widget-content">
+                                            <div className="contact-info" style={{ color: 'white' }}>
+                                                <div className="info-item mb_20" style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                                                    <i className="icon-17" style={{ marginRight: '10px', color: '#F3A952', fontSize: '18px' }}></i>
+                                                    <div>
+                                                        <p style={{ margin: '0', fontSize: '14px', color: 'white' }}>Phone/WhatsApp</p>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                                                            <Link 
+                                                                href="https://wa.me/414162617246" 
+                                                                target="_blank" 
+                                                                style={{ 
+                                                                    margin: '0', 
+                                                                    fontWeight: 'bold', 
+                                                                    color: 'white', 
+                                                                    textDecoration: 'none',
+                                                                    cursor: 'pointer'
+                                                                }}
+                                                                className="contact-link"
+                                                            >
+                                                                +41 416-261-7246
+                                                            </Link>
+                                                            <Link 
+                                                                href="https://wa.me/414162619813" 
+                                                                target="_blank" 
+                                                                style={{ 
+                                                                    margin: '0', 
+                                                                    fontWeight: 'bold', 
+                                                                    color: 'white', 
+                                                                    textDecoration: 'none',
+                                                                    cursor: 'pointer'
+                                                                }}
+                                                                className="contact-link"
+                                                            >
+                                                                +41 416-261-9813
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="info-item mb_20" style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                                                    <i className="icon-46" style={{ marginRight: '10px', color: '#F3A952', fontSize: '18px' }}></i>
+                                                    <div>
+                                                        <p style={{ margin: '0', fontSize: '14px', color: 'white' }}>Email</p>
+                                                        <p style={{ margin: '0', fontWeight: 'bold', color: 'white' }}>info@midlandwellness.ca</p>
+                                                    </div>
+                                                </div>
+                                                <div className="info-item mb_20" style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                                                    <i className="icon-18" style={{ marginRight: '10px', color: '#F3A952', fontSize: '18px' }}></i>
+                                                    <div>
+                                                        <p style={{ margin: '0', fontSize: '14px', color: 'white' }}>Address</p>
+                                                        <p style={{ margin: '0', fontWeight: 'bold', lineHeight: '1.4', color: 'white' }}>Midland Wellness Centre<br />Ontario, Canada</p>
+                                                    </div>
+                                                </div>
+                                                <div className="social-links mt_20">
+                                                    <p style={{ margin: '0 0 10px 0', fontSize: '14px', color: 'white' }}>Follow Us:</p>
+                                                    <ul className="clearfix" style={{ display: 'flex', gap: '10px', padding: '0', margin: '0' }}>
+                                                        <li style={{ listStyle: 'none' }}>
+                                                            <Link href="https://www.facebook.com/midlandwellnesscentre" target="_blank" style={{ 
+                                                                display: 'flex', 
+                                                                alignItems: 'center', 
+                                                                justifyContent: 'center', 
+                                                                width: '35px', 
+                                                                height: '35px', 
+                                                                backgroundColor: '#F3A952', 
+                                                                color: 'white', 
+                                                                borderRadius: '50%', 
+                                                                textDecoration: 'none',
+                                                                transition: 'all 0.3s ease'
+                                                            }}>
+                                                                <i className="fab fa-facebook-f"></i>
+                                                            </Link>
+                                                        </li>
+                                                        <li style={{ listStyle: 'none' }}>
+                                                            <Link href="https://www.instagram.com/midlandwellness/" target="_blank" style={{ 
+                                                                display: 'flex', 
+                                                                alignItems: 'center', 
+                                                                justifyContent: 'center', 
+                                                                width: '35px', 
+                                                                height: '35px', 
+                                                                backgroundColor: '#F3A952', 
+                                                                color: 'white', 
+                                                                borderRadius: '50%', 
+                                                                textDecoration: 'none',
+                                                                transition: 'all 0.3s ease'
+                                                            }}>
+                                                                <i className="fab fa-instagram"></i>
+                                                            </Link>
+                                                        </li>
+                                                        <li style={{ listStyle: 'none' }}>
+                                                            <Link href="https://ca.linkedin.com/in/midland-wellness-center-83a214141" target="_blank" style={{ 
+                                                                display: 'flex', 
+                                                                alignItems: 'center', 
+                                                                justifyContent: 'center', 
+                                                                width: '35px', 
+                                                                height: '35px', 
+                                                                backgroundColor: '#F3A952', 
+                                                                color: 'white', 
+                                                                borderRadius: '50%', 
+                                                                textDecoration: 'none',
+                                                                transition: 'all 0.3s ease'
+                                                            }}>
+                                                                <i className="fab fa-linkedin-in"></i>
+                                                            </Link>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
