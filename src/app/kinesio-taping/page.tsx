@@ -115,7 +115,7 @@ export default function KinesioTapingPage() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/kinesiotaping1.jpg" alt="Kinesio taping applied to athlete's shoulder for support" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/kinesiotaping1.webp" alt="Kinesio taping applied to athlete's shoulder for support" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
@@ -127,7 +127,7 @@ export default function KinesioTapingPage() {
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/kinesiotaping2.jpg" alt="Kinesio tape application on knee joint for stability" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/kinesiotaping2.webp" alt="Kinesio tape application on knee joint for stability" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>

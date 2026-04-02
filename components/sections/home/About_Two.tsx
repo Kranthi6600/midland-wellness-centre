@@ -82,7 +82,7 @@ export default function Service() {
                 </figure>
                 <figure className="image image-2">
                   <Image
-                    src="/assets/images/resource/hospital.jpg"
+                    src="/assets/images/resource/hospital.webp"
                     alt="About 4"
                     width={306}
                     height={658}

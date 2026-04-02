@@ -25,7 +25,7 @@ export default function Working() {
                                                 height: '100%'
                                             }}>
                                                 <Image 
-                                                    src="/assets/images/resource/appointment2.jpg" 
+                                                    src="/assets/images/resource/appointment2.webp" 
                                                     alt="Image" 
                                                     width={250} 
                                                     height={250} 
@@ -62,7 +62,7 @@ export default function Working() {
                                                 height: '100%'
                                             }}>
                                                 <Image 
-                                                    src="/assets/images/resource/checkup2.png" 
+                                                    src="/assets/images/resource/checkup2.webp" 
                                                     alt="Image" 
                                                     width={250} 
                                                     height={250} 
@@ -99,7 +99,7 @@ export default function Working() {
                                                 height: '100%'
                                             }}>
                                                 <Image 
-                                                    src="/assets/images/resource/healthylife2.jpg" 
+                                                    src="/assets/images/resource/healthylife2.webp" 
                                                     alt="Image" 
                                                     width={250} 
                                                     height={250} 

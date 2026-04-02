@@ -34,7 +34,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle }) => {
       case 'Kinesio Taping':
         return 'url(/assets/images/banner/breadcrumb11.png)';
       default:
-        return 'url(/assets/images/resource/staff1.png)';
+        return 'url(/assets/images/resource/staff1.webp)';
     }
   };
 

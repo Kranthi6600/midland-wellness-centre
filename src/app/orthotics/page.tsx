@@ -115,7 +115,7 @@ export default function OrthoticsPage() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="service-details-content">
                                     <div className="content-one mb_40">
-                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/orthotics1.jpg" alt="Image" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_60"><Image src="/assets/images/resource/orthotics1.webp" alt="Image" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>
@@ -126,7 +126,7 @@ export default function OrthoticsPage() {
                                         </div>
                                     </div>
                                     <div className="content-two">
-                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/orthotics2.jpg" alt="Image" width={856} height={525} priority style={{
+                                        <figure className="image-box mb_30"><Image src="/assets/images/resource/orthotics2.webp" alt="Image" width={856} height={525} priority style={{
                                             borderRadius: '15px',
                                             objectFit: 'cover'
                                         }} /></figure>

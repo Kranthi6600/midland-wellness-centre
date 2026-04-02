@@ -6,7 +6,7 @@ export default function Chooseus() {
                         marginTop: '60px'
                     }}>
                 <Image 
-                    src="/assets/images/resource/hospital2.png" 
+                    src="/assets/images/resource/hospital2.webp" 
                     alt="Image" 
                     width={642} 
                     height={407} 

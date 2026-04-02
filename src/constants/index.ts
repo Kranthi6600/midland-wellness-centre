@@ -32,7 +32,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'chiropractic',
     title: 'Chiropractic Adjustments',
     description: 'Spinal health and pain relief.',
-    image: '/assets/images/resource/Chiropractic Adjustments3.jpg',
+    image: '/assets/images/resource/Chiropractic Adjustments3.webp',
     icon: 'icon-19',
     link: '/chiropractic-adjustments',
   },

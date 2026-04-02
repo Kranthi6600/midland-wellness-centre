@@ -53,7 +53,7 @@ export default function RootLayout({
     "@type": "Organization",
     "name": "Midland Wellness Centre",
     "url": "https://midlandwellnesscentre.com",
-    "logo": "https://midlandwellnesscentre.com/assets/images/logo.png",
+    "logo": "https://midlandwellnesscentre.com/assets/images/header_logo.png",
     "description": "Expert physiotherapy, chiropractic care, massage therapy and orthotics in Scarborough",
     "foundingDate": "1994",
     "contactPoint": {
@@ -69,7 +69,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Midland Wellness Centre",
-    "image": "https://midlandwellnesscentre.com/assets/images/logo.png",
+    "image": "https://midlandwellnesscentre.com/assets/images/header_logo.png",
     "telephone": "+1-416-261-7246",
     "email": "info@midlandwellnesscentre.com",
     "address": {
@@ -95,6 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en-CA">
       <head>
+        <link rel="icon" href="/assets/images/header_logo.ico" sizes="any" />
         <link rel="canonical" href="https://midlandwellnesscentre.com" />
         <link rel="alternate" hrefLang="en" href="https://midlandwellnesscentre.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />

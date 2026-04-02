@@ -76,7 +76,7 @@ export default function BlogPage() {
                                         <h3>Search Here</h3>
                                         <form method="post" action="/blog">
                                             <div className="form-group">
-                                                <input type="search" name="search-field" placeholder="keywords" required/>
+                                                <input type="search" name="search-field" placeholder="keywords" required />
                                                 <button type="submit"><Image src="/assets/images/icons/icon-22.svg" alt="Blog search button" width={20} height={20} priority /></button>
                                             </div>
                                         </form>
@@ -114,7 +114,7 @@ export default function BlogPage() {
                                         </div>
                                     </div>
                                     <div className="consulting-widget">
-                                        <div className="bg-layer" style={{ backgroundImage: "url(assets/images/resource/sidebar-1.jpg)" }}></div>
+                                        <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>
                                         <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
                                         <Link href="/contact-us" className="theme-btn btn-two"><span>get a quote</span></Link>
@@ -124,7 +124,7 @@ export default function BlogPage() {
                         </div>
                     </div>
                 </section>
-                <Cta/>
+                <Cta />
             </Layout>
         </div>
     )

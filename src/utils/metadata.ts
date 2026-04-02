@@ -46,7 +46,7 @@ export function generateMetadata(config: SEOConfig): Metadata {
       type: "website",
       images: openGraph?.images || [
         {
-          url: "/assets/images/logo.png",
+          url: "/assets/images/header_logo.png",
           width: 1200,
           height: 630,
           alt: "Midland Wellness Centre",
@@ -57,7 +57,7 @@ export function generateMetadata(config: SEOConfig): Metadata {
       card: twitter?.card || "summary_large_image",
       title: twitter?.title || title,
       description: twitter?.description || description,
-      images: twitter?.images || ["/assets/images/logo.png"],
+      images: twitter?.images || ["/assets/images/header_logo.png"],
       creator: "@midlandwellness",
     },
     alternates: {
