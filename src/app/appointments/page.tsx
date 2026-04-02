@@ -229,9 +229,6 @@ export default function Appointments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 feature-block">
                                 <div className="feature-block-one">
                                     <div className="inner-box">
-                                        <div className="icon-box">
-                                            <i className="icon-57"></i>
-                                        </div>
                                         <h3>Expert Doctors</h3>
                                         <p>Highly qualified and experienced medical professionals dedicated to your health</p>
                                     </div>
@@ -241,9 +238,6 @@ export default function Appointments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 feature-block">
                                 <div className="feature-block-one">
                                     <div className="inner-box">
-                                        <div className="icon-box">
-                                            <i className="icon-58"></i>
-                                        </div>
                                         <h3>Modern Equipment</h3>
                                         <p>State-of-the-art medical technology for accurate diagnosis and treatment</p>
                                     </div>
@@ -253,9 +247,6 @@ export default function Appointments_Page() {
                             <div className="col-lg-4 col-md-6 col-sm-12 feature-block">
                                 <div className="feature-block-one">
                                     <div className="inner-box">
-                                        <div className="icon-box">
-                                            <i className="icon-59"></i>
-                                        </div>
                                         <h3>Personalized Care</h3>
                                         <p>Tailored treatment plans designed to meet your specific healthcare needs</p>
                                     </div>
