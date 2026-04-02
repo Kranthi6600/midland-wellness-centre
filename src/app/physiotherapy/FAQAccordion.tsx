@@ -26,11 +26,11 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                         className="faq-question" 
                         onClick={() => toggleFAQ(index)}
                         style={{
-                            padding: '15px 20px',
+                            padding: '10px 15px',
                             backgroundColor: activeFAQ === index ? '#f8f9fa' : '#fff',
                             border: '1px solid #e9ecef',
                             borderRadius: '8px',
-                            marginBottom: '10px',
+                            marginBottom: '8px',
                             cursor: 'pointer',
                             display: 'flex',
                             justifyContent: 'space-between',
@@ -58,7 +58,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                             maxHeight: activeFAQ === index ? '200px' : '0',
                             overflow: 'hidden',
                             transition: 'max-height 0.3s ease, padding 0.3s ease',
-                            padding: activeFAQ === index ? '15px 20px' : '0 20px',
+                            padding: activeFAQ === index ? '10px 15px' : '0 15px',
                             backgroundColor: '#f8f9fa',
                             borderLeft: activeFAQ === index ? '1px solid #e9ecef' : 'none',
                             borderRight: activeFAQ === index ? '1px solid #e9ecef' : 'none',
