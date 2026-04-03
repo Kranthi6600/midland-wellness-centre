@@ -26,9 +26,9 @@ export default function Chooseus() {
                 <div className="row clearfix">
                     <div className="col-lg-4 col-md-12 col-sm-12 title-column">
                         <div className="sec-title mt_190">
-                            <span className="sub-title mb_5">Why Choose Midland Wellness Centre</span>
-                            <h2>Your Trusted Physiotherapy & Pain Relief Specialists</h2>
-                            <p>As Scarborough's leading multidisciplinary wellness centre, we combine advanced physiotherapy techniques, chiropractic care, massage therapy, and cutting-edge rehabilitation technology to provide comprehensive pain management and injury recovery for Toronto residents. What is physiotherapy used for? How much does physiotherapy cost in Toronto? Is chiropractic treatment safe? Our expert team answers all your questions about rehabilitation therapy and pain management.</p>
+                            <span className="sub-title mb_5">Why Choose Our Wellness Centre</span>
+                            <h2>Choosing the right clinic is essential for effective recovery</h2>
+                            <p>Our wellness centre in Scarborough is trusted for delivering high-quality care and long-term results. We focus on personalized treatment plans, advanced technology, and a holistic approach to healing.</p>
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-sm-12 content-column">
@@ -40,8 +40,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-28"></i></div>
                                             <span className="count-text">01</span>
                                         </div>
-                                        <h3>Advanced Tech</h3>
-                                        <p style={{ flex: 1 }}>State-of-the-art electrotherapy, shockwave therapy, laser therapy, and ultrasound therapy equipment for advanced pain relief and accelerated injury recovery in Scarborough.</p>
+                                        <h3>Experienced Healthcare Professionals</h3>
+                                        <p style={{ flex: 1 }}>Our team uses advanced techniques and continuous training to provide safe and effective treatments for all patients.</p>
                                     </div>
                                 </div>
                             </div>
@@ -52,8 +52,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-29"></i></div>
                                             <span className="count-text">02</span>
                                         </div>
-                                        <h3>Proven Results</h3>
-                                        <p style={{ flex: 1 }}>Our proven track record in treating back pain, neck pain, sports injuries, and chronic pain conditions demonstrates our expertise as Scarborough's best physiotherapy clinic.</p>
+                                        <h3>Personalised Treatment Plans</h3>
+                                        <p style={{ flex: 1 }}>Every treatment is tailored to your specific condition and goals, ensuring faster recovery and better outcomes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +64,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-15"></i></div>
                                             <span className="count-text">03</span>
                                         </div>
-                                        <h3>Expert Therapists</h3>
-                                        <p style={{ flex: 1 }}>All our physiotherapists, chiropractors, and massage therapists are certified specialists with extensive experience in sports injury rehabilitation, post-surgery recovery, and musculoskeletal treatment.</p>
+                                        <h3>Advanced Technology & Techniques</h3>
+                                        <p style={{ flex: 1 }}>We use modern equipment and evidence-based therapies to deliver optimal results and improved patient experience.</p>
                                     </div>
                                 </div>
                             </div>
@@ -76,8 +76,8 @@ export default function Chooseus() {
                                             <div className="icon"><i className="icon-30"></i></div>
                                             <span className="count-text">04</span>
                                         </div>
-                                        <h3>Holistic Approach</h3>
-                                        <p style={{ flex: 1 }}>Our comprehensive approach combines manual therapy, kinesio taping, custom orthotics, and personalized exercise programs for complete injury rehabilitation and mobility improvement.</p>
+                                        <h3>Holistic Approach to Healing</h3>
+                                        <p style={{ flex: 1 }}>Our treatments focus on long-term wellness, not just symptom relief, ensuring sustainable health improvements.</p>
                                     </div>
                                 </div>
                             </div>

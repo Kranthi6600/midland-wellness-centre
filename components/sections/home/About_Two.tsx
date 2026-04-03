@@ -26,12 +26,12 @@ export default function Service() {
             <div className="content_block_four">
               <div className="content-box">
                 <div className="sec-title mb_15">
-                  <span className="sub-title mb_5">About Midland Wellness Centre - Scarborough's Trusted Physiotherapy Clinic</span>
-                  <h2>Leading Pain Relief & Rehabilitation Clinic in Toronto</h2>
+                  <span className="sub-title mb_5">Welcome to Midland Wellness Centre</span>
+                  <h2>Your Trusted Wellness Centre in Scarborough</h2>
                 </div>
                 <div className="text-box mb_30">
                   <p>
-                    Midland Wellness Centre is the premier multidisciplinary physiotherapy clinic in Scarborough, conveniently located near Midland Ave and Eglinton Ave. As your trusted wellness centre in Toronto, we specialize in comprehensive pain management, injury rehabilitation, and musculoskeletal treatment. Our expert physiotherapists, chiropractors, and massage therapists provide evidence-based care including sports injury treatment, post-surgery rehabilitation, chronic pain management, and custom orthotics. Serving Scarborough and East Toronto for over 30 years, we combine advanced techniques like kinesio taping, electrotherapy, shockwave therapy, and manual therapy to deliver personalized treatment plans for back pain, neck pain, joint pain, and sports injuries. Our holistic wellness clinic approach includes rehabilitation therapy, mobility improvement, manual therapy, and posture correction for complete injury recovery and musculoskeletal treatment.
+                    Midland Wellness Centre is a multi-disciplinary clinic dedicated to helping you restore health and maximise function. We provide a wide range of treatments, including physiotherapy, chiropractic care, massage therapy, electrotherapy, and orthotics, ensuring comprehensive rehabilitation solutions. As a trusted wellness centre in Scarborough, we use evidence-based techniques and advanced therapies to deliver personalised care. Our approach focuses on improving mobility, reducing pain, and preventing future injuries through holistic treatment plans.
                   </p>
                 </div>
 

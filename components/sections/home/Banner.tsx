@@ -12,25 +12,49 @@ export default function Banner() {
             </div>
             <div className="auto-container">
                 <div className="content-box">
-                    <span className="sub-title">Best Physiotherapy Clinic in Scarborough & Toronto</span>
-                    <h2>Expert <span>Pain Relief & Rehabilitation</span></h2>
-                    <p>Leading multidisciplinary wellness centre in Scarborough offering expert physiotherapy, chiropractic care, massage therapy, orthotics, and sports injury treatment. 30+ years providing trusted pain management, injury rehabilitation, and posture correction near Midland Ave and Eglinton Ave. Your best physiotherapy clinic in Scarborough for back pain treatment, neck pain relief, and chronic pain management. Sports injury clinic Toronto serving East Toronto with sports physiotherapy, post surgery rehabilitation, and injury rehabilitation clinic services.</p>
+                    <h1>Wellness Centre in Scarborough for Pain Relief & Recovery</h1>
+                    <p>Struggling with pain or mobility issues? Visit a trusted wellness centre in Scarborough offering expert physiotherapy, chiropractic care, massage therapy, and rehabilitation services. Our team focuses on personalised treatments to help you recover faster, reduce pain, and regain strength. Start your journey to better health today with advanced care designed for long-term results.</p>
+                    <div className="cta-section" style={{ marginTop: '20px' }}>
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '10px', color: '#007acc' }}>"Are You Still in Pain?"</h3>
+                        <p style={{ marginBottom: '15px' }}>Are you still dealing with chronic pain, injuries, or mobility problems? At our wellness centre in Scarborough, we provide advanced, non-invasive treatments to help you feel better and move freely again. Whether it's back pain, sports injury, or joint discomfort, our experienced team is ready to help you recover.</p>
+                        <p style={{ marginBottom: '15px' }}>We focus on identifying the root cause of your condition and creating personalised treatment plans. Our goal is not just temporary relief but long-term healing and improved quality of life.</p>
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '10px', color: '#007acc', marginTop: '20px' }}>"You Can Heal. We Can Help."</h3>
+                        <p style={{ marginBottom: '15px' }}>At Midland Wellness Centre, we believe healing starts with the right care and guidance. As a leading wellness centre in Scarborough, we combine modern rehabilitation techniques with a patient-focused approach to deliver effective results.</p>
+                        <p style={{ marginBottom: '15px' }}>Our team of professionals works closely with you to understand your condition and provide targeted therapies. Whether you need physiotherapy clinic Scarborough, chiropractor Scarborough, or massage therapy Scarborough, we offer complete care under one roof.</p>
+                    </div>
                     <div className="lower-box">
-                        <div className="btn-box"><Link href="/index-2" style={{
-    fontSize: 'clamp(12px, 2.5vw, 14px)',
-    backgroundColor: '#007acc',
-    color: '#ffffff',
-    padding: 'clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px)',
-    borderRadius: '6px',
-    textDecoration: 'none',
-    display: 'inline-block',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
-    fontWeight: '500',
-    whiteSpace: 'nowrap',
-    minWidth: 'fit-content'
-}}><span style={{ display: 'block' }}>Read More</span></Link></div>
+                        <div className="btn-box" style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
+                            <Link href="/contact" style={{
+                                fontSize: 'clamp(12px, 2.5vw, 14px)',
+                                backgroundColor: '#007acc',
+                                color: '#ffffff',
+                                padding: 'clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px)',
+                                borderRadius: '6px',
+                                textDecoration: 'none',
+                                display: 'inline-block',
+                                border: 'none',
+                                cursor: 'pointer',
+                                transition: 'all 0.3s ease',
+                                fontWeight: '500',
+                                whiteSpace: 'nowrap',
+                                minWidth: 'fit-content'
+                            }}><span style={{ display: 'block' }}>Book Appointment</span></Link>
+                            <Link href="tel:+1234567890" style={{
+                                fontSize: 'clamp(12px, 2.5vw, 14px)',
+                                backgroundColor: '#28a745',
+                                color: '#ffffff',
+                                padding: 'clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px)',
+                                borderRadius: '6px',
+                                textDecoration: 'none',
+                                display: 'inline-block',
+                                border: 'none',
+                                cursor: 'pointer',
+                                transition: 'all 0.3s ease',
+                                fontWeight: '500',
+                                whiteSpace: 'nowrap',
+                                minWidth: 'fit-content'
+                            }}><span style={{ display: 'block' }}>Call Now</span></Link>
+                        </div>
                         <div className="doctors-list">
                             <ul className="thumb-box clearfix">
                                 <li style={{

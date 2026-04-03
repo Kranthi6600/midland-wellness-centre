@@ -15,7 +15,8 @@ export default function Cta() {
             <div className="auto-container">
                 <div className="inner-container">
                     <div className="content-box">
-                        <h2>Expert Physiotherapy & Pain Relief in Scarborough - Book Today!</h2>
+                        <h2>Book Your Appointment Today</h2>
+                        <p>Take the first step toward better health with a trusted wellness centre in Scarborough. Our team is ready to help you recover, heal, and achieve long-term wellness.</p>
                         <div className="support-box">
                             <div className="icon-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <Image 
@@ -30,12 +31,12 @@ export default function Cta() {
                                     }}
                                 />
                             </div>
-                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px', fontWeight: '600', color: '#ffffff' }}>Book Your Physiotherapy Appointment:<br />
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px', fontWeight: '600', color: '#ffffff' }}>Call Now:<br />
                             <Link href="tel:+41 416-261-7246" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-7246</Link>
                             <br />
                             <Link href="tel:+41 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-9813</Link>
                             <br />
-                            <small style={{ fontSize: '14px', fontWeight: '400' }}>Walk-ins welcome for sports injuries & pain management. Affordable massage therapy in Scarborough. How often should you get massage therapy? Contact us today!</small>
+                            <small style={{ fontSize: '14px', fontWeight: '400' }}>Wellness centre near you - physiotherapy clinic Scarborough, chiropractor near me Scarborough, massage therapy near me</small>
                             </span>
                         </div>
                     </div>
