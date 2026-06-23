@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Chooseus() {
     return (
-        <section className="chooseus-style-two p_relative pt_100 pb_110">
+        <section className="chooseus-style-two p_relative pt_100 pb_110" style={{ paddingBottom: '60px' }}>
             <figure className="image-layer" style={{
                         marginTop: '60px'
                     }}>
@@ -27,7 +27,7 @@ export default function Chooseus() {
                     <div className="col-lg-4 col-md-12 col-sm-12 title-column">
                         <div className="sec-title mt_190">
                             <span className="sub-title mb_5">Why Choose Our Wellness Centre</span>
-                            <h2>Choosing the right clinic is essential for effective recovery</h2>
+                            <h2 style={{ marginBottom: '16px' }}>Choosing the right clinic is essential for effective recovery</h2>
                             <p>Our wellness centre in Scarborough is trusted for delivering high-quality care and long-term results. We focus on personalized treatment plans, advanced technology, and a holistic approach to healing.</p>
                         </div>
                     </div>

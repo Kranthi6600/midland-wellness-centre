@@ -13,6 +13,7 @@
     "@vercel/analytics": "^2.0.1",
     "isotope-layout": "^3.0.6",
     "next": "^15.5.12",
+    "nextjs-toploader": "^3.9.17",
     "react": "19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "19.1.0",

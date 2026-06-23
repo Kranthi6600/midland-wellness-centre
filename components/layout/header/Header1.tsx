@@ -1,12 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "../MobileMenu";
 import { HeaderProps, NavigationItem } from "@/types";
 import { SITE_CONFIG, BUSINESS_HOURS, SOCIAL_LINKS, NAVIGATION_ITEMS } from "@/constants";
 import { formatBusinessHours } from "@/utils/formatting";
+import { ServiceItem } from "@/lib/api";
 
 export default function Header1({
   scroll,
@@ -14,6 +15,49 @@ export default function Header1({
   isSidebar,
   handleSidebar
 }: HeaderProps) {
+  const [services, setServices] = useState<ServiceItem[]>([]);
+
+  useEffect(() => {
+    fetch("/api/proxy-services")
+      .then((res) => res.json())
+      .then((res) => {
+        setServices(res.data || []);
+      })
+      .catch(() => {
+        setServices([]);
+      });
+  }, []);
+
+  const renderNavItem = (item: NavigationItem, index: number) => {
+    const isServices = item.href === "/services";
+    const hasChildren = item.children && item.children.length > 0;
+    const showDropdown = hasChildren || (isServices && services.length > 0);
+
+    return (
+      <li key={index} className={showDropdown ? "dropdown" : ""}>
+        <Link href={item.href}>{item.name}</Link>
+        {showDropdown && (
+          <ul>
+            {isServices && services.length > 0 && (
+              <>
+                {services.map((svc) => (
+                  <li key={svc.id}>
+                    <Link href={`/services/${svc.slug}`}>{svc.wehoware_service_categories?.name || svc.title}</Link>
+                  </li>
+                ))}
+              </>
+            )}
+            {hasChildren && !isServices && item.children?.map((child: NavigationItem, childIndex: number) => (
+              <li key={childIndex}>
+                <Link href={child.href}>{child.name}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    );
+  };
+
   return (
     <>
       {/* main header */}
@@ -62,20 +106,7 @@ export default function Header1({
                     id="navbarSupportedContent"
                   >
                     <ul className="navigation clearfix">
-                      {NAVIGATION_ITEMS.map((item: NavigationItem, index: number) => (
-                        <li key={index} className={item.children ? "dropdown" : ""}>
-                          <Link href={item.href}>{item.name}</Link>
-                          {item.children && (
-                            <ul>
-                              {item.children.map((child: NavigationItem, childIndex: number) => (
-                                <li key={childIndex}>
-                                  <Link href={child.href}>{child.name}</Link>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </li>
-                      ))}
+                      {NAVIGATION_ITEMS.map(renderNavItem)}
                     </ul>
                   </div>
                 </nav>
@@ -131,28 +162,17 @@ export default function Header1({
                       <li>
                         <Link href="/about">About Us</Link>
                       </li>
-                      <li className="dropdown">
+                      <li className={services.length > 0 ? "dropdown" : ""}>
                         <Link href="/services">Our Services</Link>
-                        <ul>
-                          <li>
-                            <Link href="/physiotherapy">Physiotherapy</Link>
-                          </li>
-                          <li>
-                            <Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link>
-                          </li>
-                          <li>
-                            <Link href="/massage-therapy">Massage Therapy</Link>
-                          </li>
-                          <li>
-                            <Link href="/electrotherapy">Electrotherapy</Link>
-                          </li>
-                          <li>
-                            <Link href="/kinesio-taping">Kinesio Taping</Link>
-                          </li>
-                          <li>
-                            <Link href="/orthotics">Orthotics</Link>
-                          </li>
-                        </ul>
+                        {services.length > 0 && (
+                          <ul>
+                            {services.map((svc) => (
+                              <li key={svc.id}>
+                                <Link href={`/services/${svc.slug}`}>{svc.wehoware_service_categories?.name || svc.title}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </li>
                       <li>
                         <Link href="/contact-us">Contact Us</Link>

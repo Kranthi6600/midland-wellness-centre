@@ -35,11 +35,6 @@ export default function Banner() {
         role="img"
         aria-label={`${SITE_CONFIG.name} medical facility`}
       />
-      <div className="pattern-layer">
-        <div className="pattern-1" style={{ backgroundImage: "url(/assets/images/shape/shape-25.png)" }} />
-        <div className="pattern-2" style={{ backgroundImage: "url(/assets/images/shape/shape-26.png)" }} />
-        <div className="pattern-3" style={{ backgroundImage: "url(/assets/images/shape/shape-27.png)" }} />
-      </div>
       <div className="auto-container">
         <div className="content-box">
           <span className="sub-title">{bannerData.subtitle}</span>

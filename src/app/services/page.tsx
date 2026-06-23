@@ -2,6 +2,7 @@ import Layout from "../../../components/layout/Layout";
 import Service from "../../../components/sections/home/Service";
 import Working from "../../../components/sections/home/Working";
 import Cta from "../../../components/sections/home/Cta";
+import { fetchServices } from "@/lib/api";
 import { generateMetadata, defaultSEO } from "@/utils/metadata";
 import type { Metadata } from "next";
 
@@ -17,14 +18,22 @@ export const metadata: Metadata = generateMetadata({
   canonical: "/services"
 });
 
-export default function ServicesPage() {
-    return (
-        <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Our Services">
-                <Service />
-                <Working />
-                <Cta />
-            </Layout>
-        </div>
-    )
+export default async function ServicesPage() {
+  let apiServices;
+  try {
+    const response = await fetchServices({ limit: 100 });
+    apiServices = response.data;
+  } catch {
+    apiServices = undefined;
+  }
+
+  return (
+    <div className="boxed_wrapper">
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Our Services">
+        <Service services={apiServices} />
+        <Working />
+        <Cta />
+      </Layout>
+    </div>
+  )
 }

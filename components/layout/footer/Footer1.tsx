@@ -1,11 +1,31 @@
+'use client'
 
 import Image from "next/image";
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import { ServiceItem } from "@/lib/api";
 
 export default function Footer1() {
+    const [services, setServices] = useState<ServiceItem[]>([]);
     const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        console.log("Footer: Fetching services from /api/proxy-services");
+        fetch("/api/proxy-services")
+            .then((res) => {
+                console.log("Footer: Response status", res.status);
+                return res.json();
+            })
+            .then((res) => {
+                console.log("Footer: Response data", res);
+                setServices(res.data || []);
+            })
+            .catch((err) => {
+                console.error("Footer: Fetch error", err);
+                setServices([]);
+            });
+    }, []);
 
     const toggleServicesDropdown = () => {
         setIsServicesDropdownOpen(!isServicesDropdownOpen);
@@ -92,12 +112,12 @@ export default function Footer1() {
                                             opacity: isMobile ? (isServicesDropdownOpen ? 1 : 0) : 1,
                                             display: isMobile ? 'block' : 'block'
                                         }}>
-                                            <li><Link href="/physiotherapy">Physiotherapy</Link></li>
-                                            <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
-                                            <li><Link href="/massage-therapy">Massage Therapy</Link></li>
-                                            <li><Link href="/electrotherapy">Electrotherapy</Link></li>
-                                            <li><Link href="/kinesio-taping">Kinesio Taping</Link></li>
-                                            <li><Link href="/orthotics">Orthotics</Link></li>
+                                            {services.slice(0, 4).map((svc) => (
+                                                <li key={svc.id}>
+                                                    <Link href={`/services/${svc.slug}`}>{svc.wehoware_service_categories?.name || svc.title}</Link>
+                                                </li>
+                                            ))}
+                                            <li><Link href="/services">View All Services</Link></li>
                                         </ul>
                                     </div>
                                 </div>

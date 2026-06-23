@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Working() {
   return (
-        <section className="working-section sec-pad centred">
+        <section className="working-section sec-pad centred" style={{ paddingTop: '60px' }}>
             <div className="auto-container">
                 <div className="sec-title mb_60">
                     <span className="sub-title mb_5">How It Works</span>

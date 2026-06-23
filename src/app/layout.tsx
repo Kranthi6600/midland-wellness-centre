@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Caveat } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
+import NextTopLoader from "nextjs-toploader";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -117,6 +118,20 @@ export default function RootLayout({
         />
       </head>
       <body className={`${roboto.variable} ${caveat.variable} font-body`}>
+        <NextTopLoader
+          color="#007acc"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #007acc,0 0 5px #007acc"
+          template='<div class="bar" role="bar"><div class="peg"></div></div>'
+          zIndex={1600}
+          showAtBottom={false}
+        />
         {children}
         <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
       </body>

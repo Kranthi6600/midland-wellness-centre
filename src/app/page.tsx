@@ -5,6 +5,7 @@ import Banner from "../../components/sections/home/Banner";
 import Chooseus from "../../components/sections/home/Chooseus";
 import Service from "../../src/components/sections/home/Service";
 import Cta from "../../components/sections/home/Cta";
+import { fetchServices } from "@/lib/api";
 import { generateMetadata, defaultSEO } from "@/utils/metadata";
 import type { Metadata } from "next";
 
@@ -20,18 +21,25 @@ export const metadata: Metadata = generateMetadata({
   canonical: "/"
 });
 
-export default function Home() {
+export default async function Home() {
+  let apiServices;
+  try {
+    const response = await fetchServices({ limit: 6 });
+    apiServices = response.data;
+  } catch {
+    apiServices = undefined;
+  }
 
-    return (
-        <div className="boxed_wrapper">
-            <Layout headerStyle={1} footerStyle={1}>
-                <Banner/>
-                <Service/>
-                <AboutTwo/>
-                <Chooseus/>
-                <Working/>
-                <Cta/>
-            </Layout>
-        </div>
-    )
+  return (
+    <div className="boxed_wrapper">
+      <Layout headerStyle={1} footerStyle={1}>
+        <Banner/>
+        <Service services={apiServices} />
+        <AboutTwo/>
+        <Chooseus/>
+        <Working/>
+        <Cta/>
+      </Layout>
+    </div>
+  )
 }

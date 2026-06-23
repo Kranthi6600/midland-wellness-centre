@@ -1,32 +1,51 @@
-"use client";
-
 import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../components/sections/home/Cta";
-import { getBlogPosts, BlogPost } from "../../data/blogPosts";
-import { useState } from "react";
+import { fetchBlogs, fetchBlogCategories, BlogItem, BlogCategory } from "@/lib/api";
+import { generateMetadata as genMeta, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
 
-export default function BlogPage() {
-    const allBlogPosts = getBlogPosts();
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>(allBlogPosts);
+export const metadata: Metadata = genMeta({
+    ...defaultSEO,
+    title: "Blog | Midland Wellness Centre - Scarborough",
+    description: "Read the latest articles on physiotherapy, chiropractic care, massage therapy, and wellness from the experts at Midland Wellness Centre.",
+    keywords: "blog, wellness articles, physiotherapy tips, chiropractic, massage therapy, health",
+    canonical: "/blog",
+});
 
-    // Filter posts by category
-    const filterByCategory = (category: string) => {
-        if (category === 'all') {
-            setFilteredPosts(allBlogPosts);
-        } else {
-            const filtered = allBlogPosts.filter(post => post.category.toLowerCase().includes(category.toLowerCase()));
-            setFilteredPosts(filtered);
-        }
-        setSelectedCategory(category);
-    };
+function stripHtml(html: string): string {
+    return html.replace(/<[^>]*>/g, "");
+}
 
-    // Get unique categories
-    const categories = ['all', ...new Set(allBlogPosts.map(post => post.category))];
+function formatDate(date: string | null): string {
+    if (!date) return "";
+    return new Date(date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+}
 
-    const displayPosts = selectedCategory ? filteredPosts : allBlogPosts;
+export default async function BlogPage() {
+    let posts: BlogItem[] = [];
+    let categories: BlogCategory[] = [];
+
+    try {
+        const response = await fetchBlogs({ limit: 100 });
+        posts = response?.data || [];
+    } catch {
+        posts = [];
+    }
+
+    try {
+        const catResponse = await fetchBlogCategories();
+        categories = catResponse.data || [];
+    } catch {
+        categories = [];
+    }
+
+    const latestPosts = posts.slice(0, 3);
 
     return (
         <div className="boxed_wrapper">
@@ -37,19 +56,27 @@ export default function BlogPage() {
                             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                 <div className="blog-grid-content">
                                     <div className="row clearfix">
-                                        {displayPosts.map((post: BlogPost) => (
+                                        {posts.length === 0 ? (
+                                            <div className="col-12 centred">
+                                                <p>No blog posts available at the moment.</p>
+                                            </div>
+                                        ) : posts.map((post: BlogItem) => (
                                             <div key={post.id} className="col-lg-6 col-md-6 col-sm-12 news-block">
                                                 <div className="news-block-one">
                                                     <div className="inner-box">
-                                                        <figure className="image-box"><Link href={`/blog/${post.slug}`}><Image src={post.image} alt={post.title} width={416} height={287} priority /></Link></figure>
+                                                        {post.thumbnail && (
+                                                            <figure className="image-box"><Link href={`/blog/${post.slug}`}><Image src={post.thumbnail} alt={post.thumbnail_alt || post.title} width={416} height={287} priority /></Link></figure>
+                                                        )}
                                                         <div className="lower-content">
-                                                            <span className="comment-box">{post.comments}Comment</span>
+                                                            {post.read_time && <span className="comment-box">{post.read_time} min read</span>}
                                                             <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
                                                             <ul className="post-info clearfix">
-                                                                <li><i className="icon-59"></i>{post.date}</li>
-                                                                <li><i className="icon-60"></i><Link href={`/blog/${post.slug}`}>{post.author}</Link></li>
+                                                                <li><i className="icon-59"></i>{formatDate(post.published_at || post.created_at)}</li>
+                                                                {post.wehoware_blog_categories && (
+                                                                    <li><i className="icon-60"></i>{post.wehoware_blog_categories.name}</li>
+                                                                )}
                                                             </ul>
-                                                            <p>{post.excerpt}</p>
+                                                            {post.excerpt && <p>{stripHtml(post.excerpt)}</p>}
                                                             <div className="link">
                                                                 <Link href={`/blog/${post.slug}`}>Read More</Link>
                                                             </div>
@@ -59,60 +86,44 @@ export default function BlogPage() {
                                             </div>
                                         ))}
                                     </div>
-                                    <div className="pagination-wrapper centred">
-                                        <ul className="pagination clearfix">
-                                            <li><Link href="/blog"><i className="icon-21"></i></Link></li>
-                                            <li><Link href="/blog" className="current">01</Link></li>
-                                            <li><Link href="/blog">02</Link></li>
-                                            <li className="dotted"><Image src="/assets/images/icons/icon-21.svg" alt="Pagination separator dots" width={23} height={5} priority /></li>
-                                            <li><Link href="/blog"><i className="icon-22"></i></Link></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
                                 <div className="blog-sidebar">
-                                    <div className="search-widget mb_40">
-                                        <h3>Search Here</h3>
-                                        <form method="post" action="/blog">
-                                            <div className="form-group">
-                                                <input type="search" name="search-field" placeholder="keywords" required />
-                                                <button type="submit"><Image src="/assets/images/icons/icon-22.svg" alt="Blog search button" width={20} height={20} priority /></button>
+                                    {categories.length > 0 && (
+                                        <div className="sidebar-widget category-widget mb_40">
+                                            <div className="widget-title">
+                                                <h3>Category</h3>
                                             </div>
-                                        </form>
-                                    </div>
-                                    <div className="sidebar-widget category-widget mb_40">
-                                        <div className="widget-title">
-                                            <h3>Category</h3>
+                                            <div className="widget-content">
+                                                <ul className="category-list clearfix">
+                                                    {categories.map((cat: BlogCategory) => (
+                                                        <li key={cat.id}><Link href="/blog">{cat.name}</Link></li>
+                                                    ))}
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div className="widget-content">
-                                            <ul className="category-list clearfix">
-                                                <li><Link href="/physiotherapy">Physiotherapy</Link></li>
-                                                <li><Link href="/chiropractic-adjustments">Chiropractic Adjustments</Link></li>
-                                                <li><Link href="/massage-therapy">Massage Therapy</Link></li>
-                                                <li><Link href="/electrotherapy">Electrotherapy</Link></li>
-                                                <li><Link href="/kinesio-taping">Kinesio Taping</Link></li>
-                                                <li><Link href="/orthotics">Orthotics</Link></li>
-                                            </ul>
+                                    )}
+                                    {latestPosts.length > 0 && (
+                                        <div className="sidebar-widget post-widget mb_40">
+                                            <div className="widget-title">
+                                                <h3>Latest News</h3>
+                                            </div>
+                                            <div className="post-inner">
+                                                {latestPosts.map((post: BlogItem) => (
+                                                    <div key={post.id} className="post">
+                                                        {post.thumbnail && (
+                                                            <figure className="post-thumb"><Link href={`/blog/${post.slug}`}><Image src={post.thumbnail} alt={post.thumbnail_alt || post.title} width={100} height={101} priority /></Link></figure>
+                                                        )}
+                                                        <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
+                                                        <ul className="post-info clearfix">
+                                                            <li><i className="icon-59"></i>{formatDate(post.published_at || post.created_at)}</li>
+                                                        </ul>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="sidebar-widget post-widget mb_40">
-                                        <div className="widget-title">
-                                            <h3>Latest News</h3>
-                                        </div>
-                                        <div className="post-inner">
-                                            {displayPosts.slice(0, 3).map((post: BlogPost) => (
-                                                <div key={post.id} className="post">
-                                                    <figure className="post-thumb"><Link href={`/blog/${post.slug}`}><Image src={post.image} alt={post.title} width={100} height={101} priority /></Link></figure>
-                                                    <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
-                                                    <ul className="post-info clearfix">
-                                                        <li><i className="icon-59"></i>{post.date}</li>
-                                                        <li><i className="icon-60"></i><Link href={`/blog/${post.slug}`}>{post.author}</Link></li>
-                                                    </ul>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
+                                    )}
                                     <div className="consulting-widget">
                                         <div className="bg-layer"></div>
                                         <h3>Get Free <br />Consultations Today!</h3>

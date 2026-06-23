@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { ServiceItem } from "@/lib/api";
 
 type MobileMenuProps = {
   isSidebar: boolean;
@@ -12,6 +13,18 @@ type MobileMenuProps = {
 
 export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar }: MobileMenuProps) {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const [services, setServices] = useState<ServiceItem[]>([]);
+
+  useEffect(() => {
+    fetch("/api/proxy-services")
+      .then((res) => res.json())
+      .then((res) => {
+        setServices(res.data || []);
+      })
+      .catch(() => {
+        setServices([]);
+      });
+  }, []);
 
   const toggleDropdown = (key: number) => {
     if (activeDropdown === key) {
@@ -43,19 +56,19 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
               <li><Link href="/about">About Us</Link></li>
 
               {/* Services */}
-              <li className={`dropdown ${activeDropdown === 2 ? "current" : ""}`}>
-                <Link href="/departments">Departments</Link>
-                <ul style={{ display: activeDropdown === 2 ? "block" : "none" }}>
-                  <li><Link href="/department-details">Physiotherapy</Link></li>
-                  <li><Link href="/department-details-2">Chiropractic Adjustments</Link></li>
-                  <li><Link href="/department-details-3">Massage Therapy</Link></li>
-                  <li><Link href="/department-details-4">Electrotherapy</Link></li>
-                  <li><Link href="/department-details-5">Kinesio Taping</Link></li>
-                  <li><Link href="/department-details-6">Orthotics</Link></li>
-                </ul>
-                <div className={`dropdown-btn ${activeDropdown === 2 ? "open" : ""}`} onClick={() => toggleDropdown(2)}>
-                  <span className="fa fa-angle-right" />
-                </div>
+              <li className={services.length > 0 ? "dropdown" : ""}>
+                <Link href="/services" onClick={(e) => { if (services.length > 0) { e.preventDefault(); toggleDropdown(2); } }}>
+                  Our Services {services.length > 0 && <span className={activeDropdown === 2 ? "fa fa-angle-up" : "fa fa-angle-down"}></span>}
+                </Link>
+                {activeDropdown === 2 && services.length > 0 && (
+                  <ul>
+                    {services.map((svc) => (
+                      <li key={svc.id}>
+                        <Link href={`/services/${svc.slug}`}>{svc.wehoware_service_categories?.name || svc.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
 
               {/* Appointment */}
