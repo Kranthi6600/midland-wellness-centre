@@ -47,7 +47,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle, small, bg }) =
       <div className="bg-layer" style={{ backgroundImage: backgroundImage }}
       ></div>
       <div className="auto-container">
-        <div className="content-box" style={{ padding: '20px 30px', borderRadius: '12px', maxWidth: '600px', margin: '0 auto', position: 'absolute', top: '28%', left: '50%', transform: 'translate(-50%, -50%)', background: 'rgba(255, 255, 255, 0.92)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.25)' }}>
+        <div className="content-box" style={{ padding: '20px 30px', borderRadius: '12px', maxWidth: '600px', position: 'absolute', bottom: '30px', right: '30px', background: 'rgba(255, 255, 255, 0.92)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.25)' }}>
           <h2 style={{ fontSize: small ? 'clamp(18px, 3.5vw, 30px)' : 'clamp(24px, 5vw, 48px)', marginBottom: 'clamp(8px, 2vw, 15px)', color: '#1a2b3c' }}>{breadcrumbTitle}</h2>
           <ul className="bread-crumb clearfix" style={{ fontSize: 'clamp(12px, 3vw, 16px)' }}>
             <li><Link href="/">Home</Link></li>
