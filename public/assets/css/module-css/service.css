@@ -8,8 +8,8 @@
 .service-block-one .inner-box{
   position: relative;
   display: block;
-  padding-bottom: 158px;
-  height: 480px;
+  padding-bottom: 0px;
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@
   display: block;
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
-  height: 300px;
+  height: 200px;
 }
 
 .service-block-one .inner-box .image-box img{
@@ -34,24 +34,27 @@
 }
 
 .service-block-one .inner-box .lower-content{
-  position: absolute;
-  left: 50%;
-  top: 60%;
+  position: relative;
+  left: auto;
+  bottom: auto;
   background: #FFFFFF;
   border: 7px solid rgba(218, 235, 251, 0.5);
+  border-top: none;
   box-shadow: 0px 4px 30px rgba(205, 192, 192, 0.15);
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  height: auto;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   z-index: 1;
-  padding: 20px;
+  padding: 48px 20px 20px 20px;
   transition: all 500ms ease;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 0px 0px 20px 20px;
+  transform: none;
+  margin-top: -2px;
 }
 
 .service-block-one .inner-box:hover .lower-content{
@@ -66,7 +69,7 @@
   left: 0px;
   top: 0px;
   transform: scale(0,0);
-  border-radius: 50%;
+  border-radius: 0px 0px 20px 20px;
   z-index: -1;
   background: var(--theme-color);
   transition: all 500ms ease;
@@ -77,11 +80,23 @@
 }
 
 .service-block-one .inner-box .lower-content .icon-box{
-  position: relative;
-  display: block;
-  font-size: 60px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid rgba(218, 235, 251, 0.8);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+  font-size: 38px;
   color: var(--secondary-color);
-  margin-bottom: 12px;
+  margin-bottom: 0px;
+  z-index: 3;
   transition: all 500ms ease;
 }
 
@@ -115,10 +130,13 @@
   overflow: hidden;
 }
 
-.service-block-one .inner-box:hover .lower-content .icon-box,
 .service-block-one .inner-box:hover .lower-content h3 a,
 .service-block-one .inner-box:hover .lower-content p{
   color: #fff;
+}
+
+.service-block-one .inner-box:hover .lower-content .icon-box{
+  color: var(--secondary-color);
 }
 
 .service-section .pattern-layer{

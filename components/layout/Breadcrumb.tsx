@@ -3,9 +3,11 @@ import Link from "next/link";
 
 interface BreadcrumbProps {
   breadcrumbTitle: string;
+  small?: boolean;
+  bg?: string;
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle }) => {
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle, small, bg }) => {
   // Define different background images for different routes
   const getBackgroundImage = (title: string) => {
     switch (title) {
@@ -38,19 +40,23 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbTitle }) => {
     }
   };
 
+  const backgroundImage = bg ? `url(${bg})` : getBackgroundImage(breadcrumbTitle);
+
   return (
     <section className="page-title p_relative centred">
-      <div className="bg-layer" style={{ backgroundImage: getBackgroundImage(breadcrumbTitle) }}
+      <div className="bg-layer" style={{ backgroundImage: backgroundImage }}
       ></div>
       <div className="auto-container">
-        <div className="content-box" style={{ padding: '20px', borderRadius: '10px', maxWidth: '600px', margin: '0 auto', position: 'absolute', top: '20px', left: '50%', transform: 'translateX(-50%)' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 5vw, 48px)', marginBottom: 'clamp(8px, 2vw, 15px)' }}>{breadcrumbTitle}</h2>
+        <div className="content-box" style={{ padding: '20px 30px', borderRadius: '12px', maxWidth: '600px', margin: '0 auto', position: 'absolute', top: '28%', left: '50%', transform: 'translate(-50%, -50%)', background: 'rgba(255, 255, 255, 0.92)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.25)' }}>
+          <h2 style={{ fontSize: small ? 'clamp(18px, 3.5vw, 30px)' : 'clamp(24px, 5vw, 48px)', marginBottom: 'clamp(8px, 2vw, 15px)', color: '#1a2b3c' }}>{breadcrumbTitle}</h2>
           <ul className="bread-crumb clearfix" style={{ fontSize: 'clamp(12px, 3vw, 16px)' }}>
             <li><Link href="/">Home</Link></li>
-            <li className="current-page" style={{ 
-              color: 'white !important',
-              fontWeight: 'bold'
-            }}>{breadcrumbTitle}</li>
+            {!small && (
+              <li className="current-page" style={{
+                color: 'var(--theme-color) !important',
+                fontWeight: 'bold'
+              }}>{breadcrumbTitle}</li>
+            )}
           </ul>
         </div>
       </div>

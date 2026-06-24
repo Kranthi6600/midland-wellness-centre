@@ -2,6 +2,7 @@ import Layout from "../../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../../components/sections/home/Cta";
+import StickySidebar from "../../../../components/elements/StickySidebar";
 import { fetchBlogBySlug, fetchBlogs, BlogItem } from "@/lib/api";
 import { generateMetadata as genMeta, defaultSEO } from "@/utils/metadata";
 import type { Metadata } from "next";
@@ -88,11 +89,11 @@ export default async function BlogDetailPage({ params }: Props) {
 
   return (
     <div className="boxed_wrapper">
-      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Blog">
+      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Blog" breadcrumbBg={blog.thumbnail || undefined}>
         <section className="sidebar-page-container pt_120 pb_120">
           <div className="auto-container">
-            <div className="row clearfix">
-              <div className="col-lg-8 col-md-12 col-sm-12 content-side">
+            <StickySidebar
+              mainContent={
                 <div className="blog-details-content">
                   <div className="back-to-blog mb_30">
                     <Link href="/blog" className="theme-btn btn-one" style={{ width: "200px", padding: "12px 30px", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -213,9 +214,8 @@ export default async function BlogDetailPage({ params }: Props) {
                     </div>
                   )}
                 </div>
-              </div>
-
-              <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
+              }
+              sidebarTop={
                 <div className="blog-sidebar">
                   {latestPosts.length > 0 && (
                     <div className="sidebar-widget post-widget mb_40">
@@ -241,16 +241,50 @@ export default async function BlogDetailPage({ params }: Props) {
                       </div>
                     </div>
                   )}
-
-                  <div className="consulting-widget">
-                    <div className="bg-layer"></div>
-                    <h3>Get Free <br />Consultations Today!</h3>
-                    <p>Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!</p>
-                    <Link href="/contact-us" className="theme-btn btn-two"><span>get a quote</span></Link>
-                  </div>
                 </div>
-              </div>
-            </div>
+              }
+              sidebarBottom={
+                <div className="consulting-widget sidebar-widget" style={{ padding: "40px 30px", borderRadius: "16px", background: "linear-gradient(135deg, #007acc 0%, #005a9e 100%)", color: "#fff", textAlign: "center" }}>
+                  <div
+                    style={{
+                      width: "64px",
+                      height: "64px",
+                      borderRadius: "50%",
+                      background: "rgba(255,255,255,0.15)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto 20px",
+                      fontSize: "28px",
+                    }}
+                  >
+                    <i className="icon-14" style={{ color: "#fff" }} />
+                  </div>
+                  <h3 style={{ color: "#fff", fontSize: "22px", lineHeight: "1.3", marginBottom: "15px" }}>
+                    Get Free Consultations Today!
+                  </h3>
+                  <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "14px", lineHeight: "1.6", marginBottom: "24px" }}>
+                    Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!
+                  </p>
+                  <Link
+                    href="/contact-us"
+                    className="theme-btn-one"
+                    style={{
+                      background: "#fff",
+                      color: "#007acc",
+                      display: "inline-block",
+                      padding: "12px 28px",
+                      borderRadius: "8px",
+                      fontWeight: 600,
+                      textDecoration: "none",
+                      transition: "all 300ms ease",
+                    }}
+                  >
+                    Get a Quote
+                  </Link>
+                </div>
+              }
+            />
           </div>
         </section>
         <Cta />

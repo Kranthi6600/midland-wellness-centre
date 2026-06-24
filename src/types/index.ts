@@ -4,6 +4,8 @@ export interface LayoutProps {
   headerStyle?: 1 | 2 | 3;
   footerStyle?: 1;
   breadcrumbTitle?: string;
+  breadcrumbSmall?: boolean;
+  breadcrumbBg?: string;
   children: React.ReactNode;
   wrapperCls?: string;
 }

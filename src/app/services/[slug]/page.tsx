@@ -1,6 +1,7 @@
 import Layout from "../../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
+import StickySidebar from "../../../../components/elements/StickySidebar";
 import { fetchServiceBySlug, fetchServices } from "@/lib/api";
 import { generateMetadata as genMeta, defaultSEO } from "@/utils/metadata";
 import type { Metadata } from "next";
@@ -84,11 +85,11 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <div className="boxed_wrapper">
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle={service.title}>
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle={service.title} breadcrumbSmall>
         <section className="service-details sec-pad">
           <div className="auto-container">
-            <div className="row clearfix">
-              <div className="col-lg-8 col-md-12 col-sm-12 content-side">
+            <StickySidebar
+              mainContent={
                 <div className="service-details-content">
                   {service.thumbnail && (
                     <figure className="image-box mb_30">
@@ -133,11 +134,9 @@ export default async function ServiceDetailPage({ params }: Props) {
                     </div>
                   )}
                 </div>
-              </div>
-
-              <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
+              }
+              sidebarTop={
                 <div className="service-sidebar">
-
                   {otherServices.length > 0 && (
                     <div
                       className="sidebar-widget category-widget mb_40"
@@ -324,10 +323,61 @@ export default async function ServiceDetailPage({ params }: Props) {
                       </div>
                     </div>
                   )}
-
                 </div>
-              </div>
-            </div>
+              }
+              sidebarBottom={
+                <div className="sidebar-widget consultation-widget mb_40">
+                  <div
+                    className="widget-content text-center p_40"
+                    style={{
+                      background: "linear-gradient(135deg, #007acc 0%, #005a9e 100%)",
+                      borderRadius: "16px",
+                      color: "#fff",
+                      padding: "40px 30px",
+                      boxShadow: "0px 10px 40px rgba(0, 122, 204, 0.25)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "64px",
+                        height: "64px",
+                        borderRadius: "50%",
+                        background: "rgba(255,255,255,0.15)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        margin: "0 auto 20px",
+                        fontSize: "28px",
+                      }}
+                    >
+                      <i className="icon-14" style={{ color: "#fff" }} />
+                    </div>
+                    <h3 className="mb_15" style={{ color: "#fff", fontSize: "22px", lineHeight: "1.3" }}>
+                      Get Free Consultations Today!
+                    </h3>
+                    <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "14px", lineHeight: "1.6", marginBottom: "24px" }}>
+                      Speak with our expert team and receive professional advice on your next project. No obligation, no cost. Schedule your consultation now!
+                    </p>
+                    <Link
+                      href="/contact"
+                      className="theme-btn-one"
+                      style={{
+                        background: "#fff",
+                        color: "#007acc",
+                        display: "inline-block",
+                        padding: "12px 28px",
+                        borderRadius: "8px",
+                        fontWeight: 600,
+                        textDecoration: "none",
+                        transition: "all 300ms ease",
+                      }}
+                    >
+                      Get a Quote
+                    </Link>
+                  </div>
+                </div>
+              }
+            />
           </div>
         </section>
       </Layout>

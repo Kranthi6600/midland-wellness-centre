@@ -16,6 +16,8 @@ export default function Layout({
   headerStyle = 1,
   footerStyle = 1,
   breadcrumbTitle,
+  breadcrumbSmall,
+  breadcrumbBg,
   children,
   wrapperCls,
 }: LayoutProps) {
@@ -100,7 +102,7 @@ export default function Layout({
         <SidebarPopup isOpen={isSidebar} onClose={handleSidebar} />
 
         {/* Breadcrumb */}
-        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} small={breadcrumbSmall} bg={breadcrumbBg} />}
 
         {/* Page Content */}
         {children}

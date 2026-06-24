@@ -77,7 +77,7 @@ export default function Preloader() {
                                 <span data-text-preloader=" " className="letters-loading">
                                     &nbsp;
                                 </span>
-                                <span data-text-preloader="s" className="letters-loading">
+                                <span data-text-preloader="c" className="letters-loading">
                                     c
                                 </span>
                                 <span data-text-preloader="e" className="letters-loading">

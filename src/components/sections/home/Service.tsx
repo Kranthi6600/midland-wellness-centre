@@ -50,7 +50,7 @@ export default function Service({ services }: ServiceProps) {
                   )}
                   <div className="lower-content">
                     <div className="inner">
-                      <div className="icon-box" style={{ transform: 'scale(0.7)' }}>
+                      <div className="icon-box">
                         <i className={service.icon}></i>
                       </div>
                       <h3>
