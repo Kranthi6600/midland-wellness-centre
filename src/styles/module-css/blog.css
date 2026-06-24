@@ -9,6 +9,43 @@
   margin-bottom: 30px;
 }
 
+/* Equal-height blog cards */
+.blog-grid-content .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-grid-content .news-block{
+  display: flex;
+}
+
+.blog-grid-content .news-block-one{
+  display: flex;
+  width: 100%;
+}
+
+.blog-grid-content .news-block-one .inner-box{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.blog-grid-content .news-block-one .inner-box .image-box{
+  flex-shrink: 0;
+}
+
+.blog-grid-content .news-block-one .inner-box .lower-content{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-grid-content .news-block-one .inner-box .lower-content .link{
+  margin-top: auto;
+}
+
 .sidebar-page-container .pagination-wrapper{
   padding-top: 30px;
 }
