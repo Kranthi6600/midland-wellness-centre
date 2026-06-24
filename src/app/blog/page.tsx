@@ -19,6 +19,12 @@ function stripHtml(html: string): string {
     return html.replace(/<[^>]*>/g, "");
 }
 
+function truncateWords(text: string, wordLimit: number): string {
+    const words = text.trim().split(/\s+/);
+    if (words.length <= wordLimit) return text;
+    return words.slice(0, wordLimit).join(" ") + "...";
+}
+
 function formatDate(date: string | null): string {
     if (!date) return "";
     return new Date(date).toLocaleDateString("en-US", {
@@ -77,7 +83,7 @@ export default async function BlogPage() {
                                                                     <li><i className="icon-60"></i>{post.wehoware_blog_categories.name}</li>
                                                                 )}
                                                             </ul>
-                                                            {post.excerpt && <p>{stripHtml(post.excerpt)}</p>}
+                                                            <p>{post.excerpt ? truncateWords(stripHtml(post.excerpt), 20) : ""}</p>
                                                             <div className="link">
                                                                 <Link href={`/blog/${post.slug}`}>Read More</Link>
                                                             </div>
