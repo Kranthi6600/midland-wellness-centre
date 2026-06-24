@@ -5,6 +5,84 @@
   position: relative;
 }
 
+/* Consistent typography for rendered blog HTML content */
+.blog-details-content .blog-content{
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.blog-details-content .blog-content h1,
+.blog-details-content .blog-content h2,
+.blog-details-content .blog-content h3,
+.blog-details-content .blog-content h4,
+.blog-details-content .blog-content h5,
+.blog-details-content .blog-content h6{
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.blog-details-content .blog-content h1{ font-size: 34px; }
+.blog-details-content .blog-content h2{ font-size: 28px; }
+.blog-details-content .blog-content h3{ font-size: 24px; }
+.blog-details-content .blog-content h4{ font-size: 20px; }
+.blog-details-content .blog-content h5{ font-size: 18px; }
+.blog-details-content .blog-content h6{ font-size: 16px; }
+
+.blog-details-content .blog-content h1:first-child,
+.blog-details-content .blog-content h2:first-child,
+.blog-details-content .blog-content h3:first-child,
+.blog-details-content .blog-content h4:first-child{
+  margin-top: 0;
+}
+
+.blog-details-content .blog-content p{
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: var(--text-color);
+}
+
+.blog-details-content .blog-content strong,
+.blog-details-content .blog-content b{
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.blog-details-content .blog-content a{
+  color: var(--theme-color);
+  text-decoration: underline;
+}
+
+/* Restore list styling for rendered blog HTML content */
+.blog-details-content .blog-content ul{
+  list-style: disc;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.blog-details-content .blog-content ol{
+  list-style: decimal;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.blog-details-content .blog-content ul li,
+.blog-details-content .blog-content ol li{
+  display: list-item;
+  list-style: inherit;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.blog-details-content .blog-content ul ul{
+  list-style: circle;
+}
+
 .blog-details-content blockquote{
   position: relative;
   display: block;
