@@ -2,7 +2,6 @@
 import Layout from "../../../components/layout/Layout";
 import Working from "../../../components/sections/home/Working";
 import About from "../../../components/sections/home/About";
-import AboutTwo from "../../../components/sections/home/About_Two";
 import Banner from "../../../components/sections/home/Banner";
 import Chooseus from "../../../components/sections/home/Chooseus";
 import Service from "../../../components/sections/home/Service";
@@ -25,7 +24,6 @@ export default function Home2() {
                 <Banner/>
                 <About/>
                 <Service/>
-                <AboutTwo/>
                 <Chooseus/>
                 <Working/>
                 <Cta/>

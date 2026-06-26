@@ -1,6 +1,6 @@
 import Layout from "../../components/layout/Layout";
 import Working from "../../components/sections/home/Working";
-import AboutTwo from "../../components/sections/home/About_Two";
+import About from "../../components/sections/home/About";
 import Banner from "../../components/sections/home/Banner";
 import Chooseus from "../../components/sections/home/Chooseus";
 import Service from "../../src/components/sections/home/Service";
@@ -35,7 +35,7 @@ export default async function Home() {
       <Layout headerStyle={1} footerStyle={1}>
         <Banner/>
         <Service services={apiServices} />
-        <AboutTwo/>
+        <About/>
         <Chooseus/>
         <Working/>
         <Cta/>
