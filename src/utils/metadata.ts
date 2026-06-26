@@ -1,4 +1,11 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+
+function toAbsoluteUrl(path?: string): string | undefined {
+  if (!path) return undefined;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  return `${SITE_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+}
 
 interface SEOConfig {
   title: string;
@@ -33,6 +40,8 @@ export function generateMetadata(config: SEOConfig): Metadata {
     twitter
   } = config;
 
+  const canonicalUrl = toAbsoluteUrl(canonical);
+
   return {
     title,
     description,
@@ -40,7 +49,7 @@ export function generateMetadata(config: SEOConfig): Metadata {
     openGraph: {
       title: openGraph?.title || title,
       description: openGraph?.description || description,
-      url: canonical,
+      url: canonicalUrl,
       siteName: "Midland Wellness Centre",
       locale: "en_CA",
       type: "website",
@@ -61,7 +70,7 @@ export function generateMetadata(config: SEOConfig): Metadata {
       creator: "@midlandwellness",
     },
     alternates: {
-      canonical: canonical,
+      canonical: canonicalUrl,
     },
     robots: {
       index: true,

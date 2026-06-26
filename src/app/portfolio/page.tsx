@@ -2,6 +2,15 @@ import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../components/sections/home/Cta";
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Portfolio | Midland Wellness Centre - Scarborough",
+  description: "View our portfolio of successful treatments and patient care highlights at Midland Wellness Centre in Scarborough.",
+  canonical: "/portfolio",
+});
 
 export default function Portfolio_Page() {
   return (

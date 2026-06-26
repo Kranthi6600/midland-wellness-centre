@@ -48,9 +48,7 @@ async function handleContactSubmission(request: NextRequest, context: any): Prom
     let savedSubmission: ContactSubmission | null = null;
     try {
       savedSubmission = await databaseService.saveSubmission(submissionData);
-      console.log('Contact submission saved to database:', savedSubmission.id);
     } catch (dbError) {
-      console.error('Database save error:', dbError);
       // Continue with email sending even if database fails
     }
 
@@ -62,17 +60,13 @@ async function handleContactSubmission(request: NextRequest, context: any): Prom
       if (!emailResult.success) {
         throw new Error(emailResult.error);
       }
-      
-      console.log('Email sent successfully for submission:', savedSubmission?.id || 'unknown');
     } catch (emailError) {
-      console.error('Email sending error:', emailError);
       
       // If email fails but database succeeded, update status
       if (savedSubmission) {
         try {
           await databaseService.updateStatus(savedSubmission.id, 'pending');
         } catch (updateError) {
-          console.error('Failed to update submission status:', updateError);
         }
       }
       
@@ -91,7 +85,6 @@ async function handleContactSubmission(request: NextRequest, context: any): Prom
       try {
         await databaseService.updateStatus(savedSubmission.id, 'processed');
       } catch (updateError) {
-        console.error('Failed to update submission status:', updateError);
       }
     }
 
@@ -105,8 +98,6 @@ async function handleContactSubmission(request: NextRequest, context: any): Prom
     });
 
   } catch (error) {
-    console.error('Contact form API error:', error);
-    
     return NextResponse.json(
       { 
         success: false, 

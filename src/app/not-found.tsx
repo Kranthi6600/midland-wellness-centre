@@ -1,11 +1,15 @@
 
 import Link from "next/link";
 import { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Page Not Found - 404 | Midland Wellness Centre",
   description: "The page you're looking for doesn't exist. Return to Midland Wellness Centre homepage to find expert physiotherapy and wellness services in Scarborough.",
   robots: "noindex, follow",
+  alternates: {
+    canonical: `${SITE_URL}/404`,
+  },
 };
 
 export default function NotFound() {

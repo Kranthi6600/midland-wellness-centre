@@ -8,7 +8,7 @@ import { generateMetadata as genMeta, defaultSEO } from "@/utils/metadata";
 import type { Metadata } from "next";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 function formatDate(date: string | null): string {
@@ -21,7 +21,7 @@ function formatDate(date: string | null): string {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   try {
     const blog = await fetchBlogBySlug(slug);
     return genMeta({
@@ -51,7 +51,7 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogDetailPage({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   let blog;
   let error = false;
   let latestPosts: BlogItem[] = [];

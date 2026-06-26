@@ -24,7 +24,6 @@ export class FileDatabaseService implements DatabaseService {
       // For now, we'll use in-memory storage
       this.submissions = [];
     } catch (error) {
-      console.error('Failed to load submissions:', error);
       this.submissions = [];
     }
   }
@@ -32,9 +31,7 @@ export class FileDatabaseService implements DatabaseService {
   private async saveToFile(): Promise<void> {
     try {
       // In a real implementation, this would write to file system
-      console.log('Saving submissions to file:', this.filePath);
     } catch (error) {
-      console.error('Failed to save submissions:', error);
     }
   }
 
@@ -98,27 +95,22 @@ export class MongoDBService implements DatabaseService {
       status: 'pending'
     };
 
-    console.log('MongoDB: Would save submission:', submission);
     return submission;
   }
 
   async getSubmission(id: string): Promise<ContactSubmission | null> {
-    console.log('MongoDB: Would get submission:', id);
     return null;
   }
 
   async getSubmissions(limit: number = 50, offset: number = 0): Promise<ContactSubmission[]> {
-    console.log(`MongoDB: Would get submissions limit=${limit} offset=${offset}`);
     return [];
   }
 
   async updateStatus(id: string, status: ContactSubmission['status']): Promise<boolean> {
-    console.log(`MongoDB: Would update status for ${id} to ${status}`);
     return true;
   }
 
   async deleteSubmission(id: string): Promise<boolean> {
-    console.log(`MongoDB: Would delete submission: ${id}`);
     return true;
   }
 
@@ -140,27 +132,22 @@ export class PostgreSQLService implements DatabaseService {
       status: 'pending'
     };
 
-    console.log('PostgreSQL: Would save submission:', submission);
     return submission;
   }
 
   async getSubmission(id: string): Promise<ContactSubmission | null> {
-    console.log('PostgreSQL: Would get submission:', id);
     return null;
   }
 
   async getSubmissions(limit: number = 50, offset: number = 0): Promise<ContactSubmission[]> {
-    console.log(`PostgreSQL: Would get submissions limit=${limit} offset=${offset}`);
     return [];
   }
 
   async updateStatus(id: string, status: ContactSubmission['status']): Promise<boolean> {
-    console.log(`PostgreSQL: Would update status for ${id} to ${status}`);
     return true;
   }
 
   async deleteSubmission(id: string): Promise<boolean> {
-    console.log(`PostgreSQL: Would delete submission: ${id}`);
     return true;
   }
 

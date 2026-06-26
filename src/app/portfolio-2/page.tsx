@@ -1,20 +1,14 @@
-'use client'
-import React from 'react'
-import Layout from "../../../components/layout/Layout";
-import dynamic from 'next/dynamic'
-const PortfolioFilter1 = dynamic(() => import('../../../components/elements/PortfolioFilter1'), { ssr: false,})
-import Cta from "../../../components/sections/home/Cta";
+import Portfolio2Client from "./Portfolio2Client";
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Portfolio Two | Midland Wellness Centre - Scarborough",
+  description: "View our portfolio of successful treatments and patient care highlights at Midland Wellness Centre in Scarborough.",
+  canonical: "/portfolio-2",
+});
 
 export default function Portfolio_Page_Two() {
-  return (
-    <div className="boxed_wrapper">
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Portfolio Two">
-        <section className="portfolio-page-section pt_120 pb_120">
-            <PortfolioFilter1/>
-        </section>
-
-        <Cta />
-      </Layout>
-    </div>
-  );
+  return <Portfolio2Client />;
 }

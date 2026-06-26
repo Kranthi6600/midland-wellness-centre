@@ -42,14 +42,12 @@ export class FormspreeService {
       });
 
       if (response.ok) {
-        console.log('Appointment sent successfully via Formspree');
         return { success: true };
       } else {
         const errorData = await response.text();
         throw new Error(`Formspree error: ${response.status} - ${errorData}`);
       }
     } catch (error) {
-      console.error('Formspree service error:', error);
       return {
         success: false,
         error: error instanceof Error ? error.message : 'Failed to send appointment'

@@ -2,6 +2,15 @@ import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Cta from "../../../components/sections/home/Cta";
 import ProgressBar from "../../../components/elements/ProgressBar";
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Doctor Details | Midland Wellness Centre - Scarborough",
+  description: "Learn more about our healthcare professionals at Midland Wellness Centre. Read about their education, experience, and specialties.",
+  canonical: "/doctor-details",
+});
 
 export default function Doctors_Details() {
   return (

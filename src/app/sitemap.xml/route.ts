@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
+import { SITE_URL } from '@/lib/site';
 
 export async function GET() {
-  const baseUrl = 'https://midlandwellnesscentre.com';
+  const baseUrl = SITE_URL;
   const currentDate = new Date().toISOString().split('T')[0];
 
   const staticPages = [

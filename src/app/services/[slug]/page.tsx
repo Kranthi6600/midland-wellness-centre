@@ -11,11 +11,11 @@ function stripHtml(html: string): string {
 }
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   try {
     const service = await fetchServiceBySlug(slug);
     return genMeta({
@@ -45,7 +45,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ServiceDetailPage({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   let service;
   let error = false;
   let otherServices: Awaited<ReturnType<typeof fetchServices>>["data"] = [];

@@ -3,6 +3,7 @@ import { Roboto, Caveat } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import NextTopLoader from "nextjs-toploader";
+import { SITE_URL } from "@/lib/site";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,6 +23,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Midland Wellness Centre - Physiotherapy & Wellness Services",
   description: "Expert physiotherapy, chiropractic care, massage therapy and orthotics in Scarborough. Book your appointment today for comprehensive wellness services.",
   keywords: "physiotherapy, chiropractic, massage therapy, orthotics, wellness, scarborough, healthcare, rehabilitation",
@@ -39,6 +41,9 @@ export const metadata: Metadata = {
     description: "Expert care for your health and wellness",
   },
   robots: "index, follow",
+  alternates: {
+    canonical: SITE_URL,
+  },
   verification: {
     google: "buOxD8HhApLh3sPUIkTEmB0Cmrg9v3epoqoA9Foozkc",
   },
@@ -53,8 +58,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Midland Wellness Centre",
-    "url": "https://midlandwellnesscentre.com",
-    "logo": "https://midlandwellnesscentre.com/assets/images/header_logo.png",
+    "url": SITE_URL,
+    "logo": `${SITE_URL}/assets/images/header_logo.png`,
     "description": "Expert physiotherapy, chiropractic care, massage therapy and orthotics in Scarborough",
     "foundingDate": "1994",
     "contactPoint": {
@@ -70,7 +75,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Midland Wellness Centre",
-    "image": "https://midlandwellnesscentre.com/assets/images/header_logo.png",
+    "image": `${SITE_URL}/assets/images/header_logo.png`,
     "telephone": "+1-416-261-7246",
     "email": "info@midlandwellnesscentre.com",
     "address": {
@@ -102,8 +107,7 @@ export default function RootLayout({
           }}
         />
         <link rel="icon" href="/assets/images/header_logo.ico" sizes="any" />
-        <link rel="canonical" href="https://midlandwellnesscentre.com" />
-        <link rel="alternate" hrefLang="en" href="https://midlandwellnesscentre.com" />
+        <link rel="alternate" hrefLang="en" href={SITE_URL} />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <meta name="theme-color" content="#007acc" />

@@ -42,13 +42,6 @@ export async function POST(request: NextRequest) {
     // 4. Send notification to staff
     // 5. Add to calendar system
     // 6. Send SMS confirmation
-    
-    console.log('Appointment request:', {
-      ...sanitizedData,
-      serviceTitle,
-      fullName: `${sanitizedData.firstName} ${sanitizedData.lastName}`,
-      requestedDateTime: `${sanitizedData.preferredDate} at ${sanitizedData.preferredTime}`
-    });
 
     // Simulate processing time
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -64,8 +57,6 @@ export async function POST(request: NextRequest) {
     });
 
   } catch (error) {
-    console.error('Appointment booking error:', error);
-    
     return NextResponse.json(
       { 
         success: false, 

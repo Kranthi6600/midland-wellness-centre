@@ -23,7 +23,6 @@ export class EmailService {
           throw new Error(`Unsupported email provider: ${this.provider.name}`);
       }
     } catch (error) {
-      console.error('Email service error:', error);
       return {
         success: false,
         error: error instanceof Error ? error.message : 'Failed to send email'
@@ -140,7 +139,6 @@ Submitted on: ${new Date().toLocaleString()}
   private async sendWithSendGrid(emailData: ContactEmailData): Promise<{ success: boolean; error?: string }> {
     if (!this.provider.apiKey) {
       // Fallback to client-side email handling when API key is not available
-      console.warn('SendGrid API key not configured, using fallback email method');
       return this.sendFallbackEmail(emailData);
     }
 
@@ -182,7 +180,6 @@ Submitted on: ${new Date().toLocaleString()}
   private async sendWithResend(emailData: ContactEmailData): Promise<{ success: boolean; error?: string }> {
     if (!this.provider.apiKey) {
       // Fallback to client-side email handling when API key is not available
-      console.warn('Resend API key not configured, using fallback email method');
       return this.sendFallbackEmail(emailData);
     }
 
@@ -205,7 +202,6 @@ Submitted on: ${new Date().toLocaleString()}
 
       if (response.ok) {
         const result = await response.json();
-        console.log('Email sent successfully via Resend:', result.id);
         return { success: true };
       } else {
         const errorData = await response.text();
@@ -237,8 +233,6 @@ Submitted on: ${new Date().toLocaleString()}
       });
       localStorage.setItem('pendingEmails', JSON.stringify(storedEmails));
 
-      console.log('Email data stored locally (API key not configured):', emailData);
-      
       // Return success to maintain good UX, but log that it's stored locally
       return { 
         success: true, 
@@ -273,7 +267,6 @@ Submitted on: ${new Date().toLocaleString()}
 export function createEmailService(): EmailService {
   // Check for Formspree first (easiest for beginners)
   if (process.env.NEXT_PUBLIC_FORMSPREE_ID) {
-    console.log('Using Formspree for email service');
     // For now, we'll use the fallback method but you can easily switch to Formspree
     // Just replace the handleAppointmentSubmit in appointments/page.tsx to use FormspreeService
   }

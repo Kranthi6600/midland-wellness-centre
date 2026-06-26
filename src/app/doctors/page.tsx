@@ -2,6 +2,17 @@ import Layout from "../../../components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "../../../components/sections/home/Cta";
+import { generateMetadata, defaultSEO } from "@/utils/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = generateMetadata({
+  ...defaultSEO,
+  title: "Our Team | Midland Wellness Centre - Scarborough",
+  description: "Meet the experienced healthcare professionals at Midland Wellness Centre. Our team of physiotherapists, chiropractors, and massage therapists provide expert care in Scarborough.",
+  keywords: "healthcare team scarborough, physiotherapist, chiropractor, massage therapist, medical professionals, wellness centre doctors",
+  canonical: "/doctors",
+});
+
 export default function Doctors_Page() {
 
     return (
