@@ -11,18 +11,12 @@ export default function Footer1() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        console.log("Footer: Fetching services from /api/proxy-services");
         fetch("/api/proxy-services")
+            .then((res) => res.json())
             .then((res) => {
-                console.log("Footer: Response status", res.status);
-                return res.json();
-            })
-            .then((res) => {
-                console.log("Footer: Response data", res);
                 setServices(res.data || []);
             })
-            .catch((err) => {
-                console.error("Footer: Fetch error", err);
+            .catch(() => {
                 setServices([]);
             });
     }, []);

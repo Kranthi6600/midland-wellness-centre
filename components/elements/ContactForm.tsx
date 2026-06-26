@@ -72,7 +72,6 @@ export default function ContactForm() {
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
       setErrors({});
     } catch (err) {
-      console.error(err);
       setStatus("error");
     } finally {
       setIsSubmitting(false);

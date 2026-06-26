@@ -36,7 +36,6 @@ export default function Layout({
     // TODO: Fix WOW.js initialization - temporarily disabled
     // Initialize WOW.js only on client-side
     if (typeof window !== 'undefined') {
-      console.log("WOW.js temporarily disabled to prevent runtime errors");
       // Original WOW.js code commented out until fixed
       /*
       try {
