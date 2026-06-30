@@ -106,9 +106,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 export const SOCIAL_LINKS = [
-  { name: 'Facebook', href: '#', icon: 'icon-4' },
-  { name: 'Twitter', href: '#', icon: 'icon-5' },
-  { name: 'Instagram', href: '#', icon: 'icon-6' },
+  { name: 'Instagram', href: 'https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0', icon: 'icon-6' },
 ] as const;
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [

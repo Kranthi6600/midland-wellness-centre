@@ -29,10 +29,7 @@ export default function Doctors_Page() {
                                             <h3><Link href="/doctor-details">Catherine Denuve</Link></h3>
                                             <span className="designation">Optegra eye</span>
                                             <ul className="social-links clearfix">
-                                                <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-behance"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -46,10 +43,7 @@ export default function Doctors_Page() {
                                             <h3><Link href="/doctor-details">Jenny Wilson</Link></h3>
                                             <span className="designation">Lens replacement</span>
                                             <ul className="social-links clearfix">
-                                                <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-behance"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -63,10 +57,7 @@ export default function Doctors_Page() {
                                             <h3><Link href="/doctor-details">Guy Hawkins</Link></h3>
                                             <span className="designation">Cataract surgery</span>
                                             <ul className="social-links clearfix">
-                                                <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-behance"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -80,10 +71,7 @@ export default function Doctors_Page() {
                                             <h3><Link href="/doctor-details">Jane Cooper</Link></h3>
                                             <span className="designation">Clarivu eye</span>
                                             <ul className="social-links clearfix">
-                                                <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-behance"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -97,10 +85,7 @@ export default function Doctors_Page() {
                                             <h3><Link href="/doctor-details">Wade Warren</Link></h3>
                                             <span className="designation">Glaucoma</span>
                                             <ul className="social-links clearfix">
-                                                <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-behance"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -114,10 +99,7 @@ export default function Doctors_Page() {
                                             <h3><Link href="/doctor-details">Esther Howard</Link></h3>
                                             <span className="designation">Laboratory</span>
                                             <ul className="social-links clearfix">
-                                                <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-dribbble"></i></Link></li>
-                                                <li><Link href="/"><i className="fab fa-behance"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>

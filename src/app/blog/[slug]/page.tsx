@@ -144,9 +144,7 @@ export default async function BlogDetailPage({ params }: Props) {
                       {blog.allow_social_share && (
                         <ul className="post-share clearfix">
                           <li><h4>Share:</h4></li>
-                          <li><Link href={`/blog/${blog.slug}`}><i className="fab fa-facebook-f"></i></Link></li>
-                          <li><Link href={`/blog/${blog.slug}`}><i className="fab fa-twitter"></i></Link></li>
-                          <li><Link href={`/blog/${blog.slug}`}><i className="fab fa-dribbble"></i></Link></li>
+                          <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                         </ul>
                       )}
                     </div>

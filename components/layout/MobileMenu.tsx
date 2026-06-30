@@ -95,11 +95,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
           {/* Social Links */}
           <div className="social-links">
             <ul className="clearfix">
-              <li><Link href="/#"><span className="fab fa-twitter" /></Link></li>
-              <li><Link href="/#"><span className="fab fa-facebook-square" /></Link></li>
-              <li><Link href="/#"><span className="fab fa-pinterest-p" /></Link></li>
-              <li><Link href="/#"><span className="fab fa-instagram" /></Link></li>
-              <li><Link href="/#"><span className="fab fa-youtube" /></Link></li>
+              <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><span className="fab fa-instagram" /></Link></li>
             </ul>
           </div>
 

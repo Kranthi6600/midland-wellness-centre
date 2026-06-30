@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "../MobileMenu";
 import { HeaderProps, NavigationItem } from "@/types";
-import { SITE_CONFIG, BUSINESS_HOURS, SOCIAL_LINKS, NAVIGATION_ITEMS } from "@/constants";
+import { SITE_CONFIG, BUSINESS_HOURS, NAVIGATION_ITEMS } from "@/constants";
 import { formatBusinessHours } from "@/utils/formatting";
 import { ServiceItem } from "@/lib/api";
 

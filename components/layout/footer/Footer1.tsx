@@ -56,9 +56,7 @@ export default function Footer1() {
                                     <div className="widget-content">
                                         <p>To provide accessible and equitable healthcare for all individuals, regardless of their  or socioeconomic status.</p>
                                         <ul className="social-links clearfix">
-                                            <li><Link href="https://www.facebook.com/midlandwellnesscentre" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li><Link href="https://www.instagram.com/midlandwellness/" target="_blank"><i className="fab fa-instagram"></i></Link></li>
-                                            <li><Link href="https://ca.linkedin.com/in/midland-wellness-center-83a214141" target="_blank"><i className="fab fa-linkedin-in"></i></Link></li>
+                                            <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
