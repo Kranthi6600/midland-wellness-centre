@@ -65,6 +65,8 @@ export interface ServiceDetail extends ServiceItem {
     display_order: number;
   }[];
   faq_schema: object | null;
+  service_schema: object | null;
+  breadcrumb_schema: object | null;
 }
 
 export interface Pagination {
@@ -74,9 +76,15 @@ export interface Pagination {
   totalPages: number;
 }
 
+export interface ServiceListSchema {
+  item_list: object | null;
+  collection_page: object | null;
+}
+
 export interface ServicesResponse {
   data: ServiceItem[];
   pagination: Pagination;
+  schema?: ServiceListSchema;
 }
 
 export async function fetchServices(params?: {
@@ -136,7 +144,14 @@ export async function fetchServices(params?: {
     totalPages: 1,
   };
 
-  return { data, pagination };
+  const schema: ServiceListSchema | undefined = json.schema
+    ? {
+        item_list: json.schema.item_list ?? null,
+        collection_page: json.schema.collection_page ?? null,
+      }
+    : undefined;
+
+  return { data, pagination, schema };
 }
 
 export async function fetchServiceBySlug(slug: string): Promise<ServiceDetail> {
@@ -151,6 +166,9 @@ export async function fetchServiceBySlug(slug: string): Promise<ServiceDetail> {
       const json = await res.json();
       const item = Array.isArray(json.data) ? json.data[0] : json.data || json;
       if (item && item.slug) {
+        if (!item.service_schema && json.service_schema) item.service_schema = json.service_schema;
+        if (!item.breadcrumb_schema && json.breadcrumb_schema) item.breadcrumb_schema = json.breadcrumb_schema;
+        if (!item.faq_schema && json.faq_schema) item.faq_schema = json.faq_schema;
         return item;
       }
     }
@@ -177,7 +195,11 @@ export async function fetchServiceBySlug(slug: string): Promise<ServiceDetail> {
     throw new Error(`Service not found for slug: ${slug}`);
   }
 
-  return match as ServiceDetail;
+  const detail = match as ServiceDetail;
+  detail.service_schema = detail.service_schema ?? null;
+  detail.breadcrumb_schema = detail.breadcrumb_schema ?? null;
+  detail.faq_schema = detail.faq_schema ?? null;
+  return detail;
 }
 
 export async function fetchServiceFaqs(slug: string): Promise<{
@@ -265,11 +287,19 @@ export interface BlogDetail extends BlogItem {
     display_order: number;
   }[];
   faq_schema: object | null;
+  blog_schema: object | null;
+  breadcrumb_schema: object | null;
+}
+
+export interface BlogListSchema {
+  item_list: object | null;
+  collection_page: object | null;
 }
 
 export interface BlogsResponse {
   data: BlogItem[];
   pagination: Pagination;
+  schema?: BlogListSchema;
 }
 
 export interface BlogCategory {
@@ -335,7 +365,14 @@ export async function fetchBlogs(params?: {
     totalPages: 1,
   };
 
-  return { data, pagination };
+  const schema: BlogListSchema | undefined = json.schema
+    ? {
+        item_list: json.schema.item_list ?? null,
+        collection_page: json.schema.collection_page ?? null,
+      }
+    : undefined;
+
+  return { data, pagination, schema };
 }
 
 export async function fetchBlogBySlug(slug: string): Promise<BlogDetail> {
@@ -359,6 +396,9 @@ export async function fetchBlogBySlug(slug: string): Promise<BlogDetail> {
                 ? json.blogs[0]
                 : json;
       if (item && item.slug) {
+        if (!item.blog_schema && json.blog_schema) item.blog_schema = json.blog_schema;
+        if (!item.breadcrumb_schema && json.breadcrumb_schema) item.breadcrumb_schema = json.breadcrumb_schema;
+        if (!item.faq_schema && json.faq_schema) item.faq_schema = json.faq_schema;
         return item;
       }
     }
@@ -390,7 +430,11 @@ export async function fetchBlogBySlug(slug: string): Promise<BlogDetail> {
     throw new Error(`Blog not found for slug: ${slug}`);
   }
 
-  return match as BlogDetail;
+  const detail = match as BlogDetail;
+  detail.blog_schema = detail.blog_schema ?? null;
+  detail.breadcrumb_schema = detail.breadcrumb_schema ?? null;
+  detail.faq_schema = detail.faq_schema ?? null;
+  return detail;
 }
 
 export async function fetchBlogCategories(): Promise<{ data: BlogCategory[] }> {

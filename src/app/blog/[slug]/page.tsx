@@ -90,6 +90,24 @@ export default async function BlogDetailPage({ params }: Props) {
   return (
     <div className="boxed_wrapper">
       <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Blog" breadcrumbBg={blog.thumbnail || undefined}>
+        {blog.blog_schema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(blog.blog_schema) }}
+          />
+        )}
+        {blog.breadcrumb_schema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(blog.breadcrumb_schema) }}
+          />
+        )}
+        {blog.faq_schema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(blog.faq_schema) }}
+          />
+        )}
         <section className="sidebar-page-container pt_120 pb_120">
           <div className="auto-container">
             <StickySidebar

@@ -37,10 +37,12 @@ function formatDate(date: string | null): string {
 export default async function BlogPage() {
     let posts: BlogItem[] = [];
     let categories: BlogCategory[] = [];
+    let listSchema: { item_list: object | null; collection_page: object | null } | undefined;
 
     try {
         const response = await fetchBlogs({ limit: 100 });
         posts = response?.data || [];
+        listSchema = response?.schema;
     } catch {
         posts = [];
     }
@@ -57,6 +59,18 @@ export default async function BlogPage() {
     return (
         <div className="boxed_wrapper">
             <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Blog">
+                {listSchema?.item_list && (
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema.item_list) }}
+                    />
+                )}
+                {listSchema?.collection_page && (
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema.collection_page) }}
+                    />
+                )}
                 <section className="sidebar-page-container pt_120 pb_120">
                     <div className="auto-container">
                         <StickySidebar

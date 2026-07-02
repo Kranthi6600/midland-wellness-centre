@@ -20,9 +20,11 @@ export const metadata: Metadata = generateMetadata({
 
 export default async function ServicesPage() {
   let apiServices;
+  let listSchema: { item_list: object | null; collection_page: object | null } | undefined;
   try {
     const response = await fetchServices({ limit: 100 });
     apiServices = response.data;
+    listSchema = response.schema;
   } catch {
     apiServices = undefined;
   }
@@ -30,6 +32,18 @@ export default async function ServicesPage() {
   return (
     <div className="boxed_wrapper">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Our Services">
+        {listSchema?.item_list && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema.item_list) }}
+          />
+        )}
+        {listSchema?.collection_page && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema.collection_page) }}
+          />
+        )}
         <Service services={apiServices} />
         <Working />
         <Cta />

@@ -86,6 +86,24 @@ export default async function ServiceDetailPage({ params }: Props) {
   return (
     <div className="boxed_wrapper">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle={service.title} breadcrumbSmall>
+        {service.service_schema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(service.service_schema) }}
+          />
+        )}
+        {service.breadcrumb_schema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(service.breadcrumb_schema) }}
+          />
+        )}
+        {service.faq_schema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(service.faq_schema) }}
+          />
+        )}
         <section className="service-details sec-pad">
           <div className="auto-container">
             <StickySidebar
