@@ -122,8 +122,8 @@ export default function Footer1() {
                                     <div className="widget-content">
                                         <ul className="info-list clearfix">
                                             <li><Image src="/assets/images/icons/icon-5.svg" alt="Icon" width={20} height={15} priority />Email: <Link href="mailto:info@midlandwellness.ca">info@midlandwellness.ca</Link></li>
-                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+41 416-261-7246">+41 416-261-7246</Link></li>
-                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+41 416-261-9813">+41 416-261-9813</Link></li>
+                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+1 416-261-7246">+1 416-261-7246</Link></li>
+                                            <li><Image src="/assets/images/icons/icon-6.svg" alt="Icon" width={20} height={21} priority />Call : <Link href="tel:+1 416-261-9813">+1 416-261-9813</Link></li>
                                             <li><Image src="/assets/images/icons/icon-7.svg" alt="Icon" width={20} height={20} priority />2555 Eglinton Ave. E,
                                                 Scarborough, Ontario
                                                 Canada, M1K 5J1 </li>

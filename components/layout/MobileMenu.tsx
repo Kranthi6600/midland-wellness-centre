@@ -86,7 +86,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
           <div className="contact-info">
               <h4>Contact Info</h4>
               <ul>
-                  <li><i className="icon-17"></i> +41 416-261-7246</li>
+                  <li><i className="icon-17"></i> +1 416-261-7246</li>
                   <li><i className="icon-46"></i> info@midlandwellness.ca</li>
                   <li><i className="icon-18"></i> Midland Wellness Centre, Ontario, Canada</li>
               </ul>

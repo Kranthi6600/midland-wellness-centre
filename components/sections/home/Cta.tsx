@@ -32,9 +32,9 @@ export default function Cta() {
                                 />
                             </div>
                             <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px', fontWeight: '600', color: '#ffffff' }}>Call Now:<br />
-                            <Link href="tel:+41 416-261-7246" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-7246</Link>
+                            <Link href="tel:+1 416-261-7246" style={{ textDecoration: 'none', color: '#ffffff' }}>+1 416-261-7246</Link>
                             <br />
-                            <Link href="tel:+41 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+41 416-261-9813</Link>
+                            <Link href="tel:+1 416-261-9813" style={{ textDecoration: 'none', color: '#ffffff' }}>+1 416-261-9813</Link>
                             <br />
                             <small style={{ fontSize: '14px', fontWeight: '400' }}>Wellness centre near you - physiotherapy clinic Scarborough, chiropractor near me Scarborough, massage therapy near me</small>
                             </span>

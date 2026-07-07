@@ -24,8 +24,8 @@ export default function Appointment() {
                     <div className="text">
                       <h4>Emergency Cases</h4>
                       <p>
-                        <Link href="tel:+41 416-261-7246">+41 416-261-7246</Link>
-                        <Link href="tel:+41 416-261-9813">+41 416-261-9813</Link>
+                        <Link href="tel:+1 416-261-7246">+1 416-261-7246</Link>
+                        <Link href="tel:+1 416-261-9813">+1 416-261-9813</Link>
                       </p>
                     </div>
                   </li>
