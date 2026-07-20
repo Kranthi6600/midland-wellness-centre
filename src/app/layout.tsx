@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Caveat } from "next/font/google";
+import { Roboto, Caveat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import NextTopLoader from "nextjs-toploader";
@@ -20,6 +20,13 @@ const caveat = Caveat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-caveat",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-cormorant",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -126,7 +133,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${roboto.variable} ${caveat.variable} font-body`}>
+      <body className={`${roboto.variable} ${caveat.variable} ${cormorant.variable} font-body`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P3J676LC"

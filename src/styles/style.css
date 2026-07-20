@@ -2020,6 +2020,11 @@ button.ltr {
   margin-bottom: 20px;
 }
 
+.main-footer .about-widget .social-links{
+  padding-left: 0;
+  margin-left: 0;
+}
+
 .main-footer .about-widget .social-links li{
   position: relative;
   display: inline-block;

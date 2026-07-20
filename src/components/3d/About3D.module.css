@@ -1,0 +1,383 @@
+/* ============================================================
+   About3D — Innovative 3D Scroll-Based About Section
+   Green glassmorphism theme with perspective depth
+   ============================================================ */
+
+.section {
+  --gold: #2e8b57;
+  --gold-light: #6fcf97;
+  --gold-dark: #1a6b3f;
+  --ink: #1a2e20;
+  --ink-soft: #5a7a6a;
+  --pearl: #f8fdf9;
+  --easing: cubic-bezier(0.25, 1, 0.5, 1);
+  --serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --sans: -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+  position: relative;
+  padding: 140px 0 120px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8fdf9 0%, #eef7f0 100%);
+}
+
+/* Background gradient orbs */
+.bgGradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(46, 139, 87, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(111, 207, 151, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.svgLines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.svgLines path {
+  will-change: stroke-dashoffset;
+}
+
+/* ===== Dot Grid ===== */
+.dotGrid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(46, 139, 87, 0.12);
+  will-change: transform, opacity;
+}
+
+/* Floating background shapes */
+.shapesBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floatingShape {
+  position: absolute;
+  opacity: 0.06;
+}
+
+.shape1 {
+  top: 15%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+}
+
+.shape2 {
+  bottom: 20%;
+  right: 12%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--gold-dark);
+  transform: rotate(45deg);
+}
+
+.shape3 {
+  top: 50%;
+  right: 30%;
+  width: 40px;
+  height: 40px;
+  border: 2px dashed var(--gold-light);
+  border-radius: 12px;
+}
+
+/* ===== Heading ===== */
+.heading {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 14px;
+  padding: 6px 20px;
+  border: 1px solid rgba(46, 139, 87, 0.18);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  will-change: clip-path, opacity;
+}
+
+.heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  perspective: 600px;
+}
+
+.heading h2 em {
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.hChar {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 18px 0 0;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.dividerLine {
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.dividerDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px rgba(46, 139, 87, 0.4);
+}
+
+/* ===== 3D Scene ===== */
+.sceneWrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 80px;
+}
+
+.scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.cardsRow {
+  display: flex;
+  gap: 28px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* ===== 3D Card ===== */
+.card {
+  position: relative;
+  width: 300px;
+  height: 340px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 253, 249, 0.5) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(46, 139, 87, 0.12);
+  box-shadow:
+    0 20px 50px rgba(26, 46, 32, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transform-style: preserve-3d;
+  transition: box-shadow 0.5s var(--easing);
+  overflow: hidden;
+  will-change: clip-path, filter, transform;
+}
+
+.card:hover {
+  box-shadow:
+    0 30px 70px rgba(46, 139, 87, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.cardInner {
+  position: relative;
+  z-index: 2;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  gap: 18px;
+  transform: translateZ(40px);
+}
+
+.cardIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.12), rgba(111, 207, 151, 0.06));
+  border: 1px solid rgba(46, 139, 87, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-dark);
+  transition: all 0.4s var(--easing);
+}
+
+.card:hover .cardIcon {
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.2), rgba(111, 207, 151, 0.1));
+  border-color: rgba(46, 139, 87, 0.25);
+  transform: scale(1.08) translateZ(20px);
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.15);
+}
+
+.cardInner h3 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.cardInner p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Card glow on hover */
+.cardGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(46, 139, 87, 0.08), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s var(--easing);
+  pointer-events: none;
+}
+
+.card:hover .cardGlow {
+  opacity: 1;
+}
+
+/* ===== Stats Row ===== */
+.statsWrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.statsBg {
+  position: absolute;
+  inset: -20px -40px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(248, 253, 249, 0.3));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(46, 139, 87, 0.08);
+  z-index: -1;
+  will-change: transform, opacity;
+}
+
+.statsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  z-index: 2;
+  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  will-change: transform, opacity;
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 0 40px;
+  flex: 1;
+  justify-content: center;
+}
+
+.statNumber {
+  font-family: var(--serif);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.statPlus {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--gold-light);
+  will-change: transform, opacity;
+}
+
+.statLabel {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  white-space: nowrap;
+  will-change: transform, opacity;
+}
+
+.statDivider {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(180deg, transparent, rgba(46, 139, 87, 0.2), transparent);
+  flex-shrink: 0;
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .cardsRow {
+    gap: 20px;
+  }
+
+  .card {
+    width: 260px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    display: none;
+  }
+}

@@ -1,0 +1,424 @@
+/* ============================================================
+   Contact3D — Innovative Liquid + 3D Flip Contact Section
+   Green glassmorphism with morphing blob and line-expanding form
+   ============================================================ */
+
+.section {
+  --gold: #2e8b57;
+  --gold-light: #6fcf97;
+  --gold-dark: #1a6b3f;
+  --ink: #1a2e20;
+  --ink-soft: #5a7a6a;
+  --pearl: #f8fdf9;
+  --easing: cubic-bezier(0.25, 1, 0.5, 1);
+  --serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --sans: -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+  position: relative;
+  padding: 140px 0 120px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8fdf9 0%, #eef7f0 100%);
+}
+
+/* ===== Liquid Blob ===== */
+.blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(46, 139, 87, 0.12) 0%, transparent 70%);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+  will-change: border-radius, transform;
+}
+
+/* ===== Decorative Lines ===== */
+.decoLines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decoLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(46, 139, 87, 0.08) 30%,
+    rgba(46, 139, 87, 0.12) 50%,
+    rgba(46, 139, 87, 0.08) 70%,
+    transparent 100%
+  );
+  transform-origin: left center;
+  will-change: transform;
+}
+
+/* ===== Heading ===== */
+.heading {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 14px;
+  padding: 6px 20px;
+  border: 1px solid rgba(46, 139, 87, 0.18);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  will-change: clip-path, opacity;
+}
+
+.heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  perspective: 800px;
+}
+
+.hChar {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+}
+
+/* ===== Layout ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== Info Cards ===== */
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  perspective: 1000px;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(46, 139, 87, 0.1);
+  border-radius: 20px;
+  padding: 20px 24px;
+  box-shadow: 0 12px 40px rgba(26, 46, 32, 0.06);
+  transition: box-shadow 0.5s var(--easing), border-color 0.5s var(--easing);
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  cursor: default;
+}
+
+.infoCard:hover {
+  box-shadow: 0 24px 60px rgba(46, 139, 87, 0.12);
+  border-color: rgba(46, 139, 87, 0.2);
+}
+
+.infoCardInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  transform: translateZ(20px);
+}
+
+.infoIcon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.12), rgba(111, 207, 151, 0.06));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-dark);
+}
+
+.infoCard h3 {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 2px;
+}
+
+.infoCard p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.infoCard a {
+  color: var(--gold-dark);
+  text-decoration: none;
+  transition: color 0.3s var(--easing);
+}
+
+.infoCard a:hover {
+  color: var(--gold);
+}
+
+/* ===== Map Card ===== */
+.mapCard {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(46, 139, 87, 0.1);
+  border-radius: 20px;
+  padding: 20px 24px;
+  box-shadow: 0 12px 40px rgba(26, 46, 32, 0.06);
+  transition: box-shadow 0.5s var(--easing), border-color 0.5s var(--easing);
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  cursor: default;
+}
+
+.mapCard:hover {
+  box-shadow: 0 24px 60px rgba(46, 139, 87, 0.12);
+  border-color: rgba(46, 139, 87, 0.2);
+}
+
+.mapCardInner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transform: translateZ(20px);
+}
+
+.mapHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mapHeader h3 {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.mapEmbed {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(46, 139, 87, 0.08);
+}
+
+.mapEmbed iframe {
+  display: block;
+  width: 100%;
+  filter: grayscale(0.2) saturate(1.1);
+}
+
+/* ===== Form ===== */
+.formCol {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(46, 139, 87, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 16px 50px rgba(26, 46, 32, 0.08);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  will-change: transform, opacity;
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid rgba(46, 139, 87, 0.15);
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.3s var(--easing);
+  resize: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(90, 122, 106, 0.4);
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom-color: var(--gold);
+}
+
+.fieldLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transition: width 0.4s var(--easing);
+}
+
+.field input:focus ~ .fieldLine,
+.field textarea:focus ~ .fieldLine {
+  width: 100%;
+}
+
+/* ===== Submit Button ===== */
+.submitBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 48px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  will-change: transform, opacity;
+  transition: box-shadow 0.4s var(--easing);
+}
+
+.submitBtn:hover {
+  box-shadow: 0 12px 30px rgba(46, 139, 87, 0.3);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnText {
+  position: relative;
+  z-index: 2;
+}
+
+.btnGlow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  opacity: 0;
+  transition: opacity 0.4s var(--easing);
+}
+
+.submitBtn:hover .btnGlow {
+  opacity: 1;
+}
+
+/* ===== Status Messages ===== */
+.statusSuccess {
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: rgba(46, 139, 87, 0.1);
+  border: 1px solid rgba(46, 139, 87, 0.2);
+  color: var(--gold-dark);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.statusError {
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: rgba(220, 53, 69, 0.08);
+  border: 1px solid rgba(220, 53, 69, 0.15);
+  color: #c0392b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0 70px;
+  }
+
+  .formCol {
+    padding: 28px 24px;
+  }
+
+  .fieldRow {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .blob {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h2 {
+    font-size: 28px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    align-self: stretch;
+  }
+}

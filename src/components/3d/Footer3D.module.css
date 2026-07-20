@@ -1,0 +1,136 @@
+.footer {
+  --gold: #2e8b57;
+  --gold-dark: #1a6b3f;
+  --ink: #1a2e20;
+  --ink-soft: #5a7a6a;
+  --serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --sans: -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --easing: cubic-bezier(0.25, 1, 0.5, 1);
+
+  position: relative;
+  padding: 60px 0 30px;
+  background: linear-gradient(180deg, #eef7f0 0%, #d9efe0 100%);
+  overflow: hidden;
+}
+
+.lineDeco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(46, 139, 87, 0.3),
+    rgba(46, 139, 87, 0.5),
+    rgba(46, 139, 87, 0.3),
+    transparent
+  );
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(46, 139, 87, 0.15);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.brandName {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.brandDesc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 320px;
+}
+
+.colTitle {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin: 0 0 6px;
+}
+
+.linkList,
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkList a,
+.contactList a,
+.contactList li {
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.3s var(--easing);
+}
+
+.linkList a:hover,
+.contactList a:hover {
+  color: var(--gold);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.bottom p {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.3s var(--easing);
+}
+
+.socialLink:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}

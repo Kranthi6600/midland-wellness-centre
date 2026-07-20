@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   domain: 'midlandwellness.ca',
   phone: '+1 416-261-7246',
   email: 'info@midlandwellness.ca',
-  address: 'Midland, Ontario, Canada',
+  address: '2555 Eglinton Ave. E, Scarborough, ON',
 } as const;
 
 export const BUSINESS_HOURS = {
@@ -111,8 +111,8 @@ export const SOCIAL_LINKS = [
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
   { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
   { name: 'Our Services', href: '/services' },
+  { name: 'About Us', href: '/about' },
   { name: 'Contact Us', href: '/contact-us' },
   { name: 'Blog', href: '/blog' },
 ] as const;
