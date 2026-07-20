@@ -772,6 +772,12 @@ img {
   font-weight: 400;
 }
 
+.header-top .social-links{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .header-top .social-links li{
   position: relative;
   display: inline-block;
@@ -2018,6 +2024,12 @@ button.ltr {
 .main-footer .about-widget .widget-content p{
   color: #fff;
   margin-bottom: 20px;
+}
+
+.main-footer .about-widget .social-links{
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
 }
 
 .main-footer .about-widget .social-links li{

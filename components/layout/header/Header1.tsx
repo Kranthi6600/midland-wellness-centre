@@ -79,6 +79,9 @@ export default function Header1({
                   Open Hours: <span>{formatBusinessHours(BUSINESS_HOURS)}</span>
                 </li>
               </ul>
+              <ul className="social-links clearfix">
+                <li><Link href="https://www.instagram.com/p/DaEoYrBhgkQ/?igsh=NGdlcGU3eXhtZTN0" target="_blank"><i className="fab fa-instagram"></i></Link></li>
+              </ul>
             </div>
           </div>
         </div>
